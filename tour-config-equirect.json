@@ -1,0 +1,827 @@
+{
+  "default": {
+    "firstScene": "PANO_01_ENTRANCE",
+    "autoLoad": true,
+    "sceneFadeDuration": 650,
+    "showControls": false,
+    "showFullscreenCtrl": false,
+    "showZoomCtrl": false,
+    "mouseZoom": true,
+    "draggable": true,
+    "keyboardZoom": true,
+    "hfov": 100,
+    "minHfov": 40,
+    "maxHfov": 115,
+    "friction": 0.18,
+    "strings": {
+      "loadingLabel": "読み込み中…",
+      "bylineLabel": "",
+      "loadButtonLabel": "内覧を開始"
+    }
+  },
+  "scenes": {
+    "PANO_01_ENTRANCE": {
+      "sceneId": "PANO_01_ENTRANCE",
+      "title": "入口",
+      "type": "equirectangular",
+      "panorama": "PANO_01_ENTRANCE.jpg",
+      "pitch": -5,
+      "yaw": 42,
+      "hfov": 92,
+      "hotSpots": [
+        {
+          "pitch": -50.00797964399408,
+          "yaw": 46.548157698977974,
+          "type": "scene",
+          "text": "デスクへ",
+          "sceneId": "PANO_02_DESK",
+          "targetYaw": "same",
+          "targetPitch": -4,
+          "cssClass": "tour-move",
+          "createTooltipArgs": {
+            "kind": "move",
+            "label": "デスクへ"
+          }
+        },
+        {
+          "pitch": 2.96079885982021,
+          "yaw": 40.279863068956445,
+          "type": "info",
+          "text": "木質壁",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木質壁"
+          },
+          "clickHandlerArgs": {
+            "title": "木質壁",
+            "text": "木の素材感を身近に感じる内装。宿泊を通して、木のある暮らしに触れるための客室です。"
+          }
+        },
+        {
+          "pitch": 6.785878871778245,
+          "yaw": -30.37912601136835,
+          "type": "info",
+          "text": "鹿角のハンガーフック",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "鹿角のハンガーフック"
+          },
+          "clickHandlerArgs": {
+            "title": "鹿角のハンガーフック",
+            "text": "森をモチーフにした客室ディテール。鹿の角の形を、日常で使う木製フックに取り入れました。"
+          }
+        },
+        {
+          "pitch": -29.559999999999988,
+          "yaw": 17.71999999999997,
+          "type": "info",
+          "text": "木質空間と睡眠",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木質空間と睡眠"
+          },
+          "clickHandlerArgs": {
+            "title": "木質空間と睡眠",
+            "text": "木質空間でくつろぎ、休むことをテーマにしたコンセプトです。睡眠への効果を保証するものではありません。"
+          }
+        },
+        {
+          "pitch": -16.559999999999988,
+          "yaw": 27.71999999999997,
+          "type": "info",
+          "text": "きこりんのぬいぐるみ",
+          "feature": "kikorin",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "きこりんのぬいぐるみ"
+          },
+          "clickHandlerArgs": {
+            "title": "きこりんのぬいぐるみ",
+            "text": "住友林業グループのキャラクター「きこりん」を、ベッドに置くぬいぐるみとして表現しました。客室での設置イメージです。"
+          }
+        },
+        {
+          "pitch": -19.439999999999998,
+          "yaw": 80.63999999999999,
+          "type": "info",
+          "text": "BAUMのスキンケア",
+          "feature": "baum",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "BAUMのスキンケア"
+          },
+          "clickHandlerArgs": {
+            "title": "BAUMのスキンケア",
+            "text": "木製パーツを使ったBAUMのスキンケアをデスクに。BAUMは資生堂のブランドで、住友林業は森林づくりを支援しています。商品の設置イメージです。"
+          }
+        },
+        {
+          "pitch": -1.980000000000004,
+          "yaw": 8.280000000000001,
+          "type": "info",
+          "text": "10階からの都会の眺望",
+          "feature": "city",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "10階からの都会の眺望"
+          },
+          "clickHandlerArgs": {
+            "title": "10階からの都会の眺望",
+            "text": "地上約30m、10階の客室から見渡す都会の景色をイメージしました。眼下の屋上と、遠くに連なるビル群を楽しめます。実在する施設の眺望ではありません。"
+          }
+        }
+      ],
+      "northOffset": 0,
+      "haov": 360,
+      "vaov": 180,
+      "thumbnail": "thumb-PANO_01_ENTRANCE.jpg"
+    },
+    "PANO_02_DESK": {
+      "sceneId": "PANO_02_DESK",
+      "title": "デスク",
+      "type": "equirectangular",
+      "panorama": "PANO_02_DESK.jpg",
+      "pitch": -12,
+      "yaw": 100,
+      "hfov": 92,
+      "hotSpots": [
+        {
+          "pitch": -50.00797964399408,
+          "yaw": -133.45184230102205,
+          "type": "scene",
+          "text": "入口へ",
+          "sceneId": "PANO_01_ENTRANCE",
+          "targetYaw": "same",
+          "targetPitch": -4,
+          "cssClass": "tour-move",
+          "createTooltipArgs": {
+            "kind": "move",
+            "label": "入口へ"
+          }
+        },
+        {
+          "pitch": -39.98525550088276,
+          "yaw": -36.25383773744479,
+          "type": "scene",
+          "text": "ベッド足元へ",
+          "sceneId": "PANO_03_BED_FOOT",
+          "targetYaw": "same",
+          "targetPitch": -4,
+          "cssClass": "tour-move",
+          "createTooltipArgs": {
+            "kind": "move",
+            "label": "ベッド足元へ"
+          }
+        },
+        {
+          "pitch": -66.73166306821864,
+          "yaw": 26.565051177077983,
+          "type": "scene",
+          "text": "ベッド横へ",
+          "sceneId": "PANO_04_BED_SIDE",
+          "targetYaw": "same",
+          "targetPitch": -4,
+          "cssClass": "tour-move",
+          "createTooltipArgs": {
+            "kind": "move",
+            "label": "ベッド横へ"
+          }
+        },
+        {
+          "pitch": 6.065561847823661,
+          "yaw": -73.00917670801384,
+          "type": "info",
+          "text": "鹿角のハンガーフック",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "鹿角のハンガーフック"
+          },
+          "clickHandlerArgs": {
+            "title": "鹿角のハンガーフック",
+            "text": "森をモチーフにした客室ディテール。鹿の角の形を、日常で使う木製フックに取り入れました。"
+          }
+        },
+        {
+          "pitch": -11.453408468219369,
+          "yaw": 101.6893691754392,
+          "type": "info",
+          "text": "木材サンプル",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木材サンプル"
+          },
+          "clickHandlerArgs": {
+            "title": "木材サンプル",
+            "text": "樹種や森林について知るきっかけとして、小さな木材サンプルを置いています。"
+          }
+        },
+        {
+          "pitch": -5.248296568362512,
+          "yaw": 79.79602627826831,
+          "type": "info",
+          "text": "森林を知る小さな案内",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "森林を知る小さな案内"
+          },
+          "clickHandlerArgs": {
+            "title": "森林を知る小さな案内",
+            "text": "植えて、育てて、使い、また植える。森林の循環や林業を気軽に知るための案内です。"
+          }
+        },
+        {
+          "pitch": -31.091553247570843,
+          "yaw": 52.40691212849523,
+          "type": "info",
+          "text": "チェーンソーアラーム",
+          "cssClass": "tour-info tour-audio",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "チェーンソーアラームを再生・停止"
+          },
+          "clickHandlerArgs": {
+            "action": "alarm",
+            "title": "チェーンソーアラーム"
+          }
+        },
+        {
+          "pitch": -27.540000000000006,
+          "yaw": 19.80000000000001,
+          "type": "info",
+          "text": "きこりんのぬいぐるみ",
+          "feature": "kikorin",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "きこりんのぬいぐるみ"
+          },
+          "clickHandlerArgs": {
+            "title": "きこりんのぬいぐるみ",
+            "text": "住友林業グループのキャラクター「きこりん」を、ベッドに置くぬいぐるみとして表現しました。客室での設置イメージです。"
+          }
+        },
+        {
+          "pitch": -30.060000000000002,
+          "yaw": 112.68,
+          "type": "info",
+          "text": "BAUMのスキンケア",
+          "feature": "baum",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "BAUMのスキンケア"
+          },
+          "clickHandlerArgs": {
+            "title": "BAUMのスキンケア",
+            "text": "木製パーツを使ったBAUMのスキンケアをデスクに。BAUMは資生堂のブランドで、住友林業は森林づくりを支援しています。商品の設置イメージです。"
+          }
+        },
+        {
+          "pitch": -3.6000000000000085,
+          "yaw": -2.1599999999999966,
+          "type": "info",
+          "text": "10階からの都会の眺望",
+          "feature": "city",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "10階からの都会の眺望"
+          },
+          "clickHandlerArgs": {
+            "title": "10階からの都会の眺望",
+            "text": "地上約30m、10階の客室から見渡す都会の景色をイメージしました。眼下の屋上と、遠くに連なるビル群を楽しめます。実在する施設の眺望ではありません。"
+          }
+        }
+      ],
+      "northOffset": 0,
+      "haov": 360,
+      "vaov": 180,
+      "thumbnail": "thumb-PANO_02_DESK.jpg"
+    },
+    "PANO_03_BED_FOOT": {
+      "sceneId": "PANO_03_BED_FOOT",
+      "title": "ベッド足元",
+      "type": "equirectangular",
+      "panorama": "PANO_03_BED_FOOT.jpg",
+      "pitch": -5,
+      "yaw": 78,
+      "hfov": 92,
+      "hotSpots": [
+        {
+          "pitch": -39.98525550088276,
+          "yaw": 143.74616226255523,
+          "type": "scene",
+          "text": "デスクへ",
+          "sceneId": "PANO_02_DESK",
+          "targetYaw": "same",
+          "targetPitch": -4,
+          "cssClass": "tour-move",
+          "createTooltipArgs": {
+            "kind": "move",
+            "label": "デスクへ"
+          }
+        },
+        {
+          "pitch": -41.610581821759205,
+          "yaw": 4.899092453787766,
+          "type": "scene",
+          "text": "窓側へ",
+          "sceneId": "PANO_05_WINDOW",
+          "targetYaw": "same",
+          "targetPitch": -4,
+          "cssClass": "tour-move",
+          "createTooltipArgs": {
+            "kind": "move",
+            "label": "窓側へ"
+          }
+        },
+        {
+          "pitch": 4.226298360298455,
+          "yaw": 78.27488798483493,
+          "type": "info",
+          "text": "木質壁",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木質壁"
+          },
+          "clickHandlerArgs": {
+            "title": "木質壁",
+            "text": "木の素材感を身近に感じる内装。宿泊を通して、木のある暮らしに触れるための客室です。"
+          }
+        },
+        {
+          "pitch": 9.619388835870362,
+          "yaw": -143.61564818416414,
+          "type": "info",
+          "text": "鹿角のハンガーフック",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "鹿角のハンガーフック"
+          },
+          "clickHandlerArgs": {
+            "title": "鹿角のハンガーフック",
+            "text": "森をモチーフにした客室ディテール。鹿の角の形を、日常で使う木製フックに取り入れました。"
+          }
+        },
+        {
+          "pitch": -43.78,
+          "yaw": 67.39999999999998,
+          "type": "info",
+          "text": "木質空間と睡眠",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木質空間と睡眠"
+          },
+          "clickHandlerArgs": {
+            "title": "木質空間と睡眠",
+            "text": "木質空間でくつろぎ、休むことをテーマにしたコンセプトです。睡眠への効果を保証するものではありません。"
+          }
+        },
+        {
+          "pitch": -30.78,
+          "yaw": 77.39999999999998,
+          "type": "info",
+          "text": "きこりんのぬいぐるみ",
+          "feature": "kikorin",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "きこりんのぬいぐるみ"
+          },
+          "clickHandlerArgs": {
+            "title": "きこりんのぬいぐるみ",
+            "text": "住友林業グループのキャラクター「きこりん」を、ベッドに置くぬいぐるみとして表現しました。客室での設置イメージです。"
+          }
+        },
+        {
+          "pitch": -14.219999999999999,
+          "yaw": 130.68,
+          "type": "info",
+          "text": "BAUMのスキンケア",
+          "feature": "baum",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "BAUMのスキンケア"
+          },
+          "clickHandlerArgs": {
+            "title": "BAUMのスキンケア",
+            "text": "木製パーツを使ったBAUMのスキンケアをデスクに。BAUMは資生堂のブランドで、住友林業は森林づくりを支援しています。商品の設置イメージです。"
+          }
+        },
+        {
+          "pitch": -6.480000000000004,
+          "yaw": 18.00000000000003,
+          "type": "info",
+          "text": "10階からの都会の眺望",
+          "feature": "city",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "10階からの都会の眺望"
+          },
+          "clickHandlerArgs": {
+            "title": "10階からの都会の眺望",
+            "text": "地上約30m、10階の客室から見渡す都会の景色をイメージしました。眼下の屋上と、遠くに連なるビル群を楽しめます。実在する施設の眺望ではありません。"
+          }
+        }
+      ],
+      "northOffset": 0,
+      "haov": 360,
+      "vaov": 180,
+      "thumbnail": "thumb-PANO_03_BED_FOOT.jpg"
+    },
+    "PANO_04_BED_SIDE": {
+      "sceneId": "PANO_04_BED_SIDE",
+      "title": "ベッド横",
+      "type": "equirectangular",
+      "panorama": "PANO_04_BED_SIDE.jpg",
+      "pitch": -5,
+      "yaw": 18,
+      "hfov": 92,
+      "hotSpots": [
+        {
+          "pitch": -66.73166306821864,
+          "yaw": -153.43494882292202,
+          "type": "scene",
+          "text": "デスクへ",
+          "sceneId": "PANO_02_DESK",
+          "targetYaw": "same",
+          "targetPitch": -4,
+          "cssClass": "tour-move",
+          "createTooltipArgs": {
+            "kind": "move",
+            "label": "デスクへ"
+          }
+        },
+        {
+          "pitch": 5.964074921761457,
+          "yaw": 40.76360520094116,
+          "type": "info",
+          "text": "木質壁",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木質壁"
+          },
+          "clickHandlerArgs": {
+            "title": "木質壁",
+            "text": "木の素材感を身近に感じる内装。宿泊を通して、木のある暮らしに触れるための客室です。"
+          }
+        },
+        {
+          "pitch": -11.609102436835126,
+          "yaw": 128.04704253182607,
+          "type": "info",
+          "text": "木材サンプル",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木材サンプル"
+          },
+          "clickHandlerArgs": {
+            "title": "木材サンプル",
+            "text": "樹種や森林について知るきっかけとして、小さな木材サンプルを置いています。"
+          }
+        },
+        {
+          "pitch": -54.400000000000006,
+          "yaw": 8.360000000000014,
+          "type": "info",
+          "text": "木質空間と睡眠",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木質空間と睡眠"
+          },
+          "clickHandlerArgs": {
+            "title": "木質空間と睡眠",
+            "text": "木質空間でくつろぎ、休むことをテーマにしたコンセプトです。睡眠への効果を保証するものではありません。"
+          }
+        },
+        {
+          "pitch": -6.4182565304636086,
+          "yaw": 105.3762512488262,
+          "type": "info",
+          "text": "森林を知る小さな案内",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "森林を知る小さな案内"
+          },
+          "clickHandlerArgs": {
+            "title": "森林を知る小さな案内",
+            "text": "植えて、育てて、使い、また植える。森林の循環や林業を気軽に知るための案内です。"
+          }
+        },
+        {
+          "pitch": -44.576391148780154,
+          "yaw": 71.98023071822286,
+          "type": "info",
+          "text": "チェーンソーアラーム",
+          "cssClass": "tour-info tour-audio",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "チェーンソーアラームを再生・停止"
+          },
+          "clickHandlerArgs": {
+            "action": "alarm",
+            "title": "チェーンソーアラーム"
+          }
+        },
+        {
+          "pitch": -41.400000000000006,
+          "yaw": 18.360000000000014,
+          "type": "info",
+          "text": "きこりんのぬいぐるみ",
+          "feature": "kikorin",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "きこりんのぬいぐるみ"
+          },
+          "clickHandlerArgs": {
+            "title": "きこりんのぬいぐるみ",
+            "text": "住友林業グループのキャラクター「きこりん」を、ベッドに置くぬいぐるみとして表現しました。客室での設置イメージです。"
+          }
+        },
+        {
+          "pitch": -31.500000000000014,
+          "yaw": 139.32,
+          "type": "info",
+          "text": "BAUMのスキンケア",
+          "feature": "baum",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "BAUMのスキンケア"
+          },
+          "clickHandlerArgs": {
+            "title": "BAUMのスキンケア",
+            "text": "木製パーツを使ったBAUMのスキンケアをデスクに。BAUMは資生堂のブランドで、住友林業は森林づくりを支援しています。商品の設置イメージです。"
+          }
+        },
+        {
+          "pitch": -3.0600000000000023,
+          "yaw": -7.200000000000017,
+          "type": "info",
+          "text": "10階からの都会の眺望",
+          "feature": "city",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "10階からの都会の眺望"
+          },
+          "clickHandlerArgs": {
+            "title": "10階からの都会の眺望",
+            "text": "地上約30m、10階の客室から見渡す都会の景色をイメージしました。眼下の屋上と、遠くに連なるビル群を楽しめます。実在する施設の眺望ではありません。"
+          }
+        }
+      ],
+      "northOffset": 0,
+      "haov": 360,
+      "vaov": 180,
+      "thumbnail": "thumb-PANO_04_BED_SIDE.jpg"
+    },
+    "PANO_05_WINDOW": {
+      "sceneId": "PANO_05_WINDOW",
+      "title": "窓側",
+      "type": "equirectangular",
+      "panorama": "PANO_05_WINDOW.jpg",
+      "pitch": -3,
+      "yaw": 28,
+      "hfov": 92,
+      "hotSpots": [
+        {
+          "pitch": -41.610581821759205,
+          "yaw": -175.10090754621226,
+          "type": "scene",
+          "text": "ベッド足元へ",
+          "sceneId": "PANO_03_BED_FOOT",
+          "targetYaw": "same",
+          "targetPitch": -4,
+          "cssClass": "tour-move",
+          "createTooltipArgs": {
+            "kind": "move",
+            "label": "ベッド足元へ"
+          }
+        },
+        {
+          "pitch": -54.783404585647986,
+          "yaw": 92.6025622024998,
+          "type": "scene",
+          "text": "ラウンジへ",
+          "sceneId": "PANO_06_LOUNGE",
+          "targetYaw": "same",
+          "targetPitch": -4,
+          "cssClass": "tour-move",
+          "createTooltipArgs": {
+            "kind": "move",
+            "label": "ラウンジへ"
+          }
+        },
+        {
+          "pitch": 4.125134820732232,
+          "yaw": 115.64100582430528,
+          "type": "info",
+          "text": "木質壁",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木質壁"
+          },
+          "clickHandlerArgs": {
+            "title": "木質壁",
+            "text": "木の素材感を身近に感じる内装。宿泊を通して、木のある暮らしに触れるための客室です。"
+          }
+        },
+        {
+          "pitch": -39.10000000000001,
+          "yaw": 122.83999999999997,
+          "type": "info",
+          "text": "木質空間と睡眠",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木質空間と睡眠"
+          },
+          "clickHandlerArgs": {
+            "title": "木質空間と睡眠",
+            "text": "木質空間でくつろぎ、休むことをテーマにしたコンセプトです。睡眠への効果を保証するものではありません。"
+          }
+        },
+        {
+          "pitch": -26.10000000000001,
+          "yaw": 132.83999999999997,
+          "type": "info",
+          "text": "きこりんのぬいぐるみ",
+          "feature": "kikorin",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "きこりんのぬいぐるみ"
+          },
+          "clickHandlerArgs": {
+            "title": "きこりんのぬいぐるみ",
+            "text": "住友林業グループのキャラクター「きこりん」を、ベッドに置くぬいぐるみとして表現しました。客室での設置イメージです。"
+          }
+        },
+        {
+          "pitch": -9.000000000000014,
+          "yaw": 142.56,
+          "type": "info",
+          "text": "BAUMのスキンケア",
+          "feature": "baum",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "BAUMのスキンケア"
+          },
+          "clickHandlerArgs": {
+            "title": "BAUMのスキンケア",
+            "text": "木製パーツを使ったBAUMのスキンケアをデスクに。BAUMは資生堂のブランドで、住友林業は森林づくりを支援しています。商品の設置イメージです。"
+          }
+        },
+        {
+          "pitch": -7.02000000000001,
+          "yaw": 26.99999999999997,
+          "type": "info",
+          "text": "10階からの都会の眺望",
+          "feature": "city",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "10階からの都会の眺望"
+          },
+          "clickHandlerArgs": {
+            "title": "10階からの都会の眺望",
+            "text": "地上約30m、10階の客室から見渡す都会の景色をイメージしました。眼下の屋上と、遠くに連なるビル群を楽しめます。実在する施設の眺望ではありません。"
+          }
+        }
+      ],
+      "northOffset": 0,
+      "haov": 360,
+      "vaov": 180,
+      "thumbnail": "thumb-PANO_05_WINDOW.jpg"
+    },
+    "PANO_06_LOUNGE": {
+      "sceneId": "PANO_06_LOUNGE",
+      "title": "ラウンジ",
+      "type": "equirectangular",
+      "panorama": "PANO_06_LOUNGE.jpg",
+      "pitch": -5,
+      "yaw": -3,
+      "hfov": 92,
+      "hotSpots": [
+        {
+          "pitch": -54.783404585647986,
+          "yaw": -87.3974377975002,
+          "type": "scene",
+          "text": "窓側へ",
+          "sceneId": "PANO_05_WINDOW",
+          "targetYaw": "same",
+          "targetPitch": -4,
+          "cssClass": "tour-move",
+          "createTooltipArgs": {
+            "kind": "move",
+            "label": "窓側へ"
+          }
+        },
+        {
+          "pitch": 6.299345472368797,
+          "yaw": 129.40066066347944,
+          "type": "info",
+          "text": "木質壁",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木質壁"
+          },
+          "clickHandlerArgs": {
+            "title": "木質壁",
+            "text": "木の素材感を身近に感じる内装。宿泊を通して、木のある暮らしに触れるための客室です。"
+          }
+        },
+        {
+          "pitch": -50.97999999999999,
+          "yaw": 146.96000000000004,
+          "type": "info",
+          "text": "木質空間と睡眠",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木質空間と睡眠"
+          },
+          "clickHandlerArgs": {
+            "title": "木質空間と睡眠",
+            "text": "木質空間でくつろぎ、休むことをテーマにしたコンセプトです。睡眠への効果を保証するものではありません。"
+          }
+        },
+        {
+          "pitch": -37.97999999999999,
+          "yaw": 156.96000000000004,
+          "type": "info",
+          "text": "きこりんのぬいぐるみ",
+          "feature": "kikorin",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "きこりんのぬいぐるみ"
+          },
+          "clickHandlerArgs": {
+            "title": "きこりんのぬいぐるみ",
+            "text": "住友林業グループのキャラクター「きこりん」を、ベッドに置くぬいぐるみとして表現しました。客室での設置イメージです。"
+          }
+        },
+        {
+          "pitch": -11.16000000000001,
+          "yaw": 163.07999999999998,
+          "type": "info",
+          "text": "BAUMのスキンケア",
+          "feature": "baum",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "BAUMのスキンケア"
+          },
+          "clickHandlerArgs": {
+            "title": "BAUMのスキンケア",
+            "text": "木製パーツを使ったBAUMのスキンケアをデスクに。BAUMは資生堂のブランドで、住友林業は森林づくりを支援しています。商品の設置イメージです。"
+          }
+        },
+        {
+          "pitch": -6.300000000000011,
+          "yaw": -10.800000000000011,
+          "type": "info",
+          "text": "10階からの都会の眺望",
+          "feature": "city",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "10階からの都会の眺望"
+          },
+          "clickHandlerArgs": {
+            "title": "10階からの都会の眺望",
+            "text": "地上約30m、10階の客室から見渡す都会の景色をイメージしました。眼下の屋上と、遠くに連なるビル群を楽しめます。実在する施設の眺望ではありません。"
+          }
+        }
+      ],
+      "northOffset": 0,
+      "haov": 360,
+      "vaov": 180,
+      "thumbnail": "thumb-PANO_06_LOUNGE.jpg"
+    }
+  }
+}

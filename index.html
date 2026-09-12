@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#20352c"><title>きこりんルーム Virtual Tour</title><meta name="description" content="木を身近に感じるホテルの一室。6つの地点を移動する360°内覧。"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 40 40%27%3E%3Crect width=%2740%27 height=%2740%27 rx=%2720%27 fill=%27%2320352c%27/%3E%3Ctext x=%2720%27 y=%2729%27 font-size=%2727%27 text-anchor=%27middle%27 fill=%27%23f3e5c4%27%3E木%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="pannellum.css"><link rel="stylesheet" href="styles.css"></head>
+<body>
+<main id="panorama" aria-label="きこりんルームの360度内覧"></main>
+<header class="masthead"><span class="mark" aria-hidden="true">木</span><div><h1>きこりんルーム <span>Virtual Tour</span></h1><p>木と過ごす、ホテルの一室。</p></div></header>
+<div class="top-actions"><button id="alarm-toggle" title="チェーンソーアラームを再生" aria-label="チェーンソーアラームを再生" aria-pressed="false" aria-expanded="false" aria-controls="alarm-panel">i<span class="sound-dot" aria-hidden="true"></span></button><button id="fullscreen" title="全画面" aria-label="全画面">⛶</button></div>
+<div id="status" role="status" aria-live="polite">お部屋を読み込んでいます…</div>
+<div id="notice" role="status" aria-live="polite" hidden></div>
+<aside id="detail" class="detail" hidden aria-labelledby="detail-title"><button id="close-detail" aria-label="説明を閉じる">×</button><p class="eyebrow">ROOM DETAIL</p><h2 id="detail-title"></h2><p id="detail-text"></p></aside>
+<aside id="alarm-panel" class="detail alarm-panel" hidden aria-labelledby="alarm-title"><button id="close-alarm" aria-label="音を止めて閉じる">×</button><p class="eyebrow">SOUND OF FORESTRY</p><h2 id="alarm-title">チェーンソーアラーム</h2><p class="alarm-copy">森で働く音を、客室で体験。</p><audio id="chainsaw-audio" controls preload="none" aria-label="チェーンソーのサンプル音"><source src="chainsaw-sample.mp3" type="audio/mpeg"></audio><p id="audio-state" role="status" aria-live="polite">停止中 · サンプル音</p><p class="audio-note">約18秒のサンプル音です。社有林での収録音ではありません。「i」をもう一度押すか、×で停止します。</p><a class="audio-credit" href="https://bigsoundbank.com/chain-saw-s0454.html" target="_blank" rel="noopener noreferrer">音源：Joseph SARDIN / BigSoundBank · CC0</a></aside>
+<footer><div class="location"><span id="location-index">01 / 06</span><strong id="location-name">入口</strong><span class="guide">ドラッグで見回す · 床の矢印で移動 · 右上の i で音を体験</span></div><nav id="scenes" aria-label="移動する地点"></nav><div class="bottomline"><span>CONCEPT ROOM · 10F</span><button id="info-toggle" aria-pressed="true">解説を隠す</button><button id="plan-toggle" aria-expanded="false">平面図</button><a href="credits.html" target="_blank" rel="noopener">素材・企画について</a><span class="key-guide">← → 見回す / ＋ − 拡大縮小</span></div></footer>
+<aside id="plan" hidden aria-label="カメラ位置の平面図"><button id="close-plan" aria-label="平面図を閉じる">×</button><img src="camera_locations.png" alt="3.6m×5.6mの客室。入口、デスク、ベッド足元、ベッド横、窓側、ラウンジの6地点。"></aside>
+<noscript>この内覧にはJavaScriptが必要です。</noscript>
+<script src="pannellum.js"></script><script src="app.js"></script>
+</body></html>
