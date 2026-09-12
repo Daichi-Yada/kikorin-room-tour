@@ -24,7 +24,7 @@
       "sceneId": "PANO_01_ENTRANCE",
       "title": "入口",
       "type": "equirectangular",
-      "panorama": "PANO_01_ENTRANCE.jpg",
+      "panorama": "PANO_01_ENTRANCE.jpg?v=wood4k-20260912",
       "pitch": -5,
       "yaw": 42,
       "hfov": 92,
@@ -55,7 +55,7 @@
           },
           "clickHandlerArgs": {
             "title": "木質壁",
-            "text": "木の素材感を身近に感じる内装。宿泊を通して、木のある暮らしに触れるための客室です。"
+            "text": "壁と天井を木で包み、木の素材感を身近に感じる内装にしました。宿泊を通して、木のある暮らしに触れるための客室です。"
           }
         },
         {
@@ -135,18 +135,35 @@
             "title": "10階からの都会の眺望",
             "text": "地上約30m、10階の客室から見渡す都会の景色をイメージしました。眼下の屋上と、遠くに連なるビル群を楽しめます。実在する施設の眺望ではありません。"
           }
+        },
+        {
+          "pitch": -2.9518290528618043,
+          "yaw": 64.47314420300167,
+          "type": "info",
+          "text": "WOOD CYCLE",
+          "feature": "wood-cycle",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "WOOD CYCLEの公式図を見る"
+          },
+          "clickHandlerArgs": {
+            "action": "wood-cycle",
+            "title": "WOOD CYCLE",
+            "text": "森林から木材、建築、エネルギーへ。住友林業は、木を植え育て、木材を建物などに使い、資源を循環させる「WOOD CYCLE」を進めています。公式図で、そのつながりを紹介します。"
+          }
         }
       ],
       "northOffset": 0,
       "haov": 360,
       "vaov": 180,
-      "thumbnail": "thumb-PANO_01_ENTRANCE.jpg"
+      "thumbnail": "thumb-PANO_01_ENTRANCE.jpg?v=wood4k-20260912"
     },
     "PANO_02_DESK": {
       "sceneId": "PANO_02_DESK",
       "title": "デスク",
       "type": "equirectangular",
-      "panorama": "PANO_02_DESK.jpg",
+      "panorama": "PANO_02_DESK.jpg?v=wood4k-20260912",
       "pitch": -12,
       "yaw": 100,
       "hfov": 92,
@@ -224,21 +241,6 @@
           }
         },
         {
-          "pitch": -5.248296568362512,
-          "yaw": 79.79602627826831,
-          "type": "info",
-          "text": "森林を知る小さな案内",
-          "cssClass": "tour-info",
-          "createTooltipArgs": {
-            "kind": "info",
-            "label": "森林を知る小さな案内"
-          },
-          "clickHandlerArgs": {
-            "title": "森林を知る小さな案内",
-            "text": "植えて、育てて、使い、また植える。森林の循環や林業を気軽に知るための案内です。"
-          }
-        },
-        {
           "pitch": -31.091553247570843,
           "yaw": 52.40691212849523,
           "type": "info",
@@ -300,18 +302,35 @@
             "title": "10階からの都会の眺望",
             "text": "地上約30m、10階の客室から見渡す都会の景色をイメージしました。眼下の屋上と、遠くに連なるビル群を楽しめます。実在する施設の眺望ではありません。"
           }
+        },
+        {
+          "pitch": -5.248296568362512,
+          "yaw": 79.79602627826831,
+          "type": "info",
+          "text": "WOOD CYCLE",
+          "feature": "wood-cycle",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "WOOD CYCLEの公式図を見る"
+          },
+          "clickHandlerArgs": {
+            "action": "wood-cycle",
+            "title": "WOOD CYCLE",
+            "text": "森林から木材、建築、エネルギーへ。住友林業は、木を植え育て、木材を建物などに使い、資源を循環させる「WOOD CYCLE」を進めています。公式図で、そのつながりを紹介します。"
+          }
         }
       ],
       "northOffset": 0,
       "haov": 360,
       "vaov": 180,
-      "thumbnail": "thumb-PANO_02_DESK.jpg"
+      "thumbnail": "thumb-PANO_02_DESK.jpg?v=wood4k-20260912"
     },
     "PANO_03_BED_FOOT": {
       "sceneId": "PANO_03_BED_FOOT",
       "title": "ベッド足元",
       "type": "equirectangular",
-      "panorama": "PANO_03_BED_FOOT.jpg",
+      "panorama": "PANO_03_BED_FOOT.jpg?v=wood4k-20260912",
       "pitch": -5,
       "yaw": 78,
       "hfov": 92,
@@ -356,7 +375,7 @@
           },
           "clickHandlerArgs": {
             "title": "木質壁",
-            "text": "木の素材感を身近に感じる内装。宿泊を通して、木のある暮らしに触れるための客室です。"
+            "text": "壁と天井を木で包み、木の素材感を身近に感じる内装にしました。宿泊を通して、木のある暮らしに触れるための客室です。"
           }
         },
         {
@@ -436,18 +455,35 @@
             "title": "10階からの都会の眺望",
             "text": "地上約30m、10階の客室から見渡す都会の景色をイメージしました。眼下の屋上と、遠くに連なるビル群を楽しめます。実在する施設の眺望ではありません。"
           }
+        },
+        {
+          "pitch": -2.7866290369500417,
+          "yaw": 115.31775071878857,
+          "type": "info",
+          "text": "WOOD CYCLE",
+          "feature": "wood-cycle",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "WOOD CYCLEの公式図を見る"
+          },
+          "clickHandlerArgs": {
+            "action": "wood-cycle",
+            "title": "WOOD CYCLE",
+            "text": "森林から木材、建築、エネルギーへ。住友林業は、木を植え育て、木材を建物などに使い、資源を循環させる「WOOD CYCLE」を進めています。公式図で、そのつながりを紹介します。"
+          }
         }
       ],
       "northOffset": 0,
       "haov": 360,
       "vaov": 180,
-      "thumbnail": "thumb-PANO_03_BED_FOOT.jpg"
+      "thumbnail": "thumb-PANO_03_BED_FOOT.jpg?v=wood4k-20260912"
     },
     "PANO_04_BED_SIDE": {
       "sceneId": "PANO_04_BED_SIDE",
       "title": "ベッド横",
       "type": "equirectangular",
-      "panorama": "PANO_04_BED_SIDE.jpg",
+      "panorama": "PANO_04_BED_SIDE.jpg?v=wood4k-20260912",
       "pitch": -5,
       "yaw": 18,
       "hfov": 92,
@@ -478,7 +514,7 @@
           },
           "clickHandlerArgs": {
             "title": "木質壁",
-            "text": "木の素材感を身近に感じる内装。宿泊を通して、木のある暮らしに触れるための客室です。"
+            "text": "壁と天井を木で包み、木の素材感を身近に感じる内装にしました。宿泊を通して、木のある暮らしに触れるための客室です。"
           }
         },
         {
@@ -509,21 +545,6 @@
           "clickHandlerArgs": {
             "title": "木質空間と睡眠",
             "text": "木質空間でくつろぎ、休むことをテーマにしたコンセプトです。睡眠への効果を保証するものではありません。"
-          }
-        },
-        {
-          "pitch": -6.4182565304636086,
-          "yaw": 105.3762512488262,
-          "type": "info",
-          "text": "森林を知る小さな案内",
-          "cssClass": "tour-info",
-          "createTooltipArgs": {
-            "kind": "info",
-            "label": "森林を知る小さな案内"
-          },
-          "clickHandlerArgs": {
-            "title": "森林を知る小さな案内",
-            "text": "植えて、育てて、使い、また植える。森林の循環や林業を気軽に知るための案内です。"
           }
         },
         {
@@ -588,18 +609,35 @@
             "title": "10階からの都会の眺望",
             "text": "地上約30m、10階の客室から見渡す都会の景色をイメージしました。眼下の屋上と、遠くに連なるビル群を楽しめます。実在する施設の眺望ではありません。"
           }
+        },
+        {
+          "pitch": -6.4182565304636086,
+          "yaw": 105.3762512488262,
+          "type": "info",
+          "text": "WOOD CYCLE",
+          "feature": "wood-cycle",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "WOOD CYCLEの公式図を見る"
+          },
+          "clickHandlerArgs": {
+            "action": "wood-cycle",
+            "title": "WOOD CYCLE",
+            "text": "森林から木材、建築、エネルギーへ。住友林業は、木を植え育て、木材を建物などに使い、資源を循環させる「WOOD CYCLE」を進めています。公式図で、そのつながりを紹介します。"
+          }
         }
       ],
       "northOffset": 0,
       "haov": 360,
       "vaov": 180,
-      "thumbnail": "thumb-PANO_04_BED_SIDE.jpg"
+      "thumbnail": "thumb-PANO_04_BED_SIDE.jpg?v=wood4k-20260912"
     },
     "PANO_05_WINDOW": {
       "sceneId": "PANO_05_WINDOW",
       "title": "窓側",
       "type": "equirectangular",
-      "panorama": "PANO_05_WINDOW.jpg",
+      "panorama": "PANO_05_WINDOW.jpg?v=wood4k-20260912",
       "pitch": -3,
       "yaw": 28,
       "hfov": 92,
@@ -644,7 +682,7 @@
           },
           "clickHandlerArgs": {
             "title": "木質壁",
-            "text": "木の素材感を身近に感じる内装。宿泊を通して、木のある暮らしに触れるための客室です。"
+            "text": "壁と天井を木で包み、木の素材感を身近に感じる内装にしました。宿泊を通して、木のある暮らしに触れるための客室です。"
           }
         },
         {
@@ -709,18 +747,35 @@
             "title": "10階からの都会の眺望",
             "text": "地上約30m、10階の客室から見渡す都会の景色をイメージしました。眼下の屋上と、遠くに連なるビル群を楽しめます。実在する施設の眺望ではありません。"
           }
+        },
+        {
+          "pitch": -2.0783388087699275,
+          "yaw": 140.5747471156201,
+          "type": "info",
+          "text": "WOOD CYCLE",
+          "feature": "wood-cycle",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "WOOD CYCLEの公式図を見る"
+          },
+          "clickHandlerArgs": {
+            "action": "wood-cycle",
+            "title": "WOOD CYCLE",
+            "text": "森林から木材、建築、エネルギーへ。住友林業は、木を植え育て、木材を建物などに使い、資源を循環させる「WOOD CYCLE」を進めています。公式図で、そのつながりを紹介します。"
+          }
         }
       ],
       "northOffset": 0,
       "haov": 360,
       "vaov": 180,
-      "thumbnail": "thumb-PANO_05_WINDOW.jpg"
+      "thumbnail": "thumb-PANO_05_WINDOW.jpg?v=wood4k-20260912"
     },
     "PANO_06_LOUNGE": {
       "sceneId": "PANO_06_LOUNGE",
       "title": "ラウンジ",
       "type": "equirectangular",
-      "panorama": "PANO_06_LOUNGE.jpg",
+      "panorama": "PANO_06_LOUNGE.jpg?v=wood4k-20260912",
       "pitch": -5,
       "yaw": -3,
       "hfov": 92,
@@ -751,7 +806,7 @@
           },
           "clickHandlerArgs": {
             "title": "木質壁",
-            "text": "木の素材感を身近に感じる内装。宿泊を通して、木のある暮らしに触れるための客室です。"
+            "text": "壁と天井を木で包み、木の素材感を身近に感じる内装にしました。宿泊を通して、木のある暮らしに触れるための客室です。"
           }
         },
         {
@@ -816,12 +871,29 @@
             "title": "10階からの都会の眺望",
             "text": "地上約30m、10階の客室から見渡す都会の景色をイメージしました。眼下の屋上と、遠くに連なるビル群を楽しめます。実在する施設の眺望ではありません。"
           }
+        },
+        {
+          "pitch": -2.4848898090619893,
+          "yaw": 155.26207253235225,
+          "type": "info",
+          "text": "WOOD CYCLE",
+          "feature": "wood-cycle",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "WOOD CYCLEの公式図を見る"
+          },
+          "clickHandlerArgs": {
+            "action": "wood-cycle",
+            "title": "WOOD CYCLE",
+            "text": "森林から木材、建築、エネルギーへ。住友林業は、木を植え育て、木材を建物などに使い、資源を循環させる「WOOD CYCLE」を進めています。公式図で、そのつながりを紹介します。"
+          }
         }
       ],
       "northOffset": 0,
       "haov": 360,
       "vaov": 180,
-      "thumbnail": "thumb-PANO_06_LOUNGE.jpg"
+      "thumbnail": "thumb-PANO_06_LOUNGE.jpg?v=wood4k-20260912"
     }
   }
 }
