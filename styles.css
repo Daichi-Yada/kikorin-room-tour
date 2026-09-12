@@ -45,3 +45,21 @@
 }
 
 .detail{z-index:6;max-height:calc(100dvh - 110px);overflow:auto}.detail.with-diagram{width:520px}.detail #detail-text{font-size:14px;line-height:1.85;margin:0}#wood-cycle-figure{margin:18px 0 0}#wood-cycle-figure[hidden]{display:none}.detail .diagram-open{position:static;height:auto;right:auto;top:auto;padding:8px;background:white;border:1px solid #d6ddd6;border-radius:4px;display:block;width:100%}.diagram-open img{display:block;width:100%;height:auto}#wood-cycle-figure figcaption{font-size:11px;line-height:1.7;color:#55655a;margin-top:8px}#wood-cycle-figure a,#wood-cycle-dialog a{color:#315d45}#wood-cycle-dialog{position:fixed;inset:0;width:min(1100px,calc(100vw - 32px));max-height:calc(100dvh - 32px);padding:24px;border:0;border-radius:8px;background:#fff;color:#20352c;overflow:auto}#wood-cycle-dialog::backdrop{background:#10231dd9}#wood-cycle-dialog h2{margin:0 40px 12px 0;font-size:19px;font-weight:500}#wood-cycle-dialog img{display:block;width:100%;max-height:calc(100dvh - 160px);object-fit:contain}#wood-cycle-dialog p{font-size:12px;margin:12px 0 0}#close-wood-cycle{position:absolute;right:12px;top:8px;width:40px;height:40px;border:0;background:transparent;color:#20352c;font-size:30px}@media(max-width:640px){.detail.with-diagram{width:calc(100vw - 32px);max-width:none;max-height:calc(100dvh - 90px)}#wood-cycle-dialog{padding:18px}.detail .diagram-open{padding:5px}}
+
+/* Labels and print artwork remain live type, anchored to the room perspective. */
+#room-surfaces{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:2}
+.room-surface{position:absolute;left:0;top:0;transform-origin:0 0;backface-visibility:hidden;margin:0;padding:0;border:0}
+.room-surface[hidden]{display:none}
+.wood-nameplate{background:#e8ddc4;color:#302c21;border:2px solid #aa9876;box-shadow:0 3px 5px #33200e35;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif}
+.wood-nameplate strong{font-size:29px;font-weight:600;line-height:1.15;white-space:nowrap}
+.wood-nameplate span{font:17px/1.1 Arial,sans-serif;letter-spacing:2px}
+.room-brochure{pointer-events:auto;background:#f3eedf;box-shadow:0 3px 6px #3e2a1740;cursor:pointer;border-radius:0}
+.room-brochure img{display:block;width:100%;height:100%}
+.room-brochure:focus-visible{outline:6px solid #e7ce89;outline-offset:4px}
+#brochure-dialog{padding:0;border:0;border-radius:8px;width:min(1050px,calc(100vw - 24px));height:calc(100dvh - 32px);max-width:none;max-height:none;background:#e8e4d7;overflow:hidden;color:#243c30}
+#brochure-dialog::backdrop{background:#10231ddb}
+.brochure-toolbar{height:56px;padding:0 18px;display:flex;align-items:center;gap:18px;border-bottom:1px solid #cbd0c3;background:#f8f5eb}
+.brochure-toolbar h2{font-size:14px;margin:0;font-weight:500}.brochure-toolbar a{font-size:12px;color:#335f47;margin-left:auto}
+#close-brochure{border:0;background:none;color:#243c30;font-size:30px;width:44px;height:44px}
+#brochure-frame{display:block;border:0;width:100%;height:calc(100% - 56px);background:#f9f6ec}
+@media(max-width:640px){#brochure-dialog{height:calc(100dvh - 16px);width:calc(100vw - 16px)}.brochure-toolbar{padding:0 8px;gap:8px}.brochure-toolbar h2{font-size:12px}.brochure-toolbar a{font-size:11px}}

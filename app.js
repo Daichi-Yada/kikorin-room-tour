@@ -32,7 +32,10 @@ $('#alarm-toggle').onclick=toggleAlarm;
 $('#close-alarm').onclick=()=>closeAlarm(true);
 document.addEventListener('visibilitychange',()=>{if(document.hidden)closeAlarm();});
 window.addEventListener('pagehide',()=>closeAlarm());
-function explain(_,a){if(a.action==='alarm'){toggleAlarm();return;}closeAlarm();$('#detail-title').textContent=a.title;$('#detail-text').textContent=a.text;const cycle=a.action==='wood-cycle';$('#wood-cycle-figure').hidden=!cycle;$('#detail').classList.toggle('with-diagram',cycle);$('#detail').hidden=false;$('#close-detail').focus();}
+function openBrochure(){closeAlarm();$('#detail').hidden=true;if(!$('#brochure-frame').getAttribute('src'))$('#brochure-frame').src='brochure.html?v=brochure-20260912';$('#brochure-dialog').showModal();}
+$('#close-brochure').onclick=()=>$('#brochure-dialog').close();
+window.addEventListener('message',e=>{if(e.origin===location.origin&&e.source===$('#brochure-frame').contentWindow&&e.data?.type==='close-brochure')$('#brochure-dialog').close();});
+function explain(_,a){if(a.action==='brochure'){openBrochure();return;}if(a.action==='alarm'){toggleAlarm();return;}closeAlarm();$('#detail-title').textContent=a.title;$('#detail-text').textContent=a.text;const cycle=a.action==='wood-cycle';$('#wood-cycle-figure').hidden=!cycle;$('#detail').classList.toggle('with-diagram',cycle);$('#detail').hidden=false;$('#close-detail').focus();}
 function hotspot(el,a){el.setAttribute('role','button');el.tabIndex=0;el.setAttribute('aria-label',a.label);if(a.kind==='move'){const t=document.createElement('span');t.className='hot-label';t.textContent=a.label;el.append(t);}el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();el.click();}});}
 $('#open-wood-cycle').onclick=()=>$('#wood-cycle-dialog').showModal();
 $('#close-wood-cycle').onclick=()=>$('#wood-cycle-dialog').close();
@@ -40,12 +43,16 @@ $('#wood-cycle-dialog').addEventListener('click',e=>{if(e.target===e.currentTarg
 async function start(){
  try{
   const simple=new URLSearchParams(location.search).get('quality')==='standard';
-  const res=await fetch((simple?'tour-config-equirect.json':'tour-config.json')+'?v=wood4k-20260912');if(!res.ok)throw Error('設定を読み込めません');
+  const res=await fetch((simple?'tour-config-equirect.json':'tour-config.json')+'?v=brochure-20260912');if(!res.ok)throw Error('設定を読み込めません');
   const config=await res.json();
+  const surfacesResponse=await fetch('surface-config.json?v=brochure-20260912');
+  if(!surfacesResponse.ok)throw Error('表面の文字設定を読み込めません');
+  const surfaces=await surfacesResponse.json();
   if(matchMedia('(max-width: 640px)').matches){for(const s of Object.values(config.scenes)){s.hfov=48;s.pitch=Math.min(s.pitch,-8);}config.default.maxHfov=80;}
   for(const scene of Object.values(config.scenes))for(const h of scene.hotSpots){h.createTooltipFunc=hotspot;if(h.type==='info')h.clickHandlerFunc=explain;}
   if(matchMedia('(prefers-reduced-motion: reduce)').matches)config.default.sceneFadeDuration=0;
   viewer=pannellum.viewer('panorama',config);window.tourViewer=viewer;
+  window.createRoomSurfaces(viewer,surfaces,openBrochure);
   const entries=Object.entries(config.scenes);
   for(const [id,s] of entries){const b=document.createElement('button');b.dataset.scene=id;b.setAttribute('aria-label',s.title+'へ移動');const img=document.createElement('img');img.src=s.thumbnail||'thumbnails/'+id+'.jpg';img.alt='';const label=document.createElement('span');label.textContent=s.title;b.append(img,label);b.onclick=()=>viewer.loadScene(id,s.pitch,s.yaw,s.hfov);$('#scenes').append(b);}
   function active(id){const i=entries.findIndex(([key])=>key===id);$('#location-index').textContent=String(i+1).padStart(2,'0')+' / 06';$('#location-name').textContent=config.scenes[id].title;for(const b of $('#scenes').children){const selected=b.dataset.scene===id;b.setAttribute('aria-current',selected?'true':'false');if(selected)b.scrollIntoView({block:'nearest',inline:'nearest',behavior:'auto'});}$('#detail').hidden=true;}

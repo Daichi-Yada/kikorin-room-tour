@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="594" viewBox="0 0 420 594">
+<rect width="420" height="594" fill="#f3eedf"/>
+<rect x="8" y="8" width="404" height="578" fill="none" stroke="#c9bea5"/>
+<rect x="0" y="0" width="420" height="32" fill="#274c3c"/>
+<g fill="#274c3c" font-family="sans-serif">
+<text x="40" y="80" font-size="14" letter-spacing="3">KIKORIN ROOM GUIDE</text>
+<text x="36" y="155" font-size="44" font-weight="700">木と過ごす。</text>
+<text x="40" y="205" font-size="20">住友林業の取り組み</text>
+<text x="40" y="237" font-size="20">木質空間の効果</text>
+</g>
+<g fill="none" stroke="#688266" stroke-width="2">
+<path d="M35 437Q92 310 151 437M83 437Q150 267 224 437M165 437Q245 303 302 437M249 437Q316 280 387 437"/>
+<path d="M35 456Q90 327 151 456M83 456Q150 286 224 456M165 456Q245 322 302 456M249 456Q316 299 387 456"/>
+<path d="M35 475Q92 345 151 475M83 475Q150 305 224 475M165 475Q245 341 302 475M249 475Q316 318 387 475"/>
+</g>
+<text x="40" y="526" fill="#274c3c" font-family="sans-serif" font-size="20" letter-spacing="2">FOREST · WOOD · LIFE</text>
+<text x="40" y="558" fill="#6d715d" font-family="sans-serif" font-size="12">公開資料から知る、木と暮らしのつながり</text>
+</svg>

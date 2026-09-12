@@ -13,6 +13,14 @@
 
 窓外は10階・地上約30mからの都会の眺望をイメージしています。ベッドにはきこりんのぬいぐるみ、デスクにはBAUMのスキンケアを配置しています。素材と企画の出典は [credits.html](credits.html) に記載しています。
 
+## 2026-09-12 樹種ラベルとパンフレット
+
+- 木材サンプルの名称を、左から「ウォルナット / WALNUT」「オーク / OAK」「ヒノキ / HINOKI」と表示。画像内の崩れた文字を、拡大しても読める文字のプレートで覆います。
+- パソコン左側のノートを、客室ガイド「木と過ごす。」の表紙に置き換えて表示。表紙または解説マーカーを押すと本文が開きます。
+- 本文には住友林業の取り組み、WOOD CYCLEの公式図、木質内装・照明と睡眠、スギ・ヒノキの香りに関する研究を掲載。各節に公式資料の出典があります。住友林業が発行した公式パンフレットではありません。
+- 全6地点に設定。JPEGに文字を焼き込まず、HTML/SVGをパノラマの視線と画角に合わせて投影しています。元のJPEG単体やサムネイルには、この表示は含まれません。
+- 調整方法・出典・確認記録：[docs/brochure-update-20260912.md](docs/brochure-update-20260912.md)。
+
 ## 2026-09-12 木質化・高画質化
 
 - 6地点すべてで壁全面と天井を木質仕上げに変更。
@@ -28,6 +36,8 @@
 | 室内の見た目 | `PANO_*.jpg`（2:1の全天球画像） |
 | 地点ボタンの画像 | `thumb-PANO_*.jpg` |
 | 地点・向き・説明文・マーカー | `tour-config.json` と `tour-config-equirect.json` |
+| 樹種名・表紙の配置 | `surface-config.json`、`surface-overlays.js` |
+| パンフレットの本文・表紙 | `brochure.html`、`assets/brochure-cover.svg` |
 | 操作・音・図の開閉 | `app.js` |
 | 表示・レイアウト | `index.html`、`styles.css` |
 | WOOD CYCLE公式図 | `assets/wood-cycle-official.png` |
@@ -42,8 +52,8 @@
 3. 説明・UIを編集し、画像を変更した場合は `python3 tools/package_assets.py` でサムネイルと画像の検査記録を更新します。
 4. `index.html` のCSS・JS、`app.js` の設定JSON、設定JSON内の画像URLに付けた `?v=` の値を更新し、古いキャッシュが残らないようにします。
 5. `python3 -m http.server 8767 --bind 127.0.0.1` をこのリポジトリ直下で実行し、http://127.0.0.1:8767/ を開きます。JavaScriptとWebGLが必要です。
-6. 全6地点、左右一周、天井と床、ハンガー、額、公式図、音の再生・停止を確認します。PCとスマートフォン幅の両方で確認してください。
-7. `node --check app.js` と `git diff --check` を実行し、変更をコミットして `git push origin main`。GitHub Pagesの公開完了後、公開URLでも確認します。
+6. 樹種名・机上の表紙と本文の開閉、全6地点、左右一周、天井と床、ハンガー、額、公式図、音の再生・停止を確認します。PCとスマートフォン幅の両方で確認してください。
+7. `node --check app.js`、`node --check surface-overlays.js` と `git diff --check` を実行し、変更をコミットして `git push origin main`。GitHub Pagesの公開完了後、公開URLでも確認します。
 
 ## 方向別画像からの再構成
 

@@ -152,6 +152,21 @@
             "title": "WOOD CYCLE",
             "text": "森林から木材、建築、エネルギーへ。住友林業は、木を植え育て、木材を建物などに使い、資源を循環させる「WOOD CYCLE」を進めています。公式図で、そのつながりを紹介します。"
           }
+        },
+        {
+          "pitch": -18.53534018368036,
+          "yaw": 60.86325620519813,
+          "type": "info",
+          "text": "パンフレット",
+          "feature": "brochure",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "パンフレットを読む"
+          },
+          "clickHandlerArgs": {
+            "action": "brochure"
+          }
         }
       ],
       "northOffset": 0,
@@ -237,7 +252,7 @@
           },
           "clickHandlerArgs": {
             "title": "木材サンプル",
-            "text": "樹種や森林について知るきっかけとして、小さな木材サンプルを置いています。"
+            "text": "壁の木材サンプルは、左からウォルナット（WALNUT）、オーク（OAK）、ヒノキ（HINOKI）です。色や木目を見比べてみてください。"
           }
         },
         {
@@ -318,6 +333,21 @@
             "action": "wood-cycle",
             "title": "WOOD CYCLE",
             "text": "森林から木材、建築、エネルギーへ。住友林業は、木を植え育て、木材を建物などに使い、資源を循環させる「WOOD CYCLE」を進めています。公式図で、そのつながりを紹介します。"
+          }
+        },
+        {
+          "pitch": -34.24925449590728,
+          "yaw": 75.93861399116905,
+          "type": "info",
+          "text": "パンフレット",
+          "feature": "brochure",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "パンフレットを読む"
+          },
+          "clickHandlerArgs": {
+            "action": "brochure"
           }
         }
       ],
@@ -472,6 +502,21 @@
             "title": "WOOD CYCLE",
             "text": "森林から木材、建築、エネルギーへ。住友林業は、木を植え育て、木材を建物などに使い、資源を循環させる「WOOD CYCLE」を進めています。公式図で、そのつながりを紹介します。"
           }
+        },
+        {
+          "pitch": -17.77057747572957,
+          "yaw": 117.79569566648492,
+          "type": "info",
+          "text": "パンフレット",
+          "feature": "brochure",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "パンフレットを読む"
+          },
+          "clickHandlerArgs": {
+            "action": "brochure"
+          }
         }
       ],
       "northOffset": 0,
@@ -529,7 +574,7 @@
           },
           "clickHandlerArgs": {
             "title": "木材サンプル",
-            "text": "樹種や森林について知るきっかけとして、小さな木材サンプルを置いています。"
+            "text": "壁の木材サンプルは、左からウォルナット（WALNUT）、オーク（OAK）、ヒノキ（HINOKI）です。色や木目を見比べてみてください。"
           }
         },
         {
@@ -625,6 +670,21 @@
             "action": "wood-cycle",
             "title": "WOOD CYCLE",
             "text": "森林から木材、建築、エネルギーへ。住友林業は、木を植え育て、木材を建物などに使い、資源を循環させる「WOOD CYCLE」を進めています。公式図で、そのつながりを紹介します。"
+          }
+        },
+        {
+          "pitch": -41.76222769108082,
+          "yaw": 109.1746291790717,
+          "type": "info",
+          "text": "パンフレット",
+          "feature": "brochure",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "パンフレットを読む"
+          },
+          "clickHandlerArgs": {
+            "action": "brochure"
           }
         }
       ],
@@ -764,6 +824,21 @@
             "title": "WOOD CYCLE",
             "text": "森林から木材、建築、エネルギーへ。住友林業は、木を植え育て、木材を建物などに使い、資源を循環させる「WOOD CYCLE」を進めています。公式図で、そのつながりを紹介します。"
           }
+        },
+        {
+          "pitch": -12.744728089206896,
+          "yaw": 144.16036334910376,
+          "type": "info",
+          "text": "パンフレット",
+          "feature": "brochure",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "パンフレットを読む"
+          },
+          "clickHandlerArgs": {
+            "action": "brochure"
+          }
         }
       ],
       "northOffset": 0,
@@ -887,6 +962,21 @@
             "action": "wood-cycle",
             "title": "WOOD CYCLE",
             "text": "森林から木材、建築、エネルギーへ。住友林業は、木を植え育て、木材を建物などに使い、資源を循環させる「WOOD CYCLE」を進めています。公式図で、そのつながりを紹介します。"
+          }
+        },
+        {
+          "pitch": -14.783642471127443,
+          "yaw": 160.37998695404838,
+          "type": "info",
+          "text": "パンフレット",
+          "feature": "brochure",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "パンフレットを読む"
+          },
+          "clickHandlerArgs": {
+            "action": "brochure"
           }
         }
       ],
