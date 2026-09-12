@@ -32,7 +32,7 @@ $('#alarm-toggle').onclick=toggleAlarm;
 $('#close-alarm').onclick=()=>closeAlarm(true);
 document.addEventListener('visibilitychange',()=>{if(document.hidden)closeAlarm();});
 window.addEventListener('pagehide',()=>closeAlarm());
-function openBrochure(){closeAlarm();$('#detail').hidden=true;if(!$('#brochure-frame').getAttribute('src'))$('#brochure-frame').src='brochure.html?v=brochure-20260912';$('#brochure-dialog').showModal();}
+function openBrochure(){closeAlarm();$('#detail').hidden=true;if(!$('#brochure-frame').getAttribute('src'))$('#brochure-frame').src='brochure.html?v=brochure-20260912b';$('#brochure-dialog').showModal();}
 $('#close-brochure').onclick=()=>$('#brochure-dialog').close();
 window.addEventListener('message',e=>{if(e.origin===location.origin&&e.source===$('#brochure-frame').contentWindow&&e.data?.type==='close-brochure')$('#brochure-dialog').close();});
 function explain(_,a){if(a.action==='brochure'){openBrochure();return;}if(a.action==='alarm'){toggleAlarm();return;}closeAlarm();$('#detail-title').textContent=a.title;$('#detail-text').textContent=a.text;const cycle=a.action==='wood-cycle';$('#wood-cycle-figure').hidden=!cycle;$('#detail').classList.toggle('with-diagram',cycle);$('#detail').hidden=false;$('#close-detail').focus();}
@@ -43,9 +43,9 @@ $('#wood-cycle-dialog').addEventListener('click',e=>{if(e.target===e.currentTarg
 async function start(){
  try{
   const simple=new URLSearchParams(location.search).get('quality')==='standard';
-  const res=await fetch((simple?'tour-config-equirect.json':'tour-config.json')+'?v=brochure-20260912');if(!res.ok)throw Error('設定を読み込めません');
+  const res=await fetch((simple?'tour-config-equirect.json':'tour-config.json')+'?v=brochure-20260912b');if(!res.ok)throw Error('設定を読み込めません');
   const config=await res.json();
-  const surfacesResponse=await fetch('surface-config.json?v=brochure-20260912');
+  const surfacesResponse=await fetch('surface-config.json?v=brochure-20260912b');
   if(!surfacesResponse.ok)throw Error('表面の文字設定を読み込めません');
   const surfaces=await surfacesResponse.json();
   if(matchMedia('(max-width: 640px)').matches){for(const s of Object.values(config.scenes)){s.hfov=48;s.pitch=Math.min(s.pitch,-8);}config.default.maxHfov=80;}
@@ -54,11 +54,11 @@ async function start(){
   viewer=pannellum.viewer('panorama',config);window.tourViewer=viewer;
   window.createRoomSurfaces(viewer,surfaces,openBrochure);
   const entries=Object.entries(config.scenes);
-  for(const [id,s] of entries){const b=document.createElement('button');b.dataset.scene=id;b.setAttribute('aria-label',s.title+'へ移動');const img=document.createElement('img');img.src=s.thumbnail||'thumbnails/'+id+'.jpg';img.alt='';const label=document.createElement('span');label.textContent=s.title;b.append(img,label);b.onclick=()=>viewer.loadScene(id,s.pitch,s.yaw,s.hfov);$('#scenes').append(b);}
+  for(const [id,s] of entries){const b=document.createElement('button');b.dataset.scene=id;b.setAttribute('aria-label',s.title+'へ移動');const img=document.createElement('img');img.src=s.thumbnail||'thumbnails/'+id+'.jpg';img.alt='';const label=document.createElement('span');label.textContent=s.title;b.append(img,label);b.disabled=!viewer.isLoaded();b.onclick=()=>{if(viewer.isLoaded())viewer.loadScene(id,s.pitch,s.yaw,s.hfov);};$('#scenes').append(b);}
   function active(id){const i=entries.findIndex(([key])=>key===id);$('#location-index').textContent=String(i+1).padStart(2,'0')+' / 06';$('#location-name').textContent=config.scenes[id].title;for(const b of $('#scenes').children){const selected=b.dataset.scene===id;b.setAttribute('aria-current',selected?'true':'false');if(selected)b.scrollIntoView({block:'nearest',inline:'nearest',behavior:'auto'});}$('#detail').hidden=true;}
   active(config.default.firstScene);
-  viewer.on('scenechange',id=>{closeAlarm();active(id);status.textContent='移動しています…';status.hidden=false;});
-  viewer.on('load',()=>{status.hidden=true;});
+  viewer.on('scenechange',id=>{document.querySelectorAll('#scenes button').forEach(b=>b.disabled=true);closeAlarm();active(id);status.textContent='移動しています…';status.hidden=false;});
+  viewer.on('load',()=>{document.querySelectorAll('#scenes button').forEach(b=>b.disabled=false);status.hidden=true;});
   if(viewer.isLoaded())status.hidden=true;
   viewer.on('error',e=>{status.textContent='画像を読み込めませんでした。ページを再読み込みしてください。';status.hidden=false;console.error(e);});
   $('#fullscreen').onclick=async()=>{
