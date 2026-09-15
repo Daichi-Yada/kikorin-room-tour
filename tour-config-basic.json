@@ -1,0 +1,152 @@
+{
+  "default": {
+    "firstScene": "BASIC_ROOM",
+    "autoLoad": true,
+    "sceneFadeDuration": 650,
+    "showControls": false,
+    "showFullscreenCtrl": false,
+    "showZoomCtrl": false,
+    "mouseZoom": true,
+    "draggable": true,
+    "keyboardZoom": true,
+    "hfov": 100,
+    "minHfov": 40,
+    "maxHfov": 115,
+    "friction": 0.18,
+    "strings": {
+      "loadingLabel": "読み込み中…",
+      "bylineLabel": "",
+      "loadButtonLabel": "内覧を開始"
+    }
+  },
+  "scenes": {
+    "BASIC_ROOM": {
+      "title": "コンパクトな木の部屋",
+      "type": "equirectangular",
+      "panorama": "assets/rooms/basic.jpg?v=rooms-20260915",
+      "thumbnail": "assets/rooms/basic-preview.jpg?v=rooms-20260915",
+      "pitch": -9,
+      "yaw": 30,
+      "hfov": 110,
+      "hotSpots": [
+        {
+          "pitch": -10.450958286358514,
+          "yaw": -9.53776775648251,
+          "type": "info",
+          "text": "丸太枕",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "丸太枕"
+          },
+          "clickHandlerArgs": {
+            "title": "丸太枕",
+            "text": "年輪をかたどった、やわらかな丸太形の枕。3種類のきこりんルームにご用意します。"
+          },
+          "feature": "log-pillow"
+        },
+        {
+          "pitch": -23.641488162344984,
+          "yaw": 109.78579481397969,
+          "type": "info",
+          "text": "BAUMのスキンケア",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "BAUMのスキンケア"
+          },
+          "clickHandlerArgs": {
+            "title": "BAUMのスキンケア",
+            "text": "木を感じるBAUMのスキンケアを、すべてのきこりんルームに設置します。"
+          },
+          "feature": "baum"
+        },
+        {
+          "pitch": -25.670800450958282,
+          "yaw": 130.48478015783542,
+          "type": "info",
+          "text": "選べる木の香りスプレー",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "選べる木の香りスプレー"
+          },
+          "clickHandlerArgs": {
+            "title": "選べる木の香りスプレー",
+            "text": "ヒノキ・スギ・ヒバのルームスプレー。好きな木の香りを選び、使う量を調整できます。「客室・共通設備」から香りの特徴をご覧ください。"
+          },
+          "feature": "wood-spray"
+        },
+        {
+          "pitch": 21.612175873731672,
+          "yaw": 110.19165727170235,
+          "type": "info",
+          "text": "WOOD CYCLE",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "WOOD CYCLE"
+          },
+          "clickHandlerArgs": {
+            "title": "WOOD CYCLE",
+            "text": "森を育て、木材を使い、次の森へつなぐ循環。客室の看板とガイドで、住友林業の取り組みを紹介します。",
+            "action": "wood-cycle"
+          },
+          "feature": "wood-cycle"
+        },
+        {
+          "pitch": -30.541149943630217,
+          "yaw": 82.18714768883876,
+          "type": "info",
+          "text": "木を知る客室ガイド",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木を知る客室ガイド"
+          },
+          "clickHandlerArgs": {
+            "title": "木を知る客室ガイド",
+            "text": "木材サンプルやガイドから、木の魅力と森の循環を知ることができます。",
+            "action": "brochure"
+          },
+          "feature": "brochure"
+        },
+        {
+          "pitch": -11.465614430665156,
+          "yaw": -65.34385569334836,
+          "type": "info",
+          "text": "絨毯の床と木質シートの壁",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "絨毯の床と木質シートの壁"
+          },
+          "clickHandlerArgs": {
+            "title": "絨毯の床と木質シートの壁",
+            "text": "狭めの客室に、通常のホテルと同じ絨毯を敷き、壁には木質シートを採用しています。天然木の床・壁とは異なる仕上げです。"
+          }
+        }
+      ]
+    }
+  },
+  "views": [
+    {
+      "title": "ベッド・丸太枕",
+      "yaw": -12,
+      "pitch": -13,
+      "hfov": 85
+    },
+    {
+      "title": "床・木質シート",
+      "yaw": -50,
+      "pitch": -30,
+      "hfov": 85
+    },
+    {
+      "title": "香り・WOOD CYCLE",
+      "yaw": 122,
+      "pitch": -15,
+      "hfov": 85
+    }
+  ]
+}

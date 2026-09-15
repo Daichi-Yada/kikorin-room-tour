@@ -1,0 +1,198 @@
+{
+  "date": "2026-09-15",
+  "source": "built-in image_gen",
+  "assets": [
+    {
+      "path": "assets/rooms/basic-source.png",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "3fc597e33aacfc88f1f5fc6e2055e073dbbc25a994e51003b5f5537d6692eb11"
+    },
+    {
+      "path": "assets/rooms/basic.jpg",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "38984100a45b7914216fb8ece6a8781c525794a601de68be2c6952f5fd816252"
+    },
+    {
+      "path": "assets/rooms/basic-preview.jpg",
+      "size": [
+        1000,
+        650
+      ],
+      "sha256": "75bec99a9b1530fa6cfed081e39134aa78a5c9ea89dfad7de73687c2fedc889e"
+    },
+    {
+      "path": "assets/rooms/family-source.png",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "629d94a2cff7b1640d20e7ea6a27147fd6ceda194b5a0016afbcbd13a83b2566"
+    },
+    {
+      "path": "assets/rooms/family.jpg",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "9306c87ce7fc0d8dc53b67a1da6d45c706e85f2dcb769c63cff90ba3a9f33996"
+    },
+    {
+      "path": "assets/rooms/family-preview.jpg",
+      "size": [
+        1000,
+        650
+      ],
+      "sha256": "e4a8fffb94b2a888fad763d62f8dfb3b84551f3241d9ee8b5327b481f6e03bc5"
+    },
+    {
+      "path": "assets/rooms/premium-02_DESK-source.png",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "05bb8b93db0c8ddef6609ae7ec836a55e4893e4458befd8c065c0daa8cf17aa0"
+    },
+    {
+      "path": "assets/rooms/premium-02_DESK.jpg",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "92615c7595f58fb088e5fcfc32b9ac8f76cd6bb194e2f189a348ef9399f87577"
+    },
+    {
+      "path": "assets/rooms/premium-02_DESK-preview.jpg",
+      "size": [
+        480,
+        270
+      ],
+      "sha256": "47d31051e6f00fdf9342e140194795005c80624e53a7b111671fc327dd5090c6"
+    },
+    {
+      "path": "assets/rooms/premium-03_BED_FOOT-source.png",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "3948b77ff85df2bc8b54a18cb7d328c65b80ad816679485ba505f80e74c0828e"
+    },
+    {
+      "path": "assets/rooms/premium-03_BED_FOOT.jpg",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "028262f51b5e29d1106ec3264e60ed10cd9253f3a17059ac841261b077168cfe"
+    },
+    {
+      "path": "assets/rooms/premium-03_BED_FOOT-preview.jpg",
+      "size": [
+        480,
+        270
+      ],
+      "sha256": "efcd26fa075e9b2538a6a42ead996bfff97b931dfc044cf154e6ac6b5efff343"
+    },
+    {
+      "path": "assets/rooms/premium-04_BED_SIDE-source.png",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "b94f43e54545c8920cb7266b70997a22e285512f02c5d9204e5a8fccab88b4d3"
+    },
+    {
+      "path": "assets/rooms/premium-04_BED_SIDE.jpg",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "4a97f674bc95651c2d7aa92c5a419a68036efd7c606bb12991489a40d76118c5"
+    },
+    {
+      "path": "assets/rooms/premium-04_BED_SIDE-preview.jpg",
+      "size": [
+        480,
+        270
+      ],
+      "sha256": "5f0601794c25faf1b74bf6fcac6059edbda10eb2f7660f03689778851855f8bb"
+    },
+    {
+      "path": "assets/rooms/premium-05_WINDOW-source.png",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "2c3945ca2063950ff32a7c1448ce7db71f67aa2174875fe56da60072d1d44390"
+    },
+    {
+      "path": "assets/rooms/premium-05_WINDOW.jpg",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "daa23cace705f3d73482272e6408276a86a34f428a3e7dccf2e4d66e816c274b"
+    },
+    {
+      "path": "assets/rooms/premium-05_WINDOW-preview.jpg",
+      "size": [
+        480,
+        270
+      ],
+      "sha256": "f0e4df2c87c17482195ebff3e031bd1e307a6605bd40cbef98958a462e69693c"
+    },
+    {
+      "path": "assets/rooms/premium-06_LOUNGE-source.png",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "d7016dbb05de77a7acb982826b9913b0ae04cd19a2d5935cf86a13da053a38dd"
+    },
+    {
+      "path": "assets/rooms/premium-06_LOUNGE.jpg",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "03b0cac3818b5ecd7e808b219c670099a634392682e11ac4240525283d29849e"
+    },
+    {
+      "path": "assets/rooms/premium-06_LOUNGE-preview.jpg",
+      "size": [
+        480,
+        270
+      ],
+      "sha256": "85a24db55e6c61cf53229c55e2106c9e93abefbe8a364f9a5e8686465bc1b00a"
+    },
+    {
+      "path": "assets/rooms/premium-source.png",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "a03d259afc89fdc686e490f2af3354aab114a39da8b78b68a2ab529e990b04b2"
+    },
+    {
+      "path": "assets/rooms/premium.jpg",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "9e0d22a3a6ce3007e59895dad6183e1603b4f7420a79dd6a7ff61a477672e2b0"
+    },
+    {
+      "path": "assets/rooms/premium-preview.jpg",
+      "size": [
+        480,
+        270
+      ],
+      "sha256": "61a853912d86683d217bd3e3c2fe155fac19b15467190116f2c06994ad86afb0"
+    }
+  ]
+}

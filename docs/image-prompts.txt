@@ -1,3 +1,5 @@
+2026-09-15: Current room-type generation prompts are in room-image-prompts.txt and room-image-refinements.txt. The following prompts document the prior 2026-09-12 images.
+
 2026-09-12 image editing notes
 
 Step 1 — full spherical material / hanger edits (actual output: 1774 x 887)

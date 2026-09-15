@@ -1,0 +1,169 @@
+{
+  "default": {
+    "firstScene": "FAMILY_ROOM",
+    "autoLoad": true,
+    "sceneFadeDuration": 650,
+    "showControls": false,
+    "showFullscreenCtrl": false,
+    "showZoomCtrl": false,
+    "mouseZoom": true,
+    "draggable": true,
+    "keyboardZoom": true,
+    "hfov": 100,
+    "minHfov": 40,
+    "maxHfov": 115,
+    "friction": 0.18,
+    "strings": {
+      "loadingLabel": "読み込み中…",
+      "bylineLabel": "",
+      "loadButtonLabel": "内覧を開始"
+    }
+  },
+  "scenes": {
+    "FAMILY_ROOM": {
+      "title": "家族のくつろぎ空間",
+      "type": "equirectangular",
+      "panorama": "assets/rooms/family.jpg?v=rooms-20260915",
+      "thumbnail": "assets/rooms/family-preview.jpg?v=rooms-20260915",
+      "pitch": -9,
+      "yaw": -20,
+      "hfov": 110,
+      "hotSpots": [
+        {
+          "pitch": -15.930101465614428,
+          "yaw": -85.6369785794814,
+          "type": "info",
+          "text": "丸太枕",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "丸太枕"
+          },
+          "clickHandlerArgs": {
+            "title": "丸太枕",
+            "text": "年輪をかたどった、やわらかな丸太形の枕。3種類のきこりんルームにご用意します。"
+          },
+          "feature": "log-pillow"
+        },
+        {
+          "pitch": -25.873731679819613,
+          "yaw": 154.83652762119505,
+          "type": "info",
+          "text": "BAUMのスキンケア",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "BAUMのスキンケア"
+          },
+          "clickHandlerArgs": {
+            "title": "BAUMのスキンケア",
+            "text": "木を感じるBAUMのスキンケアを、すべてのきこりんルームに設置します。"
+          },
+          "feature": "baum"
+        },
+        {
+          "pitch": -26.482525366403607,
+          "yaw": 172.28861330326947,
+          "type": "info",
+          "text": "選べる木の香りスプレー",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "選べる木の香りスプレー"
+          },
+          "clickHandlerArgs": {
+            "title": "選べる木の香りスプレー",
+            "text": "ヒノキ・スギ・ヒバのルームスプレー。好きな木の香りを選び、使う量を調整できます。「客室・共通設備」から香りの特徴をご覧ください。"
+          },
+          "feature": "wood-spray"
+        },
+        {
+          "pitch": 11.871476888387818,
+          "yaw": 147.93686583990984,
+          "type": "info",
+          "text": "WOOD CYCLE",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "WOOD CYCLE"
+          },
+          "clickHandlerArgs": {
+            "title": "WOOD CYCLE",
+            "text": "森を育て、木材を使い、次の森へつなぐ循環。客室の看板とガイドで、住友林業の取り組みを紹介します。",
+            "action": "wood-cycle"
+          },
+          "feature": "wood-cycle"
+        },
+        {
+          "pitch": -22.82976324689966,
+          "yaw": 43.224351747463345,
+          "type": "info",
+          "text": "木を知る客室ガイド",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木を知る客室ガイド"
+          },
+          "clickHandlerArgs": {
+            "title": "木を知る客室ガイド",
+            "text": "木材サンプルやガイドから、木の魅力と森の循環を知ることができます。",
+            "action": "brochure"
+          },
+          "feature": "brochure"
+        },
+        {
+          "pitch": -59.560315670800435,
+          "yaw": 14.813979706877092,
+          "type": "info",
+          "text": "動物の足跡をたどろう",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "動物の足跡をたどろう"
+          },
+          "clickHandlerArgs": {
+            "title": "動物の足跡をたどろう",
+            "text": "床には、森に暮らす動物の足跡。どんな動物の足跡か、家族で探してみてください。"
+          },
+          "feature": "footprints"
+        },
+        {
+          "pitch": -3.3483652762119505,
+          "yaw": 87.86922209695604,
+          "type": "info",
+          "text": "森の生き物を探そう",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "森の生き物を探そう"
+          },
+          "clickHandlerArgs": {
+            "title": "森の生き物を探そう",
+            "text": "鹿の角のフック、舞う落ち葉やコウモリの飾り。森の生き物を探す遊びを、家族で楽しめます。"
+          },
+          "feature": "forest-play"
+        }
+      ]
+    }
+  },
+  "views": [
+    {
+      "title": "ベッド・丸太枕",
+      "yaw": -70,
+      "pitch": -16,
+      "hfov": 85
+    },
+    {
+      "title": "森のあそび",
+      "yaw": 72,
+      "pitch": -15,
+      "hfov": 85
+    },
+    {
+      "title": "香り・WOOD CYCLE",
+      "yaw": 150,
+      "pitch": -13,
+      "hfov": 85
+    }
+  ]
+}

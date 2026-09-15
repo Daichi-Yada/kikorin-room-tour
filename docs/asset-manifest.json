@@ -1,39 +1,31 @@
 {
-  "updated": "2026-09-12",
-  "method": "AI-edited 100-degree faces, spherical reprojection with overlap feathering",
-  "original_panorama_size": [
-    1774,
-    887
-  ],
-  "edited_face_size": [
-    1254,
-    1254
-  ],
+  "updated": "2026-09-15",
+  "method": "Built-in image_gen panorama editing/generation; perspective thumbnails projected from spherical images",
   "scenes": [
     {
       "scene": "PANO_01_ENTRANCE",
-      "image": "PANO_01_ENTRANCE.jpg",
+      "image": "assets/rooms/premium.jpg",
       "size": [
-        4096,
-        2048
+        1774,
+        887
       ],
-      "bytes": 3428924,
-      "sha256": "2ef75d6596f1a9a8575ef628be47eb7c8ec0f21c6113090206bfc437caf41eea",
-      "thumbnail": "thumb-PANO_01_ENTRANCE.jpg",
+      "bytes": 398129,
+      "sha256": "9e0d22a3a6ce3007e59895dad6183e1603b4f7420a79dd6a7ff61a477672e2b0",
+      "thumbnail": "assets/rooms/premium-preview.jpg",
       "destinations": [
         "PANO_02_DESK"
       ]
     },
     {
       "scene": "PANO_02_DESK",
-      "image": "PANO_02_DESK.jpg",
+      "image": "assets/rooms/premium-02_DESK.jpg",
       "size": [
-        4096,
-        2048
+        1774,
+        887
       ],
-      "bytes": 3447165,
-      "sha256": "440f249a9189964c532fcd45034279de18b9327608e039f3338fb227e1710441",
-      "thumbnail": "thumb-PANO_02_DESK.jpg",
+      "bytes": 410212,
+      "sha256": "92615c7595f58fb088e5fcfc32b9ac8f76cd6bb194e2f189a348ef9399f87577",
+      "thumbnail": "assets/rooms/premium-02_DESK-preview.jpg",
       "destinations": [
         "PANO_01_ENTRANCE",
         "PANO_03_BED_FOOT",
@@ -42,14 +34,14 @@
     },
     {
       "scene": "PANO_03_BED_FOOT",
-      "image": "PANO_03_BED_FOOT.jpg",
+      "image": "assets/rooms/premium-03_BED_FOOT.jpg",
       "size": [
-        4096,
-        2048
+        1774,
+        887
       ],
-      "bytes": 3452064,
-      "sha256": "e77dccaaaa5474a42bf3d994c3947af88419c32aa9b94b7351f325bcc32cf69d",
-      "thumbnail": "thumb-PANO_03_BED_FOOT.jpg",
+      "bytes": 422509,
+      "sha256": "028262f51b5e29d1106ec3264e60ed10cd9253f3a17059ac841261b077168cfe",
+      "thumbnail": "assets/rooms/premium-03_BED_FOOT-preview.jpg",
       "destinations": [
         "PANO_02_DESK",
         "PANO_05_WINDOW"
@@ -57,28 +49,28 @@
     },
     {
       "scene": "PANO_04_BED_SIDE",
-      "image": "PANO_04_BED_SIDE.jpg",
+      "image": "assets/rooms/premium-04_BED_SIDE.jpg",
       "size": [
-        4096,
-        2048
+        1774,
+        887
       ],
-      "bytes": 3556561,
-      "sha256": "7846d0895fef4183ab5f29b6767bdce76e3c199524810006548e81c47eb2e2cc",
-      "thumbnail": "thumb-PANO_04_BED_SIDE.jpg",
+      "bytes": 426489,
+      "sha256": "4a97f674bc95651c2d7aa92c5a419a68036efd7c606bb12991489a40d76118c5",
+      "thumbnail": "assets/rooms/premium-04_BED_SIDE-preview.jpg",
       "destinations": [
         "PANO_02_DESK"
       ]
     },
     {
       "scene": "PANO_05_WINDOW",
-      "image": "PANO_05_WINDOW.jpg",
+      "image": "assets/rooms/premium-05_WINDOW.jpg",
       "size": [
-        4096,
-        2048
+        1774,
+        887
       ],
-      "bytes": 3566650,
-      "sha256": "da4cd3f13abcf1f49af919360dcc50e14cc8e7a8fc9bbaa7d57fd5c7c202ae4d",
-      "thumbnail": "thumb-PANO_05_WINDOW.jpg",
+      "bytes": 437572,
+      "sha256": "daa23cace705f3d73482272e6408276a86a34f428a3e7dccf2e4d66e816c274b",
+      "thumbnail": "assets/rooms/premium-05_WINDOW-preview.jpg",
       "destinations": [
         "PANO_03_BED_FOOT",
         "PANO_06_LOUNGE"
@@ -86,17 +78,43 @@
     },
     {
       "scene": "PANO_06_LOUNGE",
-      "image": "PANO_06_LOUNGE.jpg",
+      "image": "assets/rooms/premium-06_LOUNGE.jpg",
       "size": [
-        4096,
-        2048
+        1774,
+        887
       ],
-      "bytes": 3562417,
-      "sha256": "4385a570c2a6ee3c3e62ebfab9d5d28565acf685ed1d1fdc33bf87edd53e94d3",
-      "thumbnail": "thumb-PANO_06_LOUNGE.jpg",
+      "bytes": 483357,
+      "sha256": "03b0cac3818b5ecd7e808b219c670099a634392682e11ac4240525283d29849e",
+      "thumbnail": "assets/rooms/premium-06_LOUNGE-preview.jpg",
       "destinations": [
         "PANO_05_WINDOW"
       ]
+    },
+    {
+      "scene": "FAMILY_ROOM",
+      "room": "family",
+      "image": "assets/rooms/family.jpg",
+      "size": [
+        1774,
+        887
+      ],
+      "bytes": 404368,
+      "sha256": "9306c87ce7fc0d8dc53b67a1da6d45c706e85f2dcb769c63cff90ba3a9f33996",
+      "thumbnail": "assets/rooms/family-preview.jpg",
+      "destinations": []
+    },
+    {
+      "scene": "BASIC_ROOM",
+      "room": "basic",
+      "image": "assets/rooms/basic.jpg",
+      "size": [
+        1774,
+        887
+      ],
+      "bytes": 440444,
+      "sha256": "38984100a45b7914216fb8ece6a8781c525794a601de68be2c6952f5fd816252",
+      "thumbnail": "assets/rooms/basic-preview.jpg",
+      "destinations": []
     }
   ],
   "official_diagram": {

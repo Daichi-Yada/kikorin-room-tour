@@ -24,7 +24,7 @@
       "sceneId": "PANO_01_ENTRANCE",
       "title": "入口",
       "type": "equirectangular",
-      "panorama": "PANO_01_ENTRANCE.jpg?v=wood4k-20260912",
+      "panorama": "assets/rooms/premium.jpg?v=rooms-20260915",
       "pitch": -5,
       "yaw": 42,
       "hfov": 92,
@@ -167,18 +167,66 @@
           "clickHandlerArgs": {
             "action": "brochure"
           }
+        },
+        {
+          "pitch": -18.568207440811733,
+          "yaw": 82.79594137542279,
+          "type": "info",
+          "text": "選べる木の香りスプレー",
+          "feature": "wood-spray",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "選べる木の香りスプレー"
+          },
+          "clickHandlerArgs": {
+            "title": "選べる木の香りスプレー",
+            "text": "ヒノキ・スギ・ヒバのルームスプレー。宿泊客が好きな木の香りを選び、量を調整できます。香りを使わずに過ごすこともできます。"
+          }
+        },
+        {
+          "pitch": -14.509582863585123,
+          "yaw": 35.107102593010154,
+          "type": "info",
+          "text": "丸太枕",
+          "feature": "log-pillow",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "丸太枕"
+          },
+          "clickHandlerArgs": {
+            "title": "丸太枕",
+            "text": "年輪や樹皮をかたどった、やわらかな丸太形の枕。3種類のきこりんルームでお楽しみいただけます。"
+          }
+        },
+        {
+          "pitch": -54.08117249154452,
+          "yaw": -84.62232243517474,
+          "type": "info",
+          "text": "靴を脱ぐ玄関",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "靴を脱ぐ玄関"
+          },
+          "clickHandlerArgs": {
+            "title": "靴を脱ぐ玄関",
+            "text": "タイルの玄関で靴を脱ぎ、木の床の室内へ。腰掛けと靴収納、室内用スリッパをご用意します。"
+          },
+          "feature": "genkan"
         }
       ],
       "northOffset": 0,
       "haov": 360,
       "vaov": 180,
-      "thumbnail": "thumb-PANO_01_ENTRANCE.jpg?v=wood4k-20260912"
+      "thumbnail": "assets/rooms/premium-preview.jpg?v=rooms-20260915"
     },
     "PANO_02_DESK": {
       "sceneId": "PANO_02_DESK",
       "title": "デスク",
       "type": "equirectangular",
-      "panorama": "PANO_02_DESK.jpg?v=wood4k-20260912",
+      "panorama": "assets/rooms/premium-02_DESK.jpg?v=rooms-20260915",
       "pitch": -12,
       "yaw": 100,
       "hfov": 92,
@@ -349,18 +397,50 @@
           "clickHandlerArgs": {
             "action": "brochure"
           }
+        },
+        {
+          "pitch": -28.71476888387825,
+          "yaw": 123.38218714768885,
+          "type": "info",
+          "text": "選べる木の香りスプレー",
+          "feature": "wood-spray",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "選べる木の香りスプレー"
+          },
+          "clickHandlerArgs": {
+            "title": "選べる木の香りスプレー",
+            "text": "ヒノキ・スギ・ヒバのルームスプレー。宿泊客が好きな木の香りを選び、量を調整できます。香りを使わずに過ごすこともできます。"
+          }
+        },
+        {
+          "pitch": -24.85907553551297,
+          "yaw": 33.07779030439684,
+          "type": "info",
+          "text": "丸太枕",
+          "feature": "log-pillow",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "丸太枕"
+          },
+          "clickHandlerArgs": {
+            "title": "丸太枕",
+            "text": "年輪や樹皮をかたどった、やわらかな丸太形の枕。3種類のきこりんルームでお楽しみいただけます。"
+          }
         }
       ],
       "northOffset": 0,
       "haov": 360,
       "vaov": 180,
-      "thumbnail": "thumb-PANO_02_DESK.jpg?v=wood4k-20260912"
+      "thumbnail": "assets/rooms/premium-02_DESK-preview.jpg?v=rooms-20260915"
     },
     "PANO_03_BED_FOOT": {
       "sceneId": "PANO_03_BED_FOOT",
       "title": "ベッド足元",
       "type": "equirectangular",
-      "panorama": "PANO_03_BED_FOOT.jpg?v=wood4k-20260912",
+      "panorama": "assets/rooms/premium-03_BED_FOOT.jpg?v=rooms-20260915",
       "pitch": -5,
       "yaw": 78,
       "hfov": 92,
@@ -517,18 +597,50 @@
           "clickHandlerArgs": {
             "action": "brochure"
           }
+        },
+        {
+          "pitch": -15.524239007891765,
+          "yaw": 116.27959413754229,
+          "type": "info",
+          "text": "選べる木の香りスプレー",
+          "feature": "wood-spray",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "選べる木の香りスプレー"
+          },
+          "clickHandlerArgs": {
+            "title": "選べる木の香りスプレー",
+            "text": "ヒノキ・スギ・ヒバのルームスプレー。宿泊客が好きな木の香りを選び、量を調整できます。香りを使わずに過ごすこともできます。"
+          }
+        },
+        {
+          "pitch": -22.22096956031568,
+          "yaw": 87.05749718151071,
+          "type": "info",
+          "text": "丸太枕",
+          "feature": "log-pillow",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "丸太枕"
+          },
+          "clickHandlerArgs": {
+            "title": "丸太枕",
+            "text": "年輪や樹皮をかたどった、やわらかな丸太形の枕。3種類のきこりんルームでお楽しみいただけます。"
+          }
         }
       ],
       "northOffset": 0,
       "haov": 360,
       "vaov": 180,
-      "thumbnail": "thumb-PANO_03_BED_FOOT.jpg?v=wood4k-20260912"
+      "thumbnail": "assets/rooms/premium-03_BED_FOOT-preview.jpg?v=rooms-20260915"
     },
     "PANO_04_BED_SIDE": {
       "sceneId": "PANO_04_BED_SIDE",
       "title": "ベッド横",
       "type": "equirectangular",
-      "panorama": "PANO_04_BED_SIDE.jpg?v=wood4k-20260912",
+      "panorama": "assets/rooms/premium-04_BED_SIDE.jpg?v=rooms-20260915",
       "pitch": -5,
       "yaw": 18,
       "hfov": 92,
@@ -686,18 +798,50 @@
           "clickHandlerArgs": {
             "action": "brochure"
           }
+        },
+        {
+          "pitch": -29.729425028184878,
+          "yaw": 147.73393461104848,
+          "type": "info",
+          "text": "選べる木の香りスプレー",
+          "feature": "wood-spray",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "選べる木の香りスプレー"
+          },
+          "clickHandlerArgs": {
+            "title": "選べる木の香りスプレー",
+            "text": "ヒノキ・スギ・ヒバのルームスプレー。宿泊客が好きな木の香りを選び、量を調整できます。香りを使わずに過ごすこともできます。"
+          }
+        },
+        {
+          "pitch": -31.75873731679819,
+          "yaw": 33.07779030439684,
+          "type": "info",
+          "text": "丸太枕",
+          "feature": "log-pillow",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "丸太枕"
+          },
+          "clickHandlerArgs": {
+            "title": "丸太枕",
+            "text": "年輪や樹皮をかたどった、やわらかな丸太形の枕。3種類のきこりんルームでお楽しみいただけます。"
+          }
         }
       ],
       "northOffset": 0,
       "haov": 360,
       "vaov": 180,
-      "thumbnail": "thumb-PANO_04_BED_SIDE.jpg?v=wood4k-20260912"
+      "thumbnail": "assets/rooms/premium-04_BED_SIDE-preview.jpg?v=rooms-20260915"
     },
     "PANO_05_WINDOW": {
       "sceneId": "PANO_05_WINDOW",
       "title": "窓側",
       "type": "equirectangular",
-      "panorama": "PANO_05_WINDOW.jpg?v=wood4k-20260912",
+      "panorama": "assets/rooms/premium-05_WINDOW.jpg?v=rooms-20260915",
       "pitch": -3,
       "yaw": 28,
       "hfov": 92,
@@ -839,18 +983,50 @@
           "clickHandlerArgs": {
             "action": "brochure"
           }
+        },
+        {
+          "pitch": -9.030439684329195,
+          "yaw": 151.7925591882751,
+          "type": "info",
+          "text": "選べる木の香りスプレー",
+          "feature": "wood-spray",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "選べる木の香りスプレー"
+          },
+          "clickHandlerArgs": {
+            "title": "選べる木の香りスプレー",
+            "text": "ヒノキ・スギ・ヒバのルームスプレー。宿泊客が好きな木の香りを選び、量を調整できます。香りを使わずに過ごすこともできます。"
+          }
+        },
+        {
+          "pitch": -22.42390078917701,
+          "yaw": 125.41149943630211,
+          "type": "info",
+          "text": "丸太枕",
+          "feature": "log-pillow",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "丸太枕"
+          },
+          "clickHandlerArgs": {
+            "title": "丸太枕",
+            "text": "年輪や樹皮をかたどった、やわらかな丸太形の枕。3種類のきこりんルームでお楽しみいただけます。"
+          }
         }
       ],
       "northOffset": 0,
       "haov": 360,
       "vaov": 180,
-      "thumbnail": "thumb-PANO_05_WINDOW.jpg?v=wood4k-20260912"
+      "thumbnail": "assets/rooms/premium-05_WINDOW-preview.jpg?v=rooms-20260915"
     },
     "PANO_06_LOUNGE": {
       "sceneId": "PANO_06_LOUNGE",
       "title": "ラウンジ",
       "type": "equirectangular",
-      "panorama": "PANO_06_LOUNGE.jpg?v=wood4k-20260912",
+      "panorama": "assets/rooms/premium-06_LOUNGE.jpg?v=rooms-20260915",
       "pitch": -5,
       "yaw": -3,
       "hfov": 92,
@@ -978,12 +1154,44 @@
           "clickHandlerArgs": {
             "action": "brochure"
           }
+        },
+        {
+          "pitch": -9.639233370913189,
+          "yaw": 164.98308906426155,
+          "type": "info",
+          "text": "選べる木の香りスプレー",
+          "feature": "wood-spray",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "選べる木の香りスプレー"
+          },
+          "clickHandlerArgs": {
+            "title": "選べる木の香りスプレー",
+            "text": "ヒノキ・スギ・ヒバのルームスプレー。宿泊客が好きな木の香りを選び、量を調整できます。香りを使わずに過ごすこともできます。"
+          }
+        },
+        {
+          "pitch": -33.7880496054115,
+          "yaw": 134.54340473506198,
+          "type": "info",
+          "text": "丸太枕",
+          "feature": "log-pillow",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "丸太枕"
+          },
+          "clickHandlerArgs": {
+            "title": "丸太枕",
+            "text": "年輪や樹皮をかたどった、やわらかな丸太形の枕。3種類のきこりんルームでお楽しみいただけます。"
+          }
         }
       ],
       "northOffset": 0,
       "haov": 360,
       "vaov": 180,
-      "thumbnail": "thumb-PANO_06_LOUNGE.jpg?v=wood4k-20260912"
+      "thumbnail": "assets/rooms/premium-06_LOUNGE-preview.jpg?v=rooms-20260915"
     }
   }
 }

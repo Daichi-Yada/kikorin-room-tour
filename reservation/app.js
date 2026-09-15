@@ -1,10 +1,16 @@
 'use strict';
 (() => {
-  const rooms = {
-    kikorin: { name: 'きこりんルーム', price: 12800, capacity: 2 },
-    single: { name: 'スタンダードシングル', price: 9800, capacity: 1 },
-    double: { name: 'スタンダードダブル', price: 11800, capacity: 2 }
-  };
+  const rooms = window.ROOM_CATALOG;
+  const picker = document.getElementById('room-type');
+  const list = document.querySelector('.room-list');
+  for (const [id, room] of Object.entries(rooms)) {
+    picker.add(new Option(room.name, id));
+    const card = document.createElement('article');
+    card.className = 'room-card'; card.dataset.room = id;
+    card.innerHTML = `<div class="room-content"><div class="room-image"><img src="../${room.image}" alt="${room.name}の客室イメージ" width="800" height="533" loading="lazy"><span>${id==='standard'?'参考写真':'客室イメージ'}</span></div><div class="room-description"><div class="room-tags"><span class="green-tag">${id==='standard'?'通常客室':'きこりんルーム'}</span><span>禁煙</span></div><h3>${room.name}</h3><p class="room-subtitle">${room.title}</p><p class="room-spec">${room.spec}</p><ul class="features">${room.features.map(f=>`<li>${f}</li>`).join('')}${id!=='standard'?'<li>丸太枕・BAUM・選べる木の香りスプレー</li><li>WOOD CYCLEの看板・木材サンプル・客室ガイド</li>':''}</ul><div class="room-bottom"><div class="price"><span>1室1泊・税込</span><strong data-price="${id}"></strong><b>円</b></div><label class="select-room"><input type="radio" name="room" value="${id}"><span>この部屋を選択</span><span class="sr-only">：${room.name}</span></label></div></div></div><details><summary>プラン・客室の詳細 <span>＋</span></summary><div class="detail-content"><h4>【素泊まり】${room.name}</h4><p>${room.description}</p><p>チェックイン 15:00 ／ チェックアウト 10:00<br>食事なし・Wi-Fi・バス・トイレ付き（設定例）</p><a href="../?room=${id}">${id==='standard'?'客室紹介':'360°ルームツアー'}を見る ↗</a></div></details>`;
+    list.append(card);
+  }
+
   const $ = id => document.getElementById(id);
   const checkin = $('checkin');
   const checkout = $('checkout');
@@ -22,14 +28,16 @@
   checkin.min = today;
   checkout.value = nextDay(today);
   checkout.min = checkout.value;
-  let selected = '';
+  const requested = new URLSearchParams(location.search).get('room');
+  let selected = requested ? window.resolveRoom(requested) : '';
   const roomType = $('room-type');
   const reserveActions = document.querySelectorAll('.reserve-action');
-  const tourUrl = 'https://daichi-yada.github.io/kikorin-room-tour/';
+  const tourUrl = '../';
   function enableReservation(enabled) {
+    document.querySelector('.main-nav a:last-child').href = '../?room=' + encodeURIComponent(selected || 'premium');
     reserveActions.forEach(link => {
       link.setAttribute('aria-disabled', String(!enabled));
-      if (enabled) { link.href = tourUrl; link.removeAttribute('tabindex'); }
+      if (enabled) { link.href = tourUrl + '?room=' + encodeURIComponent(selected); link.removeAttribute('tabindex'); }
       else { link.removeAttribute('href'); link.setAttribute('tabindex', '-1'); }
     });
   }
@@ -102,6 +110,6 @@
   $('arrival').addEventListener('change', event => {
     document.querySelector('.stay-dates small').textContent = `${event.target.value}〜`;
   });
-  // All reservation links are ordinary links to the public tour. No form data is sent.
+  // Only the selected room ID is included in the link. No guest information is sent.
   updateSummary();
 })();

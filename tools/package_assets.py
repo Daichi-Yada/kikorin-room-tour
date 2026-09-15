@@ -1,4 +1,4 @@
-"""Refresh rectilinear thumbnails and validate the six-scene static delivery."""
+"""Refresh premium thumbnails and validate all three room tours."""
 from pathlib import Path
 import hashlib
 import json
@@ -18,7 +18,7 @@ records = []
 for sid, scene in scenes.items():
     source = root / urlsplit(scene['panorama']).path
     im = Image.open(source).convert('RGB')
-    assert im.size == (4096, 2048), (sid, im.size)
+    assert im.width == im.height * 2, (sid, im.size)
     pixels = np.asarray(im)
     width, height = 480, 270
     tan_half_fov = math.tan(math.radians(85 / 2))
@@ -38,8 +38,8 @@ for sid, scene in scenes.items():
     moves = [h['sceneId'] for h in scene['hotSpots'] if h['type'] == 'scene']
     assert moves and all(dest in scenes for dest in moves), sid
     assert sum(h.get('clickHandlerArgs', {}).get('action') == 'wood-cycle' for h in scene['hotSpots']) == 1, sid
-    records.append({'scene': sid, 'image': source.name, 'size': list(im.size), 'bytes': source.stat().st_size,
-                    'sha256': hashlib.sha256(source.read_bytes()).hexdigest(), 'thumbnail': target.name, 'destinations': moves})
+    records.append({'scene': sid, 'image': str(source.relative_to(root)), 'size': list(im.size), 'bytes': source.stat().st_size,
+                    'sha256': hashlib.sha256(source.read_bytes()).hexdigest(), 'thumbnail': str(target.relative_to(root)), 'destinations': moves})
 # Each scene must be reachable using the on-image movement arrows.
 for start in scenes:
     reached, pending = set(), [start]
@@ -50,9 +50,30 @@ for start in scenes:
         reached.add(current)
         pending.extend(h['sceneId'] for h in scenes[current]['hotSpots'] if h['type'] == 'scene')
     assert len(reached) == 6, start
-manifest = {'updated': '2026-09-12', 'method': 'AI-edited 100-degree faces, spherical reprojection with overlap feathering',
-            'original_panorama_size': [1774, 887], 'edited_face_size': [1254, 1254], 'scenes': records,
-            'official_diagram': {'file': 'assets/wood-cycle-official.png', 'source': 'https://sfc.jp/information/vision/img/img_001.png'},
-            'audio_sha256': hashlib.sha256((root/'chainsaw-sample.mp3').read_bytes()).hexdigest()}
+for room in ('family', 'basic'):
+    variant = json.loads((root / f'tour-config-{room}.json').read_text())
+    assert variant['default']['firstScene'] in variant['scenes']
+    for sid, scene in variant['scenes'].items():
+        source = root / urlsplit(scene['panorama']).path
+        im = Image.open(source)
+        assert im.width == im.height * 2
+        assert (root / urlsplit(scene['thumbnail']).path).exists()
+        features = {h.get('feature') for h in scene['hotSpots']}
+        assert {'baum', 'wood-cycle', 'brochure', 'log-pillow', 'wood-spray'} <= features
+        records.append({'scene':sid, 'room':room, 'image':str(source.relative_to(root)), 'size':list(im.size), 'bytes':source.stat().st_size, 'sha256':hashlib.sha256(source.read_bytes()).hexdigest(), 'thumbnail':scene['thumbnail'].split('?')[0], 'destinations':[]})
+manifest = {'updated':'2026-09-15', 'method':'Built-in image_gen panorama editing/generation; perspective thumbnails projected from spherical images',
+            'scenes':records,
+            'official_diagram':{'file':'assets/wood-cycle-official.png', 'source':'https://sfc.jp/information/vision/img/img_001.png'},
+            'audio_sha256':hashlib.sha256((root/'chainsaw-sample.mp3').read_bytes()).hexdigest()}
 (root/'docs/asset-manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+'\n')
-print(f'Validated {len(scenes)} 4096x2048 panoramas, connected navigation, WOOD CYCLE markers; refreshed six thumbnails.')
+print(f'Validated {len(records)} panoramas across three room types, connected premium navigation, and required amenities.')
+
+# Keep the source/preview manifest current after thumbnail regeneration.
+asset_manifest = root/'docs/room-asset-manifest.json'
+if asset_manifest.exists():
+    data = json.loads(asset_manifest.read_text())
+    for item in data['assets']:
+        asset = root/item['path']
+        item['size'] = list(Image.open(asset).size)
+        item['sha256'] = hashlib.sha256(asset.read_bytes()).hexdigest()
+    asset_manifest.write_text(json.dumps(data, ensure_ascii=False, indent=2)+'\n')
