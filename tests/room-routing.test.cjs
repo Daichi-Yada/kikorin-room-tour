@@ -14,6 +14,27 @@ test('room URLs resolve all four choices and legacy links safely',()=>{
  for(const id of ['single','double'])assert.equal(resolveRoom(id),'standard');
  for(const bad of [null,'','unknown','__proto__','constructor','toString'])assert.equal(resolveRoom(bad),'premium');
 });
+test('previous tour remains independent and every current room uses the official artwork',()=>{
+ const legacy=JSON.parse(read('legacy/tour-config.json'));
+ assert.equal(Object.keys(legacy.scenes).length,6);
+ for(const scene of Object.values(legacy.scenes)){
+  assert.ok(fs.existsSync(path.resolve(root,'legacy',scene.panorama.split('?')[0])));
+  for(const h of scene.hotSpots)if(h.type==='scene')assert.ok(legacy.scenes[h.sceneId]);
+ }
+ const surfaces=JSON.parse(read('surface-config.json'));
+ for(const file of ['tour-config.json','tour-config-family.json','tour-config-basic.json']){
+  for(const [id,scene] of Object.entries(JSON.parse(read(file)).scenes)){
+   assert.match(scene.panorama,/-4k\.jpg/);
+   assert.ok(surfaces[id].some(s=>s.kind==='wood-cycle'),id);
+   const baum=scene.hotSpots.find(h=>h.feature==='baum').clickHandlerArgs.text;
+   assert.match(baum,/樹木との共生/);
+   assert.match(baum,/オーク/);
+   assert.match(baum,/ヒノキ/);
+  }
+ }
+ assert.equal(rooms.standard.name,'スタンダード');
+ assert.doesNotMatch(read('reservation/index.html'),/concept-banner|shared-amenities|small-concept/);
+});
 test('every tour has local assets, valid navigation, and all required amenities',()=>{
  for(const id of ['premium','family','basic']){
   const config=JSON.parse(read(id==='premium'?'tour-config.json':`tour-config-${id}.json`));

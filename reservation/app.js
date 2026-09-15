@@ -70,8 +70,8 @@
     });
     const total = selected ? money((rooms[selected].price + (guests - 1) * 2000) * nights * count) : '—';
     $('result-count').textContent = validRooms.length;
-    $('summary-room').textContent = selected ? rooms[selected].name : '選択してください';
-    $('mobile-room').textContent = selected ? rooms[selected].name : '選択してください';
+    $('summary-room').textContent = selected ? '客室を選択済み' : '選択してください';
+    $('mobile-room').textContent = selected ? '客室を選択済み' : '選択してください';
     $('summary-kicker').textContent = selected ? '選択中のお部屋' : 'お部屋が未選択です';
     $('summary-plan').textContent = selected ? '素泊まりプラン・禁煙' : '一覧からお好きなお部屋をお選びください。';
     $('summary-checkin').textContent = dateLabel(checkin.value);

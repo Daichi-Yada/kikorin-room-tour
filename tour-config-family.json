@@ -23,8 +23,8 @@
     "FAMILY_ROOM": {
       "title": "家族のくつろぎ空間",
       "type": "equirectangular",
-      "panorama": "assets/rooms/family.jpg?v=rooms-20260915",
-      "thumbnail": "assets/rooms/family-preview.jpg?v=rooms-20260915",
+      "panorama": "assets/rooms/family-4k.jpg?v=quality-20260915b",
+      "thumbnail": "assets/rooms/family-preview.jpg?v=quality-20260915b",
       "pitch": -9,
       "yaw": -20,
       "hfov": 110,
@@ -57,7 +57,7 @@
           },
           "clickHandlerArgs": {
             "title": "BAUMのスキンケア",
-            "text": "木を感じるBAUMのスキンケアを、すべてのきこりんルームに設置します。"
+            "text": "「樹木との共生」をテーマに掲げる資生堂のブランド「BAUM」のスキンケア製品をデスクに。木製パーツにはオークを使い、スキンケア成分にはヒノキ由来の原料を取り入れています。住友林業の協力により、豊かな森づくりにも貢献しています。"
           },
           "feature": "baum"
         },
@@ -85,11 +85,11 @@
           "cssClass": "tour-info",
           "createTooltipArgs": {
             "kind": "info",
-            "label": "WOOD CYCLE"
+            "label": "WOOD CYCLEの公式図を見る"
           },
           "clickHandlerArgs": {
             "title": "WOOD CYCLE",
-            "text": "森を育て、木材を使い、次の森へつなぐ循環。客室の看板とガイドで、住友林業の取り組みを紹介します。",
+            "text": "森林から木材、建築、エネルギーへ。住友林業は、木を植え育て、木材を建物などに使い、資源を循環させる「WOOD CYCLE」を進めています。この「きこりんルーム」もその循環の一端を担っています。",
             "action": "wood-cycle"
           },
           "feature": "wood-cycle"
@@ -98,11 +98,11 @@
           "pitch": -22.82976324689966,
           "yaw": 43.224351747463345,
           "type": "info",
-          "text": "木を知る客室ガイド",
+          "text": "パンフレット",
           "cssClass": "tour-info",
           "createTooltipArgs": {
             "kind": "info",
-            "label": "木を知る客室ガイド"
+            "label": "パンフレットを読む"
           },
           "clickHandlerArgs": {
             "title": "木を知る客室ガイド",
@@ -142,6 +142,22 @@
             "text": "鹿の角のフック、舞う落ち葉やコウモリの飾り。森の生き物を探す遊びを、家族で楽しめます。"
           },
           "feature": "forest-play"
+        },
+        {
+          "pitch": -20.930101465614428,
+          "yaw": -73.6369785794814,
+          "type": "info",
+          "text": "きこりんのぬいぐるみ",
+          "feature": "kikorin",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "きこりんのぬいぐるみ"
+          },
+          "clickHandlerArgs": {
+            "title": "きこりんのぬいぐるみ",
+            "text": "こちらは住友林業グループのキャラクター「きこりん」ぬいぐるみです。寝るときに抱きしめてあげてください。"
+          }
         }
       ]
     }
@@ -162,8 +178,8 @@
     {
       "title": "香り・WOOD CYCLE",
       "yaw": 150,
-      "pitch": -13,
-      "hfov": 85
+      "pitch": 0,
+      "hfov": 105
     }
   ]
 }

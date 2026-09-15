@@ -21,3 +21,11 @@ Final visual corrections after browser QA:
 Scenes 01–04 upward faces: replace concentric/arched wood grain with straight parallel board joints on a flat ceiling. Keep fixtures, vents, slats, framing and exposure in the same positions.
 Scene 06 left face: make the pale wall and ceiling inside the mirror reflection warm oak, keeping all reflected furniture fixed.
 Scene 06 back face: remove the extra partial wire hanger, keeping exactly two complete wooden triangular hangers with straight trouser bars and curved metal hooks.
+
+2026-09-15 quality revision
+Current output: 4096x2048. Family/basic: six 100-degree 1254x1254 detail edits, then spherical reprojection.
+Premium: original 4096x2048 bases plus 18 local perspective patches.
+Original images and exact prompts: project/assets/quality-20260915/face-generation.json and patch-generation.json.
+Kikorin identity: project/assets/web-update-20260912/kikorin-reference.png.
+One ceiling edit and one peephole removal retried after visual QA.
+WOOD CYCLE is the actual official image projected onto frames with surface-overlays.js, never regenerated.

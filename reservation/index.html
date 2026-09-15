@@ -6,10 +6,10 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="referrer" content="no-referrer">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
-  <title>宿泊予約｜きこりんルーム体験・アパホテル予約画面デモ</title>
-  <meta name="description" content="きこりんルームを選んで、木のある客室へ。発表用の宿泊予約デモです。予約するボタンから360°ルームツアーをご覧いただけます。">
-  <link rel="stylesheet" href="styles.css?v=rooms-20260915">
-  <script src="../room-catalog.js?v=rooms-20260915" defer></script><script src="app.js?v=rooms-20260915" defer></script>
+  <title>宿泊予約｜アパホテル予約画面デモ</title>
+  <meta name="description" content="部屋タイプを選べる宿泊予約のデモです。施設・料金は架空の設定です。">
+  <link rel="stylesheet" href="styles.css?v=quality-20260915b">
+  <script src="../room-catalog.js?v=quality-20260915b" defer></script><script src="app.js?v=quality-20260915b" defer></script>
 </head>
 <body id="top">
   <div class="demo-notice"><span>発表用デモ</span> アパホテルの予約画面を参考にした非公式サンプルです。実際の予約・決済は行われません。</div>
@@ -21,9 +21,8 @@
   </header>
   <nav class="main-nav" aria-label="ページ内メニュー"><div><a class="active" href="#rooms">宿泊予約</a><a href="#room-details">客室のご案内</a><a href="#guest">お客様情報</a><a href="../?room=premium">360°ルームツアー <span>↗</span></a></div></nav>
   <main class="container"><noscript><p>お部屋を選択するには、ブラウザのJavaScriptを有効にしてください。</p></noscript>
-    <div class="breadcrumb">ホテル予約 <span>›</span> 東京都 <span>›</span> きこりんルーム体験 <span>›</span> 部屋タイプから予約</div>
-    <div class="hotel-title"><div><div class="eyebrow">KIKORIN ROOM PROJECT</div><h1>アパホテル <span>〈きこりんルーム導入モデル〉</span></h1><p>いつもの宿泊に、木のぬくもりを。 <span class="model-note">施設・料金はイメージです。</span></p></div><span class="nonsmoking">全室禁煙</span></div>
-    <section class="concept-banner" aria-label="きこりんルームのご紹介"><div><span class="concept-label">木のある暮らしを、ひと晩から。</span><h2>きこりんルームで、<br>木に包まれる宿泊体験。</h2><p>家族で広々、出張でゆったり、気軽にコンパクト。3つの木の部屋から。</p></div><span class="image-note">客室イメージ</span></section>
+    <div class="breadcrumb">ホテル予約 <span>›</span> 東京都 <span>›</span> 宿泊予約 <span>›</span> 部屋タイプから予約</div>
+    <div class="hotel-title"><div><div class="eyebrow">HOTEL RESERVATION</div><h1>アパホテル</h1><p>宿泊予約 <span class="model-note">施設・料金はイメージです。</span></p></div><span class="nonsmoking">全室禁煙</span></div>
     <ol class="steps" aria-label="予約の流れ"><li class="current"><b>1</b> お部屋を選択</li><li><b>2</b> お客様情報を確認</li><li><b>3</b> 予約する・客室を体験</li></ol>
     <section class="search-panel" aria-labelledby="search-title">
       <h2 id="search-title">ご宿泊条件</h2>
@@ -40,10 +39,9 @@
       <div class="main-column">
         <section id="rooms" aria-labelledby="rooms-title">
           <div class="section-heading"><h2 id="rooms-title">部屋タイプから予約</h2><span><strong id="result-count">4</strong> 件の部屋タイプ</span></div>
-          <p class="list-note">普通の部屋と、3種類のきこりんルームからお選びください。</p>
+          <p class="list-note">ご希望の部屋タイプをお選びください。</p>
           <label class="room-picker" for="room-type">宿泊するお部屋<select id="room-type"><option value="">選択してください</option></select></label>
           <fieldset class="room-list" id="room-details"><legend class="sr-only">宿泊する部屋タイプを選択</legend></fieldset>
-          <section class="shared-amenities"><h3>すべてのきこりんルームで楽しめること</h3><p>丸太枕・BAUM・ヒノキ／スギ／ヒバの木の香りスプレーを設置。好きな香りや量を選べます。WOOD CYCLEの看板、木材サンプル、客室ガイドで木の魅力をお伝えします。</p></section>
           <p class="sample-pricing">表示料金は発表用の設定例です。2人目以降は1名・1室1泊につき2,000円を加算します。定員・ベッド構成も設定例です。</p>
         </section>
         <section id="guest" class="guest-section" aria-labelledby="guest-title"><div class="section-heading"><h2 id="guest-title">お客様情報</h2><span class="filled-badge">入力済み</span></div><p class="guest-intro">サンプル情報を入力しています。そのまま予約ボタンへお進みいただけます。</p>
@@ -61,11 +59,11 @@
         </section>
         <section class="payment-section" aria-labelledby="payment-title"><h2 id="payment-title">お支払い方法</h2><div><span class="payment-icon" aria-hidden="true">✓</span><div><strong>現地決済</strong><p>このデモではお支払いは発生しません。</p></div></div></section>
       </div>
-      <aside class="summary-column" aria-label="選択した予約内容"><div class="summary-card"><h2>ご予約内容</h2><div class="summary-body"><span class="summary-kicker" id="summary-kicker">お部屋が未選択です</span><h3 id="summary-room">選択してください</h3><p class="summary-plan" id="summary-plan">一覧からお好きなお部屋をお選びください。</p><div class="stay-dates"><div><span>チェックイン</span><strong id="summary-checkin">9/15<span>（火）</span></strong><small>15:00〜</small></div><span class="stay-arrow">→</span><div><span>チェックアウト</span><strong id="summary-checkout">9/16<span>（水）</span></strong><small>〜10:00</small></div></div><dl class="summary-info"><div><dt>ご利用</dt><dd id="summary-stay">1泊・1室・大人1名</dd></div><div><dt>予約者</dt><dd><span data-guest-name>住林倫</span> 様</dd></div><div><dt>宿泊者</dt><dd><span id="summary-guest">住林倫</span> 様</dd></div><div><dt>お支払い</dt><dd>現地決済</dd></div></dl><div class="summary-total"><div><span>合計金額</span><small>税込・サンプル料金</small></div><div><strong id="total-price">—</strong><b>円</b></div></div><a class="button reserve-button reserve-action" role="link" aria-disabled="true" tabindex="-1">予約する <span>›</span></a><p class="reserve-note">ボタンを押すと、選んだ部屋の紹介・内覧が開きます。</p><a class="edit-guest" href="#guest">お客様情報を確認・変更</a></div></div><div class="small-concept"><span>木と人との距離を、もっと近く。</span><p>いつものホテルの一室から、<br>木のある暮らしを体験する提案です。</p></div></aside>
+      <aside class="summary-column" aria-label="選択した予約内容"><div class="summary-card"><h2>ご予約内容</h2><div class="summary-body"><span class="summary-kicker" id="summary-kicker">お部屋が未選択です</span><h3 id="summary-room">選択してください</h3><p class="summary-plan" id="summary-plan">一覧からお好きなお部屋をお選びください。</p><div class="stay-dates"><div><span>チェックイン</span><strong id="summary-checkin">9/15<span>（火）</span></strong><small>15:00〜</small></div><span class="stay-arrow">→</span><div><span>チェックアウト</span><strong id="summary-checkout">9/16<span>（水）</span></strong><small>〜10:00</small></div></div><dl class="summary-info"><div><dt>ご利用</dt><dd id="summary-stay">1泊・1室・大人1名</dd></div><div><dt>予約者</dt><dd><span data-guest-name>住林倫</span> 様</dd></div><div><dt>宿泊者</dt><dd><span id="summary-guest">住林倫</span> 様</dd></div><div><dt>お支払い</dt><dd>現地決済</dd></div></dl><div class="summary-total"><div><span>合計金額</span><small>税込・サンプル料金</small></div><div><strong id="total-price">—</strong><b>円</b></div></div><a class="button reserve-button reserve-action" role="link" aria-disabled="true" tabindex="-1">予約する <span>›</span></a><p class="reserve-note">ボタンを押すと、選んだ部屋の紹介・内覧が開きます。</p><a class="edit-guest" href="#guest">お客様情報を確認・変更</a></div></div></aside>
     </div>
     <div class="bottom-action"><a href="#rooms">↑ お部屋の選択に戻る</a><a class="button reserve-action" role="link" aria-disabled="true" tabindex="-1">予約する <span>›</span></a></div>
   </main>
-  <footer><div class="container"><strong>KIKORIN ROOM PROJECT</strong><p>「中間発表」のきこりんルーム提案をもとに制作した宿泊予約のデモです。<br>アパホテル・住友林業の公式予約サイトではありません。施設・プラン・料金は架空の設定です。</p><p>参考：<a href="https://www.apahotel.com/hotel/syutoken/tokyo/kanda-jimbocho-ekihigashi/roomtype/" target="_blank" rel="noopener noreferrer">アパホテルの部屋タイプ別予約画面</a> ／ 通常客室写真：アパホテル〈神田神保町駅東〉<br>きこりんルーム画像：本プロジェクトの客室イメージ</p></div></footer>
+  <footer><div class="container"><strong>HOTEL RESERVATION DEMO</strong><p>発表用の非公式予約画面です。実際の予約・決済は行われません。<br>施設・プラン・料金は架空の設定です。</p><p>参考：<a href="https://www.apahotel.com/hotel/syutoken/tokyo/kanda-jimbocho-ekihigashi/roomtype/" target="_blank" rel="noopener noreferrer">アパホテルの部屋タイプ別予約画面</a> ／ スタンダード参考写真：アパホテル〈神田神保町駅東〉</p></div></footer>
   <div class="mobile-booking"><div><span id="mobile-room">選択してください</span><strong><span id="mobile-price">—</span><small>円（税込）</small></strong></div><a class="button reserve-action" role="link" aria-disabled="true" tabindex="-1">予約する <span>›</span></a></div>
 </body>
 </html>

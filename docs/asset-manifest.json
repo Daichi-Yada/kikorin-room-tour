@@ -4,13 +4,13 @@
   "scenes": [
     {
       "scene": "PANO_01_ENTRANCE",
-      "image": "assets/rooms/premium.jpg",
+      "image": "assets/rooms/premium-4k.jpg",
       "size": [
-        1774,
-        887
+        4096,
+        2048
       ],
-      "bytes": 398129,
-      "sha256": "9e0d22a3a6ce3007e59895dad6183e1603b4f7420a79dd6a7ff61a477672e2b0",
+      "bytes": 3554024,
+      "sha256": "a7ba68140c3d67b4b4553241ff42193bcfec6b7de35d2ab09ed0c802a10d130a",
       "thumbnail": "assets/rooms/premium-preview.jpg",
       "destinations": [
         "PANO_02_DESK"
@@ -18,13 +18,13 @@
     },
     {
       "scene": "PANO_02_DESK",
-      "image": "assets/rooms/premium-02_DESK.jpg",
+      "image": "assets/rooms/premium-02_DESK-4k.jpg",
       "size": [
-        1774,
-        887
+        4096,
+        2048
       ],
-      "bytes": 410212,
-      "sha256": "92615c7595f58fb088e5fcfc32b9ac8f76cd6bb194e2f189a348ef9399f87577",
+      "bytes": 3583783,
+      "sha256": "5f08f37a492a19ec0c91d750b8e76203978f4f2677eda39743c76d072d3bb29b",
       "thumbnail": "assets/rooms/premium-02_DESK-preview.jpg",
       "destinations": [
         "PANO_01_ENTRANCE",
@@ -34,13 +34,13 @@
     },
     {
       "scene": "PANO_03_BED_FOOT",
-      "image": "assets/rooms/premium-03_BED_FOOT.jpg",
+      "image": "assets/rooms/premium-03_BED_FOOT-4k.jpg",
       "size": [
-        1774,
-        887
+        4096,
+        2048
       ],
-      "bytes": 422509,
-      "sha256": "028262f51b5e29d1106ec3264e60ed10cd9253f3a17059ac841261b077168cfe",
+      "bytes": 3588156,
+      "sha256": "f7033a3355b68f0f3e926debf7cc1bd5838884473365b8f80b9d87c61e033fd6",
       "thumbnail": "assets/rooms/premium-03_BED_FOOT-preview.jpg",
       "destinations": [
         "PANO_02_DESK",
@@ -49,13 +49,13 @@
     },
     {
       "scene": "PANO_04_BED_SIDE",
-      "image": "assets/rooms/premium-04_BED_SIDE.jpg",
+      "image": "assets/rooms/premium-04_BED_SIDE-4k.jpg",
       "size": [
-        1774,
-        887
+        4096,
+        2048
       ],
-      "bytes": 426489,
-      "sha256": "4a97f674bc95651c2d7aa92c5a419a68036efd7c606bb12991489a40d76118c5",
+      "bytes": 3704229,
+      "sha256": "c6370db9dad419679ba1c8e56a26c213ca5472dd95e57ee45b2708a31bd739ea",
       "thumbnail": "assets/rooms/premium-04_BED_SIDE-preview.jpg",
       "destinations": [
         "PANO_02_DESK"
@@ -63,13 +63,13 @@
     },
     {
       "scene": "PANO_05_WINDOW",
-      "image": "assets/rooms/premium-05_WINDOW.jpg",
+      "image": "assets/rooms/premium-05_WINDOW-4k.jpg",
       "size": [
-        1774,
-        887
+        4096,
+        2048
       ],
-      "bytes": 437572,
-      "sha256": "daa23cace705f3d73482272e6408276a86a34f428a3e7dccf2e4d66e816c274b",
+      "bytes": 3724722,
+      "sha256": "3ef00d797008c0e1ea30b6e0853a15807341e28679c37385c1937868333ade5a",
       "thumbnail": "assets/rooms/premium-05_WINDOW-preview.jpg",
       "destinations": [
         "PANO_03_BED_FOOT",
@@ -78,13 +78,13 @@
     },
     {
       "scene": "PANO_06_LOUNGE",
-      "image": "assets/rooms/premium-06_LOUNGE.jpg",
+      "image": "assets/rooms/premium-06_LOUNGE-4k.jpg",
       "size": [
-        1774,
-        887
+        4096,
+        2048
       ],
-      "bytes": 483357,
-      "sha256": "03b0cac3818b5ecd7e808b219c670099a634392682e11ac4240525283d29849e",
+      "bytes": 3745906,
+      "sha256": "3024f442d21f91200c894c007484823d9089f0a87003b2b42171c6ca5146b403",
       "thumbnail": "assets/rooms/premium-06_LOUNGE-preview.jpg",
       "destinations": [
         "PANO_05_WINDOW"
@@ -93,26 +93,26 @@
     {
       "scene": "FAMILY_ROOM",
       "room": "family",
-      "image": "assets/rooms/family.jpg",
+      "image": "assets/rooms/family-4k.jpg",
       "size": [
-        1774,
-        887
+        4096,
+        2048
       ],
-      "bytes": 404368,
-      "sha256": "9306c87ce7fc0d8dc53b67a1da6d45c706e85f2dcb769c63cff90ba3a9f33996",
+      "bytes": 3621611,
+      "sha256": "ed919cddca090e31d8568b58fc2d6a87832e20a5ebfca93582d288eb57620803",
       "thumbnail": "assets/rooms/family-preview.jpg",
       "destinations": []
     },
     {
       "scene": "BASIC_ROOM",
       "room": "basic",
-      "image": "assets/rooms/basic.jpg",
+      "image": "assets/rooms/basic-4k.jpg",
       "size": [
-        1774,
-        887
+        4096,
+        2048
       ],
-      "bytes": 440444,
-      "sha256": "38984100a45b7914216fb8ece6a8781c525794a601de68be2c6952f5fd816252",
+      "bytes": 3296409,
+      "sha256": "d0a6b7cec4a79d9d53954f54591473a8b281e972ef9f8a1026f70bfbf7d82ccf",
       "thumbnail": "assets/rooms/basic-preview.jpg",
       "destinations": []
     }

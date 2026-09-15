@@ -32,7 +32,7 @@ $('#alarm-toggle').onclick=toggleAlarm;
 $('#close-alarm').onclick=()=>closeAlarm(true);
 document.addEventListener('visibilitychange',()=>{if(document.hidden)closeAlarm();});
 window.addEventListener('pagehide',()=>closeAlarm());
-function openBrochure(){closeAlarm();$('#detail').hidden=true;if(!$('#brochure-frame').getAttribute('src'))$('#brochure-frame').src='brochure.html?v=quality-20260915b';$('#brochure-dialog').showModal();}
+function openBrochure(){closeAlarm();$('#detail').hidden=true;if(!$('#brochure-frame').getAttribute('src'))$('#brochure-frame').src='brochure.html?v=brochure-20260912b';$('#brochure-dialog').showModal();}
 $('#close-brochure').onclick=()=>$('#brochure-dialog').close();
 window.addEventListener('message',e=>{if(e.origin===location.origin&&e.source===$('#brochure-frame').contentWindow&&e.data?.type==='close-brochure')$('#brochure-dialog').close();});
 function explain(_,a){if(a.action==='brochure'){openBrochure();return;}if(a.action==='alarm'){toggleAlarm();return;}closeAlarm();$('#detail-title').textContent=a.title;$('#detail-text').textContent=a.text;const cycle=a.action==='wood-cycle';$('#wood-cycle-figure').hidden=!cycle;$('#detail').classList.toggle('with-diagram',cycle);$('#detail').hidden=false;$('#close-detail').focus();}
@@ -41,32 +41,22 @@ $('#open-wood-cycle').onclick=()=>$('#wood-cycle-dialog').showModal();
 $('#close-wood-cycle').onclick=()=>$('#wood-cycle-dialog').close();
 $('#wood-cycle-dialog').addEventListener('click',e=>{if(e.target===e.currentTarget){const r=e.currentTarget.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.currentTarget.close();}});
 async function start(){
- if(window.activeRoomId==='standard'){status.hidden=true;return;}
  try{
   const simple=new URLSearchParams(location.search).get('quality')==='standard';
-  const res=await fetch((window.activeRoomId==='premium'?(simple?'tour-config-equirect.json':'tour-config.json'):'tour-config-'+window.activeRoomId+'.json')+'?v=quality-20260915b');if(!res.ok)throw Error('設定を読み込めません');
+  const res=await fetch((simple?'tour-config-equirect.json':'tour-config.json')+'?v=brochure-20260912b');if(!res.ok)throw Error('設定を読み込めません');
   const config=await res.json();
-  const surfacesResponse=await fetch('surface-config.json?v=quality-20260915b');
+  const surfacesResponse=await fetch('surface-config.json?v=brochure-20260912b');
   if(!surfacesResponse.ok)throw Error('表面の文字設定を読み込めません');
   const surfaces=await surfacesResponse.json();
-  if(matchMedia('(max-width: 640px)').matches){for(const s of Object.values(config.scenes)){s.hfov=window.activeRoomId==='premium'?48:70;s.pitch=Math.min(s.pitch,-8);if(window.activeRoomId==='family')s.yaw=-55;if(window.activeRoomId==='basic')s.yaw=10;}config.default.maxHfov=80;}
+  if(matchMedia('(max-width: 640px)').matches){for(const s of Object.values(config.scenes)){s.hfov=48;s.pitch=Math.min(s.pitch,-8);}config.default.maxHfov=80;}
   for(const scene of Object.values(config.scenes))for(const h of scene.hotSpots){h.createTooltipFunc=hotspot;if(h.type==='info')h.clickHandlerFunc=explain;}
   if(matchMedia('(prefers-reduced-motion: reduce)').matches)config.default.sceneFadeDuration=0;
   viewer=pannellum.viewer('panorama',config);window.tourViewer=viewer;
-  window.createRoomSurfaces(viewer,surfaces,openBrochure,()=>$('#wood-cycle-dialog').showModal());
+  window.createRoomSurfaces(viewer,surfaces,openBrochure);
   const entries=Object.entries(config.scenes);
   for(const [id,s] of entries){const b=document.createElement('button');b.dataset.scene=id;b.setAttribute('aria-label',s.title+'へ移動');const img=document.createElement('img');img.src=s.thumbnail||'thumbnails/'+id+'.jpg';img.alt='';const label=document.createElement('span');label.textContent=s.title;b.append(img,label);b.disabled=!viewer.isLoaded();b.onclick=()=>{if(viewer.isLoaded())viewer.loadScene(id,s.pitch,s.yaw,s.hfov);};$('#scenes').append(b);}
-  function active(id){const i=entries.findIndex(([key])=>key===id);$('#location-index').textContent=String(i+1).padStart(2,'0')+' / '+String(entries.length).padStart(2,'0');$('#location-name').textContent=config.scenes[id].title;for(const b of $('#scenes').children){const selected=b.dataset.scene===id;b.setAttribute('aria-current',selected?'true':'false');if(selected)b.scrollIntoView({block:'nearest',inline:'nearest',behavior:'auto'});}$('#detail').hidden=true;}
+  function active(id){const i=entries.findIndex(([key])=>key===id);$('#location-index').textContent=String(i+1).padStart(2,'0')+' / 06';$('#location-name').textContent=config.scenes[id].title;for(const b of $('#scenes').children){const selected=b.dataset.scene===id;b.setAttribute('aria-current',selected?'true':'false');if(selected)b.scrollIntoView({block:'nearest',inline:'nearest',behavior:'auto'});}$('#detail').hidden=true;}
   active(config.default.firstScene);
-  if(config.views){
-   $('#scenes').replaceChildren();$('#scenes').setAttribute('aria-label','見どころの方向を選ぶ');
-   for(const view of config.views){
-    const button=document.createElement('button');button.textContent=view.title;
-    button.disabled=!viewer.isLoaded();
-    button.onclick=()=>{if(viewer.isLoaded())viewer.lookAt(view.pitch,view.yaw,matchMedia('(max-width:640px)').matches?70:view.hfov,matchMedia('(prefers-reduced-motion: reduce)').matches?false:650);};
-    $('#scenes').append(button);
-   }
-  }
   viewer.on('scenechange',id=>{document.querySelectorAll('#scenes button').forEach(b=>b.disabled=true);closeAlarm();active(id);status.textContent='移動しています…';status.hidden=false;});
   viewer.on('load',()=>{document.querySelectorAll('#scenes button').forEach(b=>b.disabled=false);status.hidden=true;});
   if(viewer.isLoaded())status.hidden=true;
@@ -89,6 +79,4 @@ async function start(){
   document.addEventListener('keydown',e=>{if(e.key==='Escape'){$('#detail').hidden=true;closeAlarm(true);plan(false);}});
  }catch(e){status.textContent='お部屋を読み込めませんでした。通信状態を確認して再読み込みしてください。';console.error(e);}
 }
-$('#room-brochure').onclick=()=>{$('#room-dialog').close();openBrochure();};
-$('#room-cycle').onclick=()=>{$('#room-dialog').close();explain(null,{title:'WOOD CYCLE',text:'森を育て、木を使い、次の森へ。看板と客室ガイドから、森林・木材・建築のつながりを紹介します。',action:'wood-cycle'});};
 start();

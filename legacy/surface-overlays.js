@@ -1,10 +1,10 @@
 /* Editable type is projected onto room surfaces, so it stays legible at any zoom. */
 'use strict';
-window.createRoomSurfaces = function (viewer, config, openBrochure, openCycle) {
+window.createRoomSurfaces = function (viewer, config, openBrochure) {
   const layer = document.createElement('div');
   layer.id = 'room-surfaces';
   document.querySelector('#panorama').append(layer);
-  const faces = {f:0,r:90,b:180,l:-90};
+  const faces = {r:90,b:180};
   const items = [];
   let active = [];
   const rad = d => d * Math.PI / 180;
@@ -34,15 +34,15 @@ window.createRoomSurfaces = function (viewer, config, openBrochure, openCycle) {
     return `matrix3d(${a},${d},0,${g},${b},${e},0,${h},0,0,1,0,${c},${f},0,1)`;
   }
   for(const [scene, surfaces] of Object.entries(config))for(const surface of surfaces){
-    const book=surface.kind==='brochure', cycle=surface.kind==='wood-cycle';
-    const el=document.createElement(book||cycle?'button':'div');
-    el.className='room-surface '+(cycle?'room-cycle-art':book?'room-brochure':'wood-nameplate');
-    const width=cycle?800:book?420:240,height=cycle?1100:book?594:84;
-    el.style.width=width+'px';el.style.height=height+'px';if(surface.clip)el.style.clipPath=surface.clip;
-    if(book||cycle){
-      el.type='button';el.setAttribute('aria-label',cycle?'WOOD CYCLEの公式図を見る':'机のパンフレットを読む');
-      const img=document.createElement('img');img.src=cycle?'assets/wood-cycle-official.png':'assets/brochure-cover.svg';img.alt=cycle?'住友林業 WOOD CYCLE 公式図':'木と過ごす。住友林業の取り組みと木質空間の効果';el.append(img);
-      el.onclick=cycle?openCycle:openBrochure;
+    const book=surface.kind==='brochure';
+    const el=document.createElement(book?'button':'div');
+    el.className='room-surface '+(book?'room-brochure':'wood-nameplate');
+    const width=book?420:240,height=book?594:84;
+    el.style.width=width+'px';el.style.height=height+'px';
+    if(book){
+      el.type='button';el.setAttribute('aria-label','机のパンフレットを読む');
+      const img=document.createElement('img');img.src='../assets/brochure-cover.svg';img.alt='木と過ごす。住友林業の取り組みと木質空間の効果';el.append(img);
+      el.onclick=openBrochure;
       // Keep a tap on the booklet from starting panorama movement.
       for(const event of ['mousedown','touchstart','pointerdown'])el.addEventListener(event,e=>e.stopPropagation());
     } else {
