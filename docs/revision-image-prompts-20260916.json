@@ -1,0 +1,344 @@
+{
+  "date": "2026-09-16",
+  "tool": "built-in image_gen",
+  "records": [
+    {
+      "source": "family-generation.json",
+      "generations": [
+        {
+          "face": "f",
+          "path": "exec-603b93b8-99a2-460e-971c-a544e6494a45.png",
+          "prompt": "Use case: precise-object-edit. Image1 is the exact edit target, a square 100-degree perspective face used in a 360-degree hotel panorama. Replace ALL fabric drapes and curtain rods around the large window with beautifully constructed horizontal Japanese cedar wooden Venetian blinds: thin straight evenly spaced slats, raised to upper quarter of window, two neat ladder tapes and a matching wooden headrail, leaving the city view open. Remove fabric curtains on both sides. Keep entire window opening, skyline and furniture fixed. The interior timber is pollen-free Japanese cedar (sugi): fine warm pale cedar grain, matte finish; preserve current warm color and plank layout. Preserve exact camera, perspective, framing, geometry, image edges, lighting, all other objects including BAUM and three spray bottles, plush and log pillows. Highest possible photographic detail and resolution square output. No crop, no zoom, no new furniture except as expressly requested, no watermark."
+        },
+        {
+          "face": "r",
+          "path": "exec-050acf72-63b2-4fa9-87fb-be0ace8384a1.png",
+          "prompt": "Use case: precise-object-edit. Image1 is the exact edit target, a square 100-degree perspective face used in a 360-degree hotel panorama. Replace the malformed animal shapes on the existing rectangular wooden discovery panel with exactly SIX exquisite clean carved wood relief silhouettes, arranged in two rows of three: Japanese deer with anatomically plausible slender antlers, squirrel with one curled bushy tail, rabbit with two long ears; fox with pointed ears and bushy tail, owl with symmetric wings folded, bear with rounded ears. Each animal must be one complete clearly recognizable continuous silhouette, neatly CNC cut with softly rounded polished edges, no detached parts, twisted limbs, stray holes or abstract blobs. Preserve panel dimensions, position and wood color. Keep leaf and bat hanging mobiles neat and plausible. No text on this panel. The interior timber is pollen-free Japanese cedar (sugi): fine warm pale cedar grain, matte finish; preserve current warm color and plank layout. Preserve exact camera, perspective, framing, geometry, image edges, lighting, all other objects including BAUM and three spray bottles, plush and log pillows. Highest possible photographic detail and resolution square output. No crop, no zoom, no new furniture except as expressly requested, no watermark."
+        },
+        {
+          "face": "b",
+          "path": "exec-6f001f81-feb9-4d6d-ba40-f69ab6141312.png",
+          "prompt": "Use case: precise-object-edit. Image1 is the exact edit target, a square 100-degree perspective face used in a 360-degree hotel panorama. Replace only the tall full-height mirror recess visible on the RIGHT edge with a precisely constructed recessed cedar wardrobe in that same footprint: straight rectangular carcass, upper shelf, one level black clothes rail, two separate triangular wooden hangers, bottom shelf for luggage. Clean joinery, realistic shelf thickness, no bent/intersecting bars. It must be flush with wall, clear of the entrance doorway. Preserve entrance door and all desk objects and existing blank wall picture frame. The interior timber is pollen-free Japanese cedar (sugi): fine warm pale cedar grain, matte finish; preserve current warm color and plank layout. Preserve exact camera, perspective, framing, geometry, image edges, lighting, all other objects including BAUM and three spray bottles, plush and log pillows. Highest possible photographic detail and resolution square output. No crop, no zoom, no new furniture except as expressly requested, no watermark."
+        },
+        {
+          "face": "l",
+          "path": "exec-8e406950-ff62-4600-b04c-fff50fb7982a.png",
+          "prompt": "Use case: precise-object-edit. Image1 is the exact edit target, a square 100-degree perspective face used in a 360-degree hotel panorama. Replace the tall full-height mirror recess on the LEFT side with a beautifully made recessed cedar wardrobe in the same footprint: rectangular straight carcass, upper shelf, one horizontal black clothes rail, two separate triangular wooden hangers, bottom luggage shelf. Clean joinery, realistic shelf thickness, no bent/intersecting bars. Keep entrance path clear. Add ONE larger wooden bedside alarm speaker on the existing bedside table BETWEEN the two beds (near right side of view). It is approximately 32 cm wide x 20 cm high x 16 cm deep, rectangular cedar enclosure, broad beige woven grille, two small control knobs on top. Clearly visible and convincingly supported by the table. Preserve both plush character identities and log pillows exactly. The interior timber is pollen-free Japanese cedar (sugi): fine warm pale cedar grain, matte finish; preserve current warm color and plank layout. Preserve exact camera, perspective, framing, geometry, image edges, lighting, all other objects including BAUM and three spray bottles, plush and log pillows. Highest possible photographic detail and resolution square output. No crop, no zoom, no new furniture except as expressly requested, no watermark."
+        }
+      ]
+    },
+    {
+      "source": "business-generation.json",
+      "generations": [
+        {
+          "name": "PANO_01_ENTRANCE-window",
+          "scene": "PANO_01_ENTRANCE",
+          "kind": "window",
+          "yaw": 8.280000000000001,
+          "pitch": 0,
+          "fov": 100,
+          "path": "project/assets/revision-20260916/input/PANO_01_ENTRANCE-window.png",
+          "source": "premium-4k.jpg",
+          "output": "exec-49cfce2f-735b-4774-ae78-85bfbb691b80.png",
+          "prompt": "Use case: precise-object-edit. Image1 is a square perspective patch from a 4K 360-degree Japanese wood hotel room. Replace every fabric curtain/drape and rod at the window, including its visible mirror reflection, with warm pale cedar wooden Venetian blinds. Straight evenly spaced thin horizontal slats, coherent headrail and two ladder tapes. Blinds raised to the top quarter of the window, leaving most of the city view fully visible. Remove side fabric curtains entirely. Preserve the window opening and skyline, exact camera geometry. Preserve all other objects, architecture, camera, perspective, frame edges, light, colors and precise geometry. Pollen-free Japanese cedar (sugi) timber with warm matte fine grain. Highest available resolution and clear architectural photographic detail. Do not crop, zoom, redesign room, distort, add text, or change plush."
+        },
+        {
+          "name": "PANO_01_ENTRANCE-closet",
+          "scene": "PANO_01_ENTRANCE",
+          "kind": "closet",
+          "yaw": 150,
+          "pitch": -6,
+          "fov": 80,
+          "path": "project/assets/revision-20260916/input/PANO_01_ENTRANCE-closet.png",
+          "source": "premium-4k.jpg",
+          "output": "exec-c69ae5e1-7710-462b-b27e-f446bd674d3f.png",
+          "prompt": "Use case: precise-object-edit. Image1 is a square perspective patch from a 4K 360-degree Japanese wood hotel room. Refine the existing wardrobe construction, wherever visible: straight rectangular cedar carcass, clean coherent corners, level full-depth shelves of realistic thickness, one straight clothes rail, exactly two distinct symmetrical wooden triangular hangers with curved black metal hooks, generous clear hanging space and one low luggage shelf. Fix crooked or intersecting hangers and warped shelving. Keep exact existing wardrobe footprint and door opening locations; if only its side panel is visible, refine the panel without revealing an impossible interior. Preserve all entry tile, slippers, entrance door, desk and accessories. Add no furniture in doorway. Preserve all other objects, architecture, camera, perspective, frame edges, light, colors and precise geometry. Pollen-free Japanese cedar (sugi) timber with warm matte fine grain. Highest available resolution and clear architectural photographic detail. Do not crop, zoom, redesign room, distort, add text, or change plush."
+        },
+        {
+          "name": "PANO_01_ENTRANCE-speaker",
+          "scene": "PANO_01_ENTRANCE",
+          "kind": "speaker",
+          "yaw": 52,
+          "pitch": -23,
+          "fov": 60,
+          "path": "project/assets/revision-20260916/input/PANO_01_ENTRANCE-speaker.png",
+          "source": "premium-4k.jpg",
+          "output": "exec-5deecfb4-81a9-4e1b-b696-a790be2e4559.png",
+          "prompt": "Use case: precise-object-edit. Image1 is a square perspective patch from a 4K 360-degree Japanese wood hotel room. Enlarge the EXISTING small wooden cube alarm speaker on the bedside table next to the bed and desk into a substantial handsome horizontal rectangular speaker, approximately 32cm wide x20cm high x16cm deep, warm pale cedar enclosure, wide beige woven fabric front grille, two small dark control knobs on top. Keep it on the same bedside table, supported within the tabletop. Increase the existing object's width about 1.8 times and height about 1.35 times. Keep exact location, no second speaker. If the speaker is partially occluded by bed/desk, keep realistic occlusion. Preserve plush face and log pillow, BAUM and spray bottles exactly. Preserve all other objects, architecture, camera, perspective, frame edges, light, colors and precise geometry. Pollen-free Japanese cedar (sugi) timber with warm matte fine grain. Highest available resolution and clear architectural photographic detail. Do not crop, zoom, redesign room, distort, add text, or change plush."
+        },
+        {
+          "name": "PANO_02_DESK-window",
+          "scene": "PANO_02_DESK",
+          "kind": "window",
+          "yaw": -2.1599999999999966,
+          "pitch": 0,
+          "fov": 100,
+          "path": "project/assets/revision-20260916/input/PANO_02_DESK-window.png",
+          "source": "premium-02_DESK-4k.jpg",
+          "output": "exec-6d066560-72b7-4bcc-b7d0-05118bb9af71.png",
+          "prompt": "Use case: precise-object-edit. Image1 is a square perspective patch from a 4K 360-degree Japanese wood hotel room. Replace every fabric curtain/drape and rod at the window, including its visible mirror reflection, with warm pale cedar wooden Venetian blinds. Straight evenly spaced thin horizontal slats, coherent headrail and two ladder tapes. Blinds raised to the top quarter of the window, leaving most of the city view fully visible. Remove side fabric curtains entirely. Preserve the window opening and skyline, exact camera geometry. Preserve all other objects, architecture, camera, perspective, frame edges, light, colors and precise geometry. Pollen-free Japanese cedar (sugi) timber with warm matte fine grain. Highest available resolution and clear architectural photographic detail. Do not crop, zoom, redesign room, distort, add text, or change plush."
+        },
+        {
+          "name": "PANO_02_DESK-closet",
+          "scene": "PANO_02_DESK",
+          "kind": "closet",
+          "yaw": 174,
+          "pitch": -6,
+          "fov": 80,
+          "path": "project/assets/revision-20260916/input/PANO_02_DESK-closet.png",
+          "source": "premium-02_DESK-4k.jpg",
+          "output": "exec-2849f593-3117-4d3a-87f7-3198fb02fa52.png",
+          "prompt": "Use case: precise-object-edit. Image1 is a square perspective patch from a 4K 360-degree Japanese wood hotel room. Refine the existing wardrobe construction, wherever visible: straight rectangular cedar carcass, clean coherent corners, level full-depth shelves of realistic thickness, one straight clothes rail, exactly two distinct symmetrical wooden triangular hangers with curved black metal hooks, generous clear hanging space and one low luggage shelf. Fix crooked or intersecting hangers and warped shelving. Keep exact existing wardrobe footprint and door opening locations; if only its side panel is visible, refine the panel without revealing an impossible interior. Preserve all entry tile, slippers, entrance door, desk and accessories. Add no furniture in doorway. Preserve all other objects, architecture, camera, perspective, frame edges, light, colors and precise geometry. Pollen-free Japanese cedar (sugi) timber with warm matte fine grain. Highest available resolution and clear architectural photographic detail. Do not crop, zoom, redesign room, distort, add text, or change plush."
+        },
+        {
+          "name": "PANO_02_DESK-speaker",
+          "scene": "PANO_02_DESK",
+          "kind": "speaker",
+          "yaw": 52.4,
+          "pitch": -31.1,
+          "fov": 60,
+          "path": "project/assets/revision-20260916/input/PANO_02_DESK-speaker.png",
+          "source": "premium-02_DESK-4k.jpg",
+          "output": "exec-da53ef3a-962c-48b6-bf0c-1d7ae6633ae3.png",
+          "prompt": "Use case: precise-object-edit. Image1 is a square perspective patch from a 4K 360-degree Japanese wood hotel room. Enlarge the EXISTING small wooden cube alarm speaker on the bedside table next to the bed and desk into a substantial handsome horizontal rectangular speaker, approximately 32cm wide x20cm high x16cm deep, warm pale cedar enclosure, wide beige woven fabric front grille, two small dark control knobs on top. Keep it on the same bedside table, supported within the tabletop. Increase the existing object's width about 1.8 times and height about 1.35 times. Keep exact location, no second speaker. If the speaker is partially occluded by bed/desk, keep realistic occlusion. Preserve plush face and log pillow, BAUM and spray bottles exactly. Preserve all other objects, architecture, camera, perspective, frame edges, light, colors and precise geometry. Pollen-free Japanese cedar (sugi) timber with warm matte fine grain. Highest available resolution and clear architectural photographic detail. Do not crop, zoom, redesign room, distort, add text, or change plush."
+        },
+        {
+          "name": "PANO_03_BED_FOOT-window",
+          "scene": "PANO_03_BED_FOOT",
+          "kind": "window",
+          "yaw": 18.00000000000003,
+          "pitch": 0,
+          "fov": 100,
+          "path": "project/assets/revision-20260916/input/PANO_03_BED_FOOT-window.png",
+          "source": "premium-03_BED_FOOT-4k.jpg",
+          "output": "exec-6aa12b97-575a-44b4-9fe1-56f58425979f.png",
+          "prompt": "Use case: precise-object-edit. Image1 is a square perspective patch from a 4K 360-degree Japanese wood hotel room. Replace every fabric curtain/drape and rod at the window, including its visible mirror reflection, with warm pale cedar wooden Venetian blinds. Straight evenly spaced thin horizontal slats, coherent headrail and two ladder tapes. Blinds raised to the top quarter of the window, leaving most of the city view fully visible. Remove side fabric curtains entirely. Preserve the window opening and skyline, exact camera geometry. Preserve all other objects, architecture, camera, perspective, frame edges, light, colors and precise geometry. Pollen-free Japanese cedar (sugi) timber with warm matte fine grain. Highest available resolution and clear architectural photographic detail. Do not crop, zoom, redesign room, distort, add text, or change plush."
+        },
+        {
+          "name": "PANO_03_BED_FOOT-closet",
+          "scene": "PANO_03_BED_FOOT",
+          "kind": "closet",
+          "yaw": 155,
+          "pitch": -6,
+          "fov": 80,
+          "path": "project/assets/revision-20260916/input/PANO_03_BED_FOOT-closet.png",
+          "source": "premium-03_BED_FOOT-4k.jpg",
+          "output": "exec-8d8e0c8d-019d-4512-ab98-26ba03f2e4c0.png",
+          "prompt": "Use case: precise-object-edit. Image1 is a square perspective patch from a 4K 360-degree Japanese wood hotel room. Refine the existing wardrobe construction, wherever visible: straight rectangular cedar carcass, clean coherent corners, level full-depth shelves of realistic thickness, one straight clothes rail, exactly two distinct symmetrical wooden triangular hangers with curved black metal hooks, generous clear hanging space and one low luggage shelf. Fix crooked or intersecting hangers and warped shelving. Keep exact existing wardrobe footprint and door opening locations; if only its side panel is visible, refine the panel without revealing an impossible interior. Preserve all entry tile, slippers, entrance door, desk and accessories. Add no furniture in doorway. Preserve all other objects, architecture, camera, perspective, frame edges, light, colors and precise geometry. Pollen-free Japanese cedar (sugi) timber with warm matte fine grain. Highest available resolution and clear architectural photographic detail. Do not crop, zoom, redesign room, distort, add text, or change plush."
+        },
+        {
+          "name": "PANO_03_BED_FOOT-speaker",
+          "scene": "PANO_03_BED_FOOT",
+          "kind": "speaker",
+          "yaw": 106,
+          "pitch": -18,
+          "fov": 60,
+          "path": "project/assets/revision-20260916/input/PANO_03_BED_FOOT-speaker.png",
+          "source": "premium-03_BED_FOOT-4k.jpg",
+          "output": "exec-b841026f-87c8-40f5-b741-9ee3c428cb0b.png",
+          "prompt": "Use case: precise-object-edit. Image1 is a square perspective patch from a 4K 360-degree Japanese wood hotel room. Enlarge the EXISTING small wooden cube alarm speaker on the bedside table next to the bed and desk into a substantial handsome horizontal rectangular speaker, approximately 32cm wide x20cm high x16cm deep, warm pale cedar enclosure, wide beige woven fabric front grille, two small dark control knobs on top. Keep it on the same bedside table, supported within the tabletop. Increase the existing object's width about 1.8 times and height about 1.35 times. Keep exact location, no second speaker. If the speaker is partially occluded by bed/desk, keep realistic occlusion. Preserve plush face and log pillow, BAUM and spray bottles exactly. Preserve all other objects, architecture, camera, perspective, frame edges, light, colors and precise geometry. Pollen-free Japanese cedar (sugi) timber with warm matte fine grain. Highest available resolution and clear architectural photographic detail. Do not crop, zoom, redesign room, distort, add text, or change plush."
+        },
+        {
+          "name": "PANO_04_BED_SIDE-window",
+          "scene": "PANO_04_BED_SIDE",
+          "kind": "window",
+          "yaw": -7.200000000000017,
+          "pitch": 0,
+          "fov": 100,
+          "path": "project/assets/revision-20260916/input/PANO_04_BED_SIDE-window.png",
+          "source": "premium-04_BED_SIDE-4k.jpg",
+          "output": "exec-fc05a492-b8b7-408a-8525-d15904c4e040.png",
+          "prompt": "Use case: precise-object-edit. Image1 is a square perspective patch from a 4K 360-degree Japanese wood hotel room. Replace every fabric curtain/drape and rod at the window, including its visible mirror reflection, with warm pale cedar wooden Venetian blinds. Straight evenly spaced thin horizontal slats, coherent headrail and two ladder tapes. Blinds raised to the top quarter of the window, leaving most of the city view fully visible. Remove side fabric curtains entirely. Preserve the window opening and skyline, exact camera geometry. Preserve all other objects, architecture, camera, perspective, frame edges, light, colors and precise geometry. Pollen-free Japanese cedar (sugi) timber with warm matte fine grain. Highest available resolution and clear architectural photographic detail. Do not crop, zoom, redesign room, distort, add text, or change plush."
+        },
+        {
+          "name": "PANO_04_BED_SIDE-closet",
+          "scene": "PANO_04_BED_SIDE",
+          "kind": "closet",
+          "yaw": -175,
+          "pitch": -6,
+          "fov": 80,
+          "path": "project/assets/revision-20260916/input/PANO_04_BED_SIDE-closet.png",
+          "source": "premium-04_BED_SIDE-4k.jpg",
+          "output": "exec-14c88edc-8f97-4dbe-beda-df4d11682580.png",
+          "prompt": "Use case: precise-object-edit. Image1 is a square perspective patch from a 4K 360-degree Japanese wood hotel room. Refine the existing wardrobe construction, wherever visible: straight rectangular cedar carcass, clean coherent corners, level full-depth shelves of realistic thickness, one straight clothes rail, exactly two distinct symmetrical wooden triangular hangers with curved black metal hooks, generous clear hanging space and one low luggage shelf. Fix crooked or intersecting hangers and warped shelving. Keep exact existing wardrobe footprint and door opening locations; if only its side panel is visible, refine the panel without revealing an impossible interior. Preserve all entry tile, slippers, entrance door, desk and accessories. Add no furniture in doorway. Preserve all other objects, architecture, camera, perspective, frame edges, light, colors and precise geometry. Pollen-free Japanese cedar (sugi) timber with warm matte fine grain. Highest available resolution and clear architectural photographic detail. Do not crop, zoom, redesign room, distort, add text, or change plush."
+        },
+        {
+          "name": "PANO_04_BED_SIDE-speaker",
+          "scene": "PANO_04_BED_SIDE",
+          "kind": "speaker",
+          "yaw": 72,
+          "pitch": -44.6,
+          "fov": 60,
+          "path": "project/assets/revision-20260916/input/PANO_04_BED_SIDE-speaker.png",
+          "source": "premium-04_BED_SIDE-4k.jpg",
+          "output": "exec-c7ca373d-2e4a-4a9f-8433-1062b6abc2d3.png",
+          "prompt": "Use case: precise-object-edit. Image1 is a square perspective patch from a 4K 360-degree Japanese wood hotel room. Enlarge the EXISTING small wooden cube alarm speaker on the bedside table next to the bed and desk into a substantial handsome horizontal rectangular speaker, approximately 32cm wide x20cm high x16cm deep, warm pale cedar enclosure, wide beige woven fabric front grille, two small dark control knobs on top. Keep it on the same bedside table, supported within the tabletop. Increase the existing object's width about 1.8 times and height about 1.35 times. Keep exact location, no second speaker. If the speaker is partially occluded by bed/desk, keep realistic occlusion. Preserve plush face and log pillow, BAUM and spray bottles exactly. Preserve all other objects, architecture, camera, perspective, frame edges, light, colors and precise geometry. Pollen-free Japanese cedar (sugi) timber with warm matte fine grain. Highest available resolution and clear architectural photographic detail. Do not crop, zoom, redesign room, distort, add text, or change plush."
+        },
+        {
+          "name": "PANO_05_WINDOW-window",
+          "scene": "PANO_05_WINDOW",
+          "kind": "window",
+          "yaw": 26.99999999999997,
+          "pitch": 0,
+          "fov": 100,
+          "path": "project/assets/revision-20260916/input/PANO_05_WINDOW-window.png",
+          "source": "premium-05_WINDOW-4k.jpg",
+          "output": "exec-e9d63bf2-f491-4ed9-bd05-222fc2f1f5c4.png",
+          "prompt": "Use case: precise-object-edit. Image1 is a square perspective patch from a 4K 360-degree Japanese wood hotel room. Replace every fabric curtain/drape and rod at the window, including its visible mirror reflection, with warm pale cedar wooden Venetian blinds. Straight evenly spaced thin horizontal slats, coherent headrail and two ladder tapes. Blinds raised to the top quarter of the window, leaving most of the city view fully visible. Remove side fabric curtains entirely. Preserve the window opening and skyline, exact camera geometry. Preserve all other objects, architecture, camera, perspective, frame edges, light, colors and precise geometry. Pollen-free Japanese cedar (sugi) timber with warm matte fine grain. Highest available resolution and clear architectural photographic detail. Do not crop, zoom, redesign room, distort, add text, or change plush."
+        },
+        {
+          "name": "PANO_05_WINDOW-closet",
+          "scene": "PANO_05_WINDOW",
+          "kind": "closet",
+          "yaw": 163,
+          "pitch": -6,
+          "fov": 80,
+          "path": "project/assets/revision-20260916/input/PANO_05_WINDOW-closet.png",
+          "source": "premium-05_WINDOW-4k.jpg",
+          "output": "exec-eb6db282-656e-4a7f-ba68-b42b0a0f8cba.png",
+          "prompt": "Use case: precise-object-edit. Image1 is a square perspective patch from a 4K 360-degree Japanese wood hotel room. Refine the existing wardrobe construction, wherever visible: straight rectangular cedar carcass, clean coherent corners, level full-depth shelves of realistic thickness, one straight clothes rail, exactly two distinct symmetrical wooden triangular hangers with curved black metal hooks, generous clear hanging space and one low luggage shelf. Fix crooked or intersecting hangers and warped shelving. Keep exact existing wardrobe footprint and door opening locations; if only its side panel is visible, refine the panel without revealing an impossible interior. Preserve all entry tile, slippers, entrance door, desk and accessories. Add no furniture in doorway. Preserve all other objects, architecture, camera, perspective, frame edges, light, colors and precise geometry. Pollen-free Japanese cedar (sugi) timber with warm matte fine grain. Highest available resolution and clear architectural photographic detail. Do not crop, zoom, redesign room, distort, add text, or change plush."
+        },
+        {
+          "name": "PANO_05_WINDOW-speaker",
+          "scene": "PANO_05_WINDOW",
+          "kind": "speaker",
+          "yaw": 139,
+          "pitch": -19,
+          "fov": 60,
+          "path": "project/assets/revision-20260916/input/PANO_05_WINDOW-speaker.png",
+          "source": "premium-05_WINDOW-4k.jpg",
+          "output": "exec-24de3de3-8f02-4d73-bd8f-72b377011cf7.png",
+          "prompt": "Use case: precise-object-edit. Image1 is a square perspective patch from a 4K 360-degree Japanese wood hotel room. Enlarge the EXISTING small wooden cube alarm speaker on the bedside table next to the bed and desk into a substantial handsome horizontal rectangular speaker, approximately 32cm wide x20cm high x16cm deep, warm pale cedar enclosure, wide beige woven fabric front grille, two small dark control knobs on top. Keep it on the same bedside table, supported within the tabletop. Increase the existing object's width about 1.8 times and height about 1.35 times. Keep exact location, no second speaker. If the speaker is partially occluded by bed/desk, keep realistic occlusion. Preserve plush face and log pillow, BAUM and spray bottles exactly. Preserve all other objects, architecture, camera, perspective, frame edges, light, colors and precise geometry. Pollen-free Japanese cedar (sugi) timber with warm matte fine grain. Highest available resolution and clear architectural photographic detail. Do not crop, zoom, redesign room, distort, add text, or change plush."
+        },
+        {
+          "name": "PANO_06_LOUNGE-window",
+          "scene": "PANO_06_LOUNGE",
+          "kind": "window",
+          "yaw": -10.800000000000011,
+          "pitch": 0,
+          "fov": 100,
+          "path": "project/assets/revision-20260916/input/PANO_06_LOUNGE-window.png",
+          "source": "premium-06_LOUNGE-4k.jpg",
+          "output": "exec-0844e6cb-fbbc-4491-9c01-5f72ac7bcc84.png",
+          "prompt": "Use case: precise-object-edit. Image1 is a square perspective patch from a 4K 360-degree Japanese wood hotel room. Replace every fabric curtain/drape and rod at the window, including its visible mirror reflection, with warm pale cedar wooden Venetian blinds. Straight evenly spaced thin horizontal slats, coherent headrail and two ladder tapes. Blinds raised to the top quarter of the window, leaving most of the city view fully visible. Remove side fabric curtains entirely. Preserve the window opening and skyline, exact camera geometry. Preserve all other objects, architecture, camera, perspective, frame edges, light, colors and precise geometry. Pollen-free Japanese cedar (sugi) timber with warm matte fine grain. Highest available resolution and clear architectural photographic detail. Do not crop, zoom, redesign room, distort, add text, or change plush."
+        },
+        {
+          "name": "PANO_06_LOUNGE-closet",
+          "scene": "PANO_06_LOUNGE",
+          "kind": "closet",
+          "yaw": 175,
+          "pitch": -6,
+          "fov": 80,
+          "path": "project/assets/revision-20260916/input/PANO_06_LOUNGE-closet.png",
+          "source": "premium-06_LOUNGE-4k.jpg",
+          "output": "exec-fce60f08-e7a3-490e-8f69-06d0c98efe33.png",
+          "prompt": "Use case: precise-object-edit. Image1 is a square perspective patch from a 4K 360-degree Japanese wood hotel room. Refine the existing wardrobe construction, wherever visible: straight rectangular cedar carcass, clean coherent corners, level full-depth shelves of realistic thickness, one straight clothes rail, exactly two distinct symmetrical wooden triangular hangers with curved black metal hooks, generous clear hanging space and one low luggage shelf. Fix crooked or intersecting hangers and warped shelving. Keep exact existing wardrobe footprint and door opening locations; if only its side panel is visible, refine the panel without revealing an impossible interior. Preserve all entry tile, slippers, entrance door, desk and accessories. Add no furniture in doorway. Preserve all other objects, architecture, camera, perspective, frame edges, light, colors and precise geometry. Pollen-free Japanese cedar (sugi) timber with warm matte fine grain. Highest available resolution and clear architectural photographic detail. Do not crop, zoom, redesign room, distort, add text, or change plush."
+        },
+        {
+          "name": "PANO_06_LOUNGE-speaker",
+          "scene": "PANO_06_LOUNGE",
+          "kind": "speaker",
+          "yaw": 156,
+          "pitch": -20,
+          "fov": 60,
+          "path": "project/assets/revision-20260916/input/PANO_06_LOUNGE-speaker.png",
+          "source": "premium-06_LOUNGE-4k.jpg",
+          "output": "exec-fb094d12-86ca-466d-a1ab-9ad95d567952.png",
+          "prompt": "Use case: precise-object-edit. Image1 is a square perspective patch from a 4K 360-degree Japanese wood hotel room. Enlarge the EXISTING small wooden cube alarm speaker on the bedside table next to the bed and desk into a substantial handsome horizontal rectangular speaker, approximately 32cm wide x20cm high x16cm deep, warm pale cedar enclosure, wide beige woven fabric front grille, two small dark control knobs on top. Keep it on the same bedside table, supported within the tabletop. Increase the existing object's width about 1.8 times and height about 1.35 times. Keep exact location, no second speaker. If the speaker is partially occluded by bed/desk, keep realistic occlusion. Preserve plush face and log pillow, BAUM and spray bottles exactly. Preserve all other objects, architecture, camera, perspective, frame edges, light, colors and precise geometry. Pollen-free Japanese cedar (sugi) timber with warm matte fine grain. Highest available resolution and clear architectural photographic detail. Do not crop, zoom, redesign room, distort, add text, or change plush."
+        }
+      ]
+    },
+    {
+      "source": "family-viewpoint-generation.json",
+      "generations": [
+        {
+          "id": "family-play",
+          "path": "exec-870910e1-296c-4cc6-acf7-b6c1c089f9ae.png",
+          "prompt": "Use case: precise-object-edit. Asset: a second camera position in the SAME hotel room. Image1 is the full 360x180 equirectangular room panorama and geometry authority. Image2 is close detail of the exact animal wall ONLY. Move the camera physically about 1.8 meters forward and 1.2 meters right from its current position, to the open aisle beside the low round play table, about one meter in front of the animal discovery wall. The play wall is now much closer on the RIGHT side at yaw +90 degrees; two beds are across the room on LEFT at yaw -90; the window stays FORWARD at yaw 0; desk and entry BEHIND at yaw180. The foreground table has stronger parallax; do not merely rotate or zoom the previous image. Standing camera height 1.35m. Produce an exact 2:1 full 360x180 equirectangular spherical panorama, level equator, correct spherical ceiling and floor poles, left/right seamless at rear wall. Preserve room architecture and furniture locations: exactly2beds with Kikorin plush and soft log pillows; wide window with WOOD VENETIAN BLINDS raised to upperquarter NO fabric curtains; pale Japanese cedar floor walls ceiling; cedar closet by entrance with straight shelves, two separate wooden hangers and black rail; larger32cm rectangular wood speaker with beige grille betweenbeds; low round playtable on beige roundrug with greenfloorcushions; crisp six carved animals deer squirrel rabbit fox owl bear in 2x3grid; deerantlerhook, hanging leaf and bat mobiles, bookcase; desk with laptop2BAUM and exactly3woodsprays; original blank ivory WOODCYCLE frame remains atdesk for actualart insertion. Keep same urban skyline warmdaylight and premium detailed photographic style, no redesign, no duplicated furniture, no malformed animals, no text orUI. Highest resolution full2:1 equirectangular image. This must be the new physical viewpoint described above, while keeping room dimensions and furniture layout consistent."
+        },
+        {
+          "id": "family-window",
+          "path": "exec-7b79bf29-8cbb-49cd-9937-62e4eabb7db2.png",
+          "prompt": "Use case: precise-object-edit. Asset: a second camera position in the SAME hotel room. Image1 is the full 360x180 equirectangular room panorama and geometry authority. Image2 is close detail of the exact animal wall ONLY. Move the camera physically about 3 meters forward from its current position, to the clear aisle near the large window between the window-side bed and play table. The window is now very close directly FORWARD at yaw 0, beds and large speaker LEFT at yaw -90 and behind-left, animal panel RIGHT at yaw +90 and behind-right, distant entry and desk BEHIND at yaw180. The view across the room from this new camera must show strong convincing parallax, not merely rotation or zoom. Standing camera height1.35m. Produce an exact 2:1 full 360x180 equirectangular spherical panorama, level equator, correct spherical ceiling and floor poles, left/right seamless at rear wall. Preserve room architecture and furniture locations: exactly2beds with Kikorin plush and soft log pillows; wide window with WOOD VENETIAN BLINDS raised to upperquarter NO fabric curtains; pale Japanese cedar floor walls ceiling; cedar closet by entrance with straight shelves, two separate wooden hangers and black rail; larger32cm rectangular wood speaker with beige grille betweenbeds; low round playtable on beige roundrug with greenfloorcushions; crisp six carved animals deer squirrel rabbit fox owl bear in 2x3grid; deerantlerhook, hanging leaf and bat mobiles, bookcase; desk with laptop2BAUM and exactly3woodsprays; original blank ivory WOODCYCLE frame remains atdesk for actualart insertion. Keep same urban skyline warmdaylight and premium detailed photographic style, no redesign, no duplicated furniture, no malformed animals, no text orUI. Highest resolution full2:1 equirectangular image. This must be the new physical viewpoint described above, while keeping room dimensions and furniture layout consistent."
+        }
+      ]
+    },
+    {
+      "source": "family-detail-generation.json",
+      "generations": [
+        {
+          "id": "family-play",
+          "face": "f",
+          "path": "exec-f640a8c1-810b-4952-853c-53973e384890.png",
+          "prompt": "Use case: precise-object-edit. Enhance this exact square 100-degree perspective face of the family hotel panorama. Highest resolution crisp architectural photograph, fine warm cedar wood grain, linen and rug weave, clean furniture edges, natural daylight. Preserve every visible object and camera position. Preserve EXACT camera, field of view, framing, all straight lines, composition, room layout and edge pixels. Keep timber Venetian blinds, no fabric curtains; animals remain six complete recognizable carved silhouettes deer squirrel rabbit fox owl bear; never distort their anatomy. Keep exact Kikorin plush faces with green leaf eyes and white outline, nose and legs. Keep large cedar speaker with beige grille, BAUM, log pillows and sprays where present. Do not crop, zoom, invent objects, add people, change lighting or colors, or turn this into an illustration."
+        },
+        {
+          "id": "family-play",
+          "face": "r",
+          "path": "exec-8d2f96bb-4e5b-4563-aa46-e081201691b8.png",
+          "prompt": "Use case: precise-object-edit. Enhance this exact square 100-degree perspective face of the family hotel panorama. Highest resolution crisp architectural photograph, fine warm cedar wood grain, linen and rug weave, clean furniture edges, natural daylight. Preserve every visible object and camera position. Preserve EXACT camera, field of view, framing, all straight lines, composition, room layout and edge pixels. Keep timber Venetian blinds, no fabric curtains; animals remain six complete recognizable carved silhouettes deer squirrel rabbit fox owl bear; never distort their anatomy. Keep exact Kikorin plush faces with green leaf eyes and white outline, nose and legs. Keep large cedar speaker with beige grille, BAUM, log pillows and sprays where present. Do not crop, zoom, invent objects, add people, change lighting or colors, or turn this into an illustration."
+        },
+        {
+          "id": "family-play",
+          "face": "b",
+          "path": "exec-ff3f5569-c6e0-4d4d-ba50-7d2803368454.png",
+          "prompt": "Use case: precise-object-edit. Enhance this exact square 100-degree perspective face of the family hotel panorama. Highest resolution crisp architectural photograph, fine warm cedar wood grain, linen and rug weave, clean furniture edges, natural daylight. Preserve every visible object and camera position. On the desk retain the existing laptop and add two white BAUM bottles with wooden caps and exactly three small amber room spray bottles on one cedar tray beside the laptop, at the rear edge of the desktop. Preserve any existing blank framed ivory artwork above the desk. Preserve EXACT camera, field of view, framing, all straight lines, composition, room layout and edge pixels. Keep timber Venetian blinds, no fabric curtains; animals remain six complete recognizable carved silhouettes deer squirrel rabbit fox owl bear; never distort their anatomy. Keep exact Kikorin plush faces with green leaf eyes and white outline, nose and legs. Keep large cedar speaker with beige grille, BAUM, log pillows and sprays where present. Do not crop, zoom, invent objects, add people, change lighting or colors, or turn this into an illustration."
+        },
+        {
+          "id": "family-play",
+          "face": "l",
+          "path": "exec-59ba6a1f-fecf-46e4-978f-252e73baa593.png",
+          "prompt": "Use case: precise-object-edit. Enhance this exact square 100-degree perspective face of the family hotel panorama. Highest resolution crisp architectural photograph, fine warm cedar wood grain, linen and rug weave, clean furniture edges, natural daylight. Preserve every visible object and camera position. Preserve EXACT camera, field of view, framing, all straight lines, composition, room layout and edge pixels. Keep timber Venetian blinds, no fabric curtains; animals remain six complete recognizable carved silhouettes deer squirrel rabbit fox owl bear; never distort their anatomy. Keep exact Kikorin plush faces with green leaf eyes and white outline, nose and legs. Keep large cedar speaker with beige grille, BAUM, log pillows and sprays where present. Do not crop, zoom, invent objects, add people, change lighting or colors, or turn this into an illustration."
+        },
+        {
+          "id": "family-play",
+          "face": "u",
+          "path": "exec-f44f2008-335a-4fe0-9b92-18963dc43a5d.png",
+          "prompt": "Use case: precise-object-edit. Enhance this exact square 100-degree perspective face of the family hotel panorama. Highest resolution crisp architectural photograph, fine warm cedar wood grain, linen and rug weave, clean furniture edges, natural daylight. This is a view straight UP at the ceiling: show ONLY the same ceiling, lights, beam and existing mobiles if already visible. No beds or other invented objects. Preserve EXACT camera, field of view, framing, all straight lines, composition, room layout and edge pixels. Keep timber Venetian blinds, no fabric curtains; animals remain six complete recognizable carved silhouettes deer squirrel rabbit fox owl bear; never distort their anatomy. Keep exact Kikorin plush faces with green leaf eyes and white outline, nose and legs. Keep large cedar speaker with beige grille, BAUM, log pillows and sprays where present. Do not crop, zoom, invent objects, add people, change lighting or colors, or turn this into an illustration."
+        },
+        {
+          "id": "family-play",
+          "face": "d",
+          "path": "exec-c956769a-98f8-4582-b270-302b15cda374.png",
+          "prompt": "Use case: precise-object-edit. Enhance this exact square 100-degree perspective face of the family hotel panorama. Highest resolution crisp architectural photograph, fine warm cedar wood grain, linen and rug weave, clean furniture edges, natural daylight. This is a view straight DOWN at the floor: preserve every table/chair/bed edge and floor position, sharpen real cedar grain and rug weave. Preserve EXACT camera, field of view, framing, all straight lines, composition, room layout and edge pixels. Keep timber Venetian blinds, no fabric curtains; animals remain six complete recognizable carved silhouettes deer squirrel rabbit fox owl bear; never distort their anatomy. Keep exact Kikorin plush faces with green leaf eyes and white outline, nose and legs. Keep large cedar speaker with beige grille, BAUM, log pillows and sprays where present. Do not crop, zoom, invent objects, add people, change lighting or colors, or turn this into an illustration."
+        },
+        {
+          "id": "family-window",
+          "face": "f",
+          "path": "exec-19e2f543-1d16-42e5-a515-985fdbc83b30.png",
+          "prompt": "Use case: precise-object-edit. Enhance this exact square 100-degree perspective face of the family hotel panorama. Highest resolution crisp architectural photograph, fine warm cedar wood grain, linen and rug weave, clean furniture edges, natural daylight. Preserve every visible object and camera position. Preserve EXACT camera, field of view, framing, all straight lines, composition, room layout and edge pixels. Keep timber Venetian blinds, no fabric curtains; animals remain six complete recognizable carved silhouettes deer squirrel rabbit fox owl bear; never distort their anatomy. Keep exact Kikorin plush faces with green leaf eyes and white outline, nose and legs. Keep large cedar speaker with beige grille, BAUM, log pillows and sprays where present. Do not crop, zoom, invent objects, add people, change lighting or colors, or turn this into an illustration."
+        },
+        {
+          "id": "family-window",
+          "face": "r",
+          "path": "exec-51fb601f-9487-4f25-8c25-7c410b54097b.png",
+          "prompt": "Use case: precise-object-edit. Enhance this exact square 100-degree perspective face of the family hotel panorama. Highest resolution crisp architectural photograph, fine warm cedar wood grain, linen and rug weave, clean furniture edges, natural daylight. Preserve every visible object and camera position. Preserve EXACT camera, field of view, framing, all straight lines, composition, room layout and edge pixels. Keep timber Venetian blinds, no fabric curtains; animals remain six complete recognizable carved silhouettes deer squirrel rabbit fox owl bear; never distort their anatomy. Keep exact Kikorin plush faces with green leaf eyes and white outline, nose and legs. Keep large cedar speaker with beige grille, BAUM, log pillows and sprays where present. Do not crop, zoom, invent objects, add people, change lighting or colors, or turn this into an illustration."
+        },
+        {
+          "id": "family-window",
+          "face": "b",
+          "path": "exec-a57a183a-d8e1-49ba-b47c-6e7b610a65b9.png",
+          "prompt": "Use case: precise-object-edit. Enhance this exact square 100-degree perspective face of the family hotel panorama. Highest resolution crisp architectural photograph, fine warm cedar wood grain, linen and rug weave, clean furniture edges, natural daylight. Preserve every visible object and camera position. Preserve EXACT camera, field of view, framing, all straight lines, composition, room layout and edge pixels. Keep timber Venetian blinds, no fabric curtains; animals remain six complete recognizable carved silhouettes deer squirrel rabbit fox owl bear; never distort their anatomy. Keep exact Kikorin plush faces with green leaf eyes and white outline, nose and legs. Keep large cedar speaker with beige grille, BAUM, log pillows and sprays where present. Do not crop, zoom, invent objects, add people, change lighting or colors, or turn this into an illustration."
+        },
+        {
+          "id": "family-window",
+          "face": "l",
+          "path": "exec-52800700-fe1d-4678-9e21-29e9c685b5e5.png",
+          "prompt": "Use case: precise-object-edit. Enhance this exact square 100-degree perspective face of the family hotel panorama. Highest resolution crisp architectural photograph, fine warm cedar wood grain, linen and rug weave, clean furniture edges, natural daylight. Preserve every visible object and camera position. Preserve EXACT camera, field of view, framing, all straight lines, composition, room layout and edge pixels. Keep timber Venetian blinds, no fabric curtains; animals remain six complete recognizable carved silhouettes deer squirrel rabbit fox owl bear; never distort their anatomy. Keep exact Kikorin plush faces with green leaf eyes and white outline, nose and legs. Keep large cedar speaker with beige grille, BAUM, log pillows and sprays where present. Do not crop, zoom, invent objects, add people, change lighting or colors, or turn this into an illustration."
+        },
+        {
+          "id": "family-window",
+          "face": "u",
+          "path": "exec-2f797a3e-0675-43d0-afcf-33da32165d62.png",
+          "prompt": "Use case: precise-object-edit. Enhance this exact square 100-degree perspective face of the family hotel panorama. Highest resolution crisp architectural photograph, fine warm cedar wood grain, linen and rug weave, clean furniture edges, natural daylight. This is a view straight UP at the ceiling: show ONLY the same ceiling, lights, beam and existing mobiles if already visible. No beds or other invented objects. Preserve EXACT camera, field of view, framing, all straight lines, composition, room layout and edge pixels. Keep timber Venetian blinds, no fabric curtains; animals remain six complete recognizable carved silhouettes deer squirrel rabbit fox owl bear; never distort their anatomy. Keep exact Kikorin plush faces with green leaf eyes and white outline, nose and legs. Keep large cedar speaker with beige grille, BAUM, log pillows and sprays where present. Do not crop, zoom, invent objects, add people, change lighting or colors, or turn this into an illustration."
+        },
+        {
+          "id": "family-window",
+          "face": "d",
+          "path": "exec-5a0abe63-62ff-432b-b620-ab4ae71c5c19.png",
+          "prompt": "Use case: precise-object-edit. Enhance this exact square 100-degree perspective face of the family hotel panorama. Highest resolution crisp architectural photograph, fine warm cedar wood grain, linen and rug weave, clean furniture edges, natural daylight. This is a view straight DOWN at the floor: preserve every table/chair/bed edge and floor position, sharpen real cedar grain and rug weave. Preserve EXACT camera, field of view, framing, all straight lines, composition, room layout and edge pixels. Keep timber Venetian blinds, no fabric curtains; animals remain six complete recognizable carved silhouettes deer squirrel rabbit fox owl bear; never distort their anatomy. Keep exact Kikorin plush faces with green leaf eyes and white outline, nose and legs. Keep large cedar speaker with beige grille, BAUM, log pillows and sprays where present. Do not crop, zoom, invent objects, add people, change lighting or colors, or turn this into an illustration."
+        }
+      ]
+    }
+  ]
+}

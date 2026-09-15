@@ -29,15 +29,15 @@
   document.getElementById('room-about').onclick = () => dialog.showModal();
   document.getElementById('close-room').onclick = () => dialog.close();
   document.getElementById('common-amenities').hidden = id === 'standard';
-  if (id !== 'premium') document.getElementById('plan-toggle').hidden = true;
+  if (id !== 'business') document.getElementById('plan-toggle').hidden = true;
   if (id === 'standard') {
     document.getElementById('standard-room').hidden = false;
     document.getElementById('panorama').hidden = true;
     document.getElementById('room-about').textContent = '客室について';
     document.querySelector('footer').hidden = true;
     document.querySelector('.top-actions').hidden = true;
-  } else if (id !== 'premium') {
-    document.querySelector('.guide').textContent = 'ドラッグで見回す · 下のボタンで見どころへ';
+  } else if (id !== 'business') {
+    document.querySelector('.guide').textContent = 'ドラッグで見回す · 床の矢印で移動';
   }
   const scents = {
     none:'香りを加えずに過ごすこともできます。',

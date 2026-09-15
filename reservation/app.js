@@ -34,7 +34,7 @@
   const reserveActions = document.querySelectorAll('.reserve-action');
   const tourUrl = '../';
   function enableReservation(enabled) {
-    document.querySelector('.main-nav a:last-child').href = '../?room=' + encodeURIComponent(selected || 'premium');
+    document.querySelector('.main-nav a:last-child').href = '../?room=' + encodeURIComponent(selected || 'business');
     reserveActions.forEach(link => {
       link.setAttribute('aria-disabled', String(!enabled));
       if (enabled) { link.href = tourUrl + '?room=' + encodeURIComponent(selected); link.removeAttribute('tabindex'); }

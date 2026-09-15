@@ -32,10 +32,10 @@ $('#alarm-toggle').onclick=toggleAlarm;
 $('#close-alarm').onclick=()=>closeAlarm(true);
 document.addEventListener('visibilitychange',()=>{if(document.hidden)closeAlarm();});
 window.addEventListener('pagehide',()=>closeAlarm());
-function openBrochure(){closeAlarm();$('#detail').hidden=true;if(!$('#brochure-frame').getAttribute('src'))$('#brochure-frame').src='brochure.html?v=quality-20260915b';$('#brochure-dialog').showModal();}
+function openBrochure(){closeAlarm();$('#detail').hidden=true;if(!$('#brochure-frame').getAttribute('src'))$('#brochure-frame').src='brochure.html?v=rooms-20260916-final';$('#brochure-dialog').showModal();}
 $('#close-brochure').onclick=()=>$('#brochure-dialog').close();
 window.addEventListener('message',e=>{if(e.origin===location.origin&&e.source===$('#brochure-frame').contentWindow&&e.data?.type==='close-brochure')$('#brochure-dialog').close();});
-function explain(_,a){if(a.action==='brochure'){openBrochure();return;}if(a.action==='alarm'){toggleAlarm();return;}closeAlarm();$('#detail-title').textContent=a.title;$('#detail-text').textContent=a.text;const cycle=a.action==='wood-cycle';$('#wood-cycle-figure').hidden=!cycle;$('#detail').classList.toggle('with-diagram',cycle);$('#detail').hidden=false;$('#close-detail').focus();}
+function explain(_,a){if(a.action==='brochure'){openBrochure();return;}if(a.action==='alarm'){toggleAlarm();return;}closeAlarm();$('#detail-title').textContent=a.title;$('#detail-text').textContent=a.text;$('#detail-source').hidden=!a.source;if(a.source){const link=$('#detail-source a');link.textContent=a.source.label;link.href=a.source.url;}const cycle=a.action==='wood-cycle';$('#wood-cycle-figure').hidden=!cycle;$('#detail').classList.toggle('with-diagram',cycle);$('#detail').hidden=false;$('#close-detail').focus();}
 function hotspot(el,a){el.setAttribute('role','button');el.tabIndex=0;el.setAttribute('aria-label',a.label);if(a.kind==='move'){const t=document.createElement('span');t.className='hot-label';t.textContent=a.label;el.append(t);}el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();el.click();}});}
 $('#open-wood-cycle').onclick=()=>$('#wood-cycle-dialog').showModal();
 $('#close-wood-cycle').onclick=()=>$('#wood-cycle-dialog').close();
@@ -44,12 +44,12 @@ async function start(){
  if(window.activeRoomId==='standard'){status.hidden=true;return;}
  try{
   const simple=new URLSearchParams(location.search).get('quality')==='standard';
-  const res=await fetch((window.activeRoomId==='premium'?(simple?'tour-config-equirect.json':'tour-config.json'):'tour-config-'+window.activeRoomId+'.json')+'?v=quality-20260915b');if(!res.ok)throw Error('設定を読み込めません');
+  const res=await fetch((window.activeRoomId==='business'?(simple?'tour-config-equirect.json':'tour-config.json'):'tour-config-'+window.activeRoomId+'.json')+'?v=rooms-20260916-final');if(!res.ok)throw Error('設定を読み込めません');
   const config=await res.json();
-  const surfacesResponse=await fetch('surface-config.json?v=quality-20260915b');
+  const surfacesResponse=await fetch('surface-config.json?v=rooms-20260916-final');
   if(!surfacesResponse.ok)throw Error('表面の文字設定を読み込めません');
   const surfaces=await surfacesResponse.json();
-  if(matchMedia('(max-width: 640px)').matches){for(const s of Object.values(config.scenes)){s.hfov=window.activeRoomId==='premium'?48:70;s.pitch=Math.min(s.pitch,-8);if(window.activeRoomId==='family')s.yaw=-55;if(window.activeRoomId==='basic')s.yaw=10;}config.default.maxHfov=80;}
+  if(matchMedia('(max-width: 640px)').matches){for(const s of Object.values(config.scenes)){s.hfov=window.activeRoomId==='business'?48:70;s.pitch=Math.min(s.pitch,-8);if(typeof s.mobileYaw==='number')s.yaw=s.mobileYaw;}config.default.maxHfov=80;}
   for(const scene of Object.values(config.scenes))for(const h of scene.hotSpots){h.createTooltipFunc=hotspot;if(h.type==='info')h.clickHandlerFunc=explain;}
   if(matchMedia('(prefers-reduced-motion: reduce)').matches)config.default.sceneFadeDuration=0;
   viewer=pannellum.viewer('panorama',config);window.tourViewer=viewer;

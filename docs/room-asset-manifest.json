@@ -1,134 +1,150 @@
 {
-  "date": "2026-09-15",
-  "source": "built-in image_gen perspective edits; spherical reprojection; premium original 4K base",
+  "date": "2026-09-16",
+  "source": "built-in image_gen perspective edits; spherical reprojection; business original 4K base; family three camera positions",
   "assets": [
     {
-      "path": "assets/rooms/basic-4k.jpg",
+      "path": "assets/rooms/business-4k.jpg",
       "size": [
         4096,
         2048
       ],
-      "sha256": "d0a6b7cec4a79d9d53954f54591473a8b281e972ef9f8a1026f70bfbf7d82ccf"
+      "sha256": "7a4dccc8161fb5ae43fe6aa5b17207a891f4bf8e8992dbe10254ce2f7b6023ef"
     },
     {
-      "path": "assets/rooms/basic-preview.jpg",
+      "path": "assets/rooms/business-preview.jpg",
       "size": [
         1000,
         650
       ],
-      "sha256": "5e9474965ad1f722b746bf71e681259c96f2e8f30e52845ef16f4e536048468b"
+      "sha256": "af76d1d453e3fb031ff0ae4ce6bb99ff727617f570205bb7ff7067920d265aab"
     },
     {
-      "path": "assets/rooms/family-4k.jpg",
+      "path": "assets/rooms/business-02_DESK-4k.jpg",
       "size": [
         4096,
         2048
       ],
-      "sha256": "ed919cddca090e31d8568b58fc2d6a87832e20a5ebfca93582d288eb57620803"
+      "sha256": "20e51649be60229dbd8df0263500c524e4e4555425d3a09b6437f21bf1283d7b"
     },
     {
-      "path": "assets/rooms/family-preview.jpg",
+      "path": "assets/rooms/business-02_DESK-preview.jpg",
       "size": [
         1000,
         650
       ],
-      "sha256": "b34c85ef52cbfd30ffe65410dba7c51a8cf2bb7a50766f6142288ca8b305f45c"
+      "sha256": "9839d8a0a08f4cf3327dc92ccf7ba600807bce171b256114d37225981eafcd48"
     },
     {
-      "path": "assets/rooms/premium-02_DESK-4k.jpg",
+      "path": "assets/rooms/business-03_BED_FOOT-4k.jpg",
       "size": [
         4096,
         2048
       ],
-      "sha256": "5f08f37a492a19ec0c91d750b8e76203978f4f2677eda39743c76d072d3bb29b"
+      "sha256": "e06dd9e17f549f8322e9ff99269c6ec76c18becda1228736fb73bf4e7013a7f8"
     },
     {
-      "path": "assets/rooms/premium-02_DESK-preview.jpg",
+      "path": "assets/rooms/business-03_BED_FOOT-preview.jpg",
       "size": [
-        480,
-        270
+        1000,
+        650
       ],
-      "sha256": "a6e6dac8424d9cbef2e6b867050db9aff7af665264c081264e541f71aeb96ca6"
+      "sha256": "7a24d4ad634241ed37c295f2528dfa7899653ff96a74e88edcf7fdbe0f819534"
     },
     {
-      "path": "assets/rooms/premium-03_BED_FOOT-4k.jpg",
-      "size": [
-        4096,
-        2048
-      ],
-      "sha256": "f7033a3355b68f0f3e926debf7cc1bd5838884473365b8f80b9d87c61e033fd6"
-    },
-    {
-      "path": "assets/rooms/premium-03_BED_FOOT-preview.jpg",
-      "size": [
-        480,
-        270
-      ],
-      "sha256": "cc9d092e172b091bebb80f03a7b128b19be999c5244f3c5cbd4436b4d4e7ca57"
-    },
-    {
-      "path": "assets/rooms/premium-04_BED_SIDE-4k.jpg",
+      "path": "assets/rooms/business-04_BED_SIDE-4k.jpg",
       "size": [
         4096,
         2048
       ],
-      "sha256": "c6370db9dad419679ba1c8e56a26c213ca5472dd95e57ee45b2708a31bd739ea"
+      "sha256": "d385c542cda05f850ad925af3c3e09cb2b0c0591d1612846daca5d34bf595262"
     },
     {
-      "path": "assets/rooms/premium-04_BED_SIDE-preview.jpg",
+      "path": "assets/rooms/business-04_BED_SIDE-preview.jpg",
       "size": [
-        480,
-        270
+        1000,
+        650
       ],
-      "sha256": "3ecb9b17fa0090ecaea1ed7206729cc99562cecdc5b93fbd0adb00e4336aa676"
+      "sha256": "159003379495b072832b96df73a8f542b4195d24ef5516e78e11cef1f25254fc"
     },
     {
-      "path": "assets/rooms/premium-05_WINDOW-4k.jpg",
-      "size": [
-        4096,
-        2048
-      ],
-      "sha256": "3ef00d797008c0e1ea30b6e0853a15807341e28679c37385c1937868333ade5a"
-    },
-    {
-      "path": "assets/rooms/premium-05_WINDOW-preview.jpg",
-      "size": [
-        480,
-        270
-      ],
-      "sha256": "b330c8d1c241ca29c21e64c0db91dc71d722319487e356e4d00bc2e046e546a5"
-    },
-    {
-      "path": "assets/rooms/premium-06_LOUNGE-4k.jpg",
+      "path": "assets/rooms/business-05_WINDOW-4k.jpg",
       "size": [
         4096,
         2048
       ],
-      "sha256": "3024f442d21f91200c894c007484823d9089f0a87003b2b42171c6ca5146b403"
+      "sha256": "967a7fe90af7e20ff92d75ba0a3ab2357d805bc18899ef235ec63a8f07d8713f"
     },
     {
-      "path": "assets/rooms/premium-06_LOUNGE-preview.jpg",
+      "path": "assets/rooms/business-05_WINDOW-preview.jpg",
       "size": [
-        480,
-        270
+        1000,
+        650
       ],
-      "sha256": "b9b4deb667bfd7737f0872eb55760734f8aa75080aca1eb2307938c4636b915b"
+      "sha256": "2e1e42ba9fa77d3329954246d74161d1a7faecc6e14eb79d3870fd14cab19472"
     },
     {
-      "path": "assets/rooms/premium-4k.jpg",
+      "path": "assets/rooms/business-06_LOUNGE-4k.jpg",
       "size": [
         4096,
         2048
       ],
-      "sha256": "a7ba68140c3d67b4b4553241ff42193bcfec6b7de35d2ab09ed0c802a10d130a"
+      "sha256": "f620fa058e70e377a11a6b6597f0ad68e2baf66aae3b1d9a1598412ad77b9a96"
     },
     {
-      "path": "assets/rooms/premium-preview.jpg",
+      "path": "assets/rooms/business-06_LOUNGE-preview.jpg",
       "size": [
-        480,
-        270
+        1000,
+        650
       ],
-      "sha256": "91ffcc85a72187f77a6e8cee691825d323fd10d49643a01158d860848c6b221c"
+      "sha256": "0b55e7e44f7432e03fd597111052df85d4e03f64db552a75d368c76e0826ab0c"
+    },
+    {
+      "path": "assets/rooms/family-20260916-4k.jpg",
+      "size": [
+        4096,
+        2048
+      ],
+      "sha256": "bb1a1c4d12463e228b4f5ad41ba95b0aad2b7156dab13c3b7f340e20f5a817ba"
+    },
+    {
+      "path": "assets/rooms/family-20260916-preview.jpg",
+      "size": [
+        1000,
+        650
+      ],
+      "sha256": "f246459a14856341feeb84ca949a2822c0038bcca4ffe2f7c996fc2de137c6e3"
+    },
+    {
+      "path": "assets/rooms/family-play-4k.jpg",
+      "size": [
+        4096,
+        2048
+      ],
+      "sha256": "ea849e2130c60aff7d3415a93416707a5716f9bb0ddd685a0ce0a8938e12d9f3"
+    },
+    {
+      "path": "assets/rooms/family-play-preview.jpg",
+      "size": [
+        1000,
+        650
+      ],
+      "sha256": "3856632ad609c590f1733e5a12a224adf5d3a949741712f1acf95cdcb15623e5"
+    },
+    {
+      "path": "assets/rooms/family-window-4k.jpg",
+      "size": [
+        4096,
+        2048
+      ],
+      "sha256": "2e8ebb1b9caa7c3a8e147ea4fb719a442e4300b7bb9af6be56b0d5a1d4e34dec"
+    },
+    {
+      "path": "assets/rooms/family-window-preview.jpg",
+      "size": [
+        1000,
+        650
+      ],
+      "sha256": "3b68d25e95455a57f3516d5fa7f2c636319b3cf8ba82b7c384564718b7d073e3"
     }
   ]
 }

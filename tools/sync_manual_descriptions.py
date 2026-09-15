@@ -21,11 +21,12 @@ for sc in manual['scenes'].values():
    if h.get('feature')=='baum':args['text']=baum
    if '睡眠' in args.get('title',''):args['text']=sleep
   if h.get('feature'):common.setdefault(h['feature'],h)
-for filename in ['tour-config.json','tour-config-family.json','tour-config-basic.json']:
+for filename in ['tour-config.json','tour-config-family.json']:
  cfg=json.loads((root/filename).read_text())
  for sid,sc in cfg['scenes'].items():
   originals=manual['scenes'].get(sid,{}).get('hotSpots',[])
   for i,h in enumerate(sc['hotSpots']):
+   if h.get('feature') in {'pollen-free-sugi','wood-blinds','closet','alarm','forest-play','log-pillow'}:continue
    src=originals[i] if i<len(originals) and h['type']=='info' else common.get(h.get('feature'))
    if src and h['type']=='info':
     for key in ['text','createTooltipArgs']:
@@ -38,4 +39,4 @@ for filename in ['tour-config.json','tour-config-family.json','tour-config-basic
    h['yaw']=pillow['yaw']+12;h['pitch']=pillow['pitch']-5;sc['hotSpots'].append(h)
  (root/filename).write_text(json.dumps(cfg,ensure_ascii=False,indent=2)+'\n')
 (root/'tour-config-equirect.json').write_text((root/'tour-config.json').read_text())
-print('Updated premium, family and basic descriptions; preserved input and legacy.')
+print('Updated business and family descriptions; preserved input and legacy.')

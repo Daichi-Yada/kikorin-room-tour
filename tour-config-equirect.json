@@ -24,7 +24,7 @@
       "sceneId": "PANO_01_ENTRANCE",
       "title": "入口",
       "type": "equirectangular",
-      "panorama": "assets/rooms/premium-4k.jpg?v=quality-20260915b",
+      "panorama": "assets/rooms/business-4k.jpg?v=rooms-20260916-final",
       "pitch": -5,
       "yaw": 42,
       "hfov": 92,
@@ -47,16 +47,21 @@
           "pitch": 2.96079885982021,
           "yaw": 40.279863068956445,
           "type": "info",
-          "text": "木質空間",
+          "text": "無花粉スギの木質空間",
           "cssClass": "tour-info",
           "createTooltipArgs": {
             "kind": "info",
-            "label": "木質空間"
+            "label": "無花粉スギの木質空間"
           },
           "clickHandlerArgs": {
-            "title": "木質空間",
-            "text": "床・壁・天井、どこを見ても木。気（木）になっちゃいますね。木質化された空間での宿泊を通して木を身近に感じやすいつくりになっています。"
-          }
+            "title": "無花粉スギの木質空間",
+            "text": "床・壁・天井、どこを見ても木。気（木）になっちゃいますね。木質化された空間での宿泊を通して木を身近に感じやすいつくりになっています。\n\n木質内装には、無花粉スギを取り入れています。無花粉スギは、花粉を作らない性質を持つスギです。住友林業はDNA鑑定や組織培養を活用した苗木の増殖に取り組み、花粉症対策につながる森づくりを進めています。木を使う体験から、次の森を育てる取り組みへ目を向けてみてください。",
+            "source": {
+              "label": "無花粉スギの苗木づくり（住友林業）",
+              "url": "https://sfc.jp/information/news/2024/2024-08-08-02.html"
+            }
+          },
+          "feature": "pollen-free-sugi"
         },
         {
           "pitch": 6.785878871778245,
@@ -197,7 +202,7 @@
           },
           "clickHandlerArgs": {
             "title": "丸太枕",
-            "text": "年輪や樹皮をかたどった、やわらかな丸太形の枕。3種類のきこりんルームでお楽しみいただけます。"
+            "text": "年輪や樹皮をかたどった、やわらかな丸太形の枕。2種類のきこりんルームでお楽しみいただけます。"
           }
         },
         {
@@ -215,18 +220,67 @@
             "text": "タイルの玄関で靴を脱ぎ、木の床の室内へ。ドアの前は広く空け、脇に室内用スリッパをご用意します。"
           },
           "feature": "genkan"
+        },
+        {
+          "type": "info",
+          "feature": "wood-blinds",
+          "text": "木製ブラインド",
+          "yaw": 7.078,
+          "pitch": 5.725,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木製ブラインド"
+          },
+          "clickHandlerArgs": {
+            "title": "木製ブラインド",
+            "text": "窓辺には木製のブラインドを。木の羽根の角度で光をやわらかく調整し、街の眺めと木の質感を楽しめます。"
+          }
+        },
+        {
+          "type": "info",
+          "feature": "closet",
+          "text": "木製クローゼット",
+          "yaw": 132.696,
+          "pitch": 0.621,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木製クローゼット"
+          },
+          "clickHandlerArgs": {
+            "title": "木製クローゼット",
+            "text": "棚板とハンガーパイプをすっきりと納めた木製クローゼット。上段に小物、中央に衣類、下段に荷物を置けるつくりです。"
+          }
+        },
+        {
+          "type": "info",
+          "feature": "alarm",
+          "text": "チェーンソーアラーム",
+          "yaw": 51.259,
+          "pitch": -17.128,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "チェーンソーアラーム"
+          },
+          "clickHandlerArgs": {
+            "title": "チェーンソーアラーム",
+            "text": "木を育て、使い、次の森へ。大きめの木製スピーカーから、林業で働く音が聞こえます。",
+            "action": "alarm"
+          }
         }
       ],
       "northOffset": 0,
       "haov": 360,
       "vaov": 180,
-      "thumbnail": "assets/rooms/premium-preview.jpg?v=quality-20260915b"
+      "thumbnail": "assets/rooms/business-preview.jpg?v=rooms-20260916-final"
     },
     "PANO_02_DESK": {
       "sceneId": "PANO_02_DESK",
       "title": "デスク",
       "type": "equirectangular",
-      "panorama": "assets/rooms/premium-02_DESK-4k.jpg?v=quality-20260915b",
+      "panorama": "assets/rooms/business-02_DESK-4k.jpg?v=rooms-20260916-final",
       "pitch": -12,
       "yaw": 100,
       "hfov": 92,
@@ -304,18 +358,20 @@
           }
         },
         {
-          "pitch": -31.091553247570843,
-          "yaw": 52.40691212849523,
           "type": "info",
+          "feature": "alarm",
           "text": "チェーンソーアラーム",
-          "cssClass": "tour-info tour-audio",
+          "yaw": 55.773,
+          "pitch": -30.345,
+          "cssClass": "tour-info",
           "createTooltipArgs": {
             "kind": "info",
-            "label": "チェーンソーアラームを再生・停止"
+            "label": "チェーンソーアラーム"
           },
           "clickHandlerArgs": {
-            "action": "alarm",
-            "title": "チェーンソーアラーム"
+            "title": "チェーンソーアラーム",
+            "text": "木を育て、使い、次の森へ。大きめの木製スピーカーから、林業で働く音が聞こえます。",
+            "action": "alarm"
           }
         },
         {
@@ -427,20 +483,72 @@
           },
           "clickHandlerArgs": {
             "title": "丸太枕",
-            "text": "年輪や樹皮をかたどった、やわらかな丸太形の枕。3種類のきこりんルームでお楽しみいただけます。"
+            "text": "年輪や樹皮をかたどった、やわらかな丸太形の枕。2種類のきこりんルームでお楽しみいただけます。"
+          }
+        },
+        {
+          "type": "info",
+          "feature": "pollen-free-sugi",
+          "text": "無花粉スギの木質空間",
+          "yaw": 40,
+          "pitch": 12,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "無花粉スギの木質空間"
+          },
+          "clickHandlerArgs": {
+            "title": "無花粉スギの木質空間",
+            "text": "木質内装には、無花粉スギを取り入れています。無花粉スギは、花粉を作らない性質を持つスギです。住友林業はDNA鑑定や組織培養を活用した苗木の増殖に取り組み、花粉症対策につながる森づくりを進めています。木を使う体験から、次の森を育てる取り組みへ目を向けてみてください。",
+            "source": {
+              "label": "無花粉スギの苗木づくり（住友林業）",
+              "url": "https://sfc.jp/information/news/2024/2024-08-08-02.html"
+            }
+          }
+        },
+        {
+          "type": "info",
+          "feature": "wood-blinds",
+          "text": "木製ブラインド",
+          "yaw": -2.828,
+          "pitch": 7.572,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木製ブラインド"
+          },
+          "clickHandlerArgs": {
+            "title": "木製ブラインド",
+            "text": "窓辺には木製のブラインドを。木の羽根の角度で光をやわらかく調整し、街の眺めと木の質感を楽しめます。"
+          }
+        },
+        {
+          "type": "info",
+          "feature": "closet",
+          "text": "木製クローゼット",
+          "yaw": 158.49,
+          "pitch": 3.293,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木製クローゼット"
+          },
+          "clickHandlerArgs": {
+            "title": "木製クローゼット",
+            "text": "棚板とハンガーパイプをすっきりと納めた木製クローゼット。上段に小物、中央に衣類、下段に荷物を置けるつくりです。"
           }
         }
       ],
       "northOffset": 0,
       "haov": 360,
       "vaov": 180,
-      "thumbnail": "assets/rooms/premium-02_DESK-preview.jpg?v=quality-20260915b"
+      "thumbnail": "assets/rooms/business-02_DESK-preview.jpg?v=rooms-20260916-final"
     },
     "PANO_03_BED_FOOT": {
       "sceneId": "PANO_03_BED_FOOT",
       "title": "ベッド足元",
       "type": "equirectangular",
-      "panorama": "assets/rooms/premium-03_BED_FOOT-4k.jpg?v=quality-20260915b",
+      "panorama": "assets/rooms/business-03_BED_FOOT-4k.jpg?v=rooms-20260916-final",
       "pitch": -5,
       "yaw": 78,
       "hfov": 92,
@@ -477,16 +585,21 @@
           "pitch": 4.226298360298455,
           "yaw": 78.27488798483493,
           "type": "info",
-          "text": "木質壁",
+          "text": "無花粉スギの木質空間",
           "cssClass": "tour-info",
           "createTooltipArgs": {
             "kind": "info",
-            "label": "木質壁"
+            "label": "無花粉スギの木質空間"
           },
           "clickHandlerArgs": {
-            "title": "木質壁",
-            "text": "床・壁・天井、どこを見ても木。気（木）になっちゃいますね。木質化された空間での宿泊を通して木を身近に感じやすいつくりになっています。"
-          }
+            "title": "無花粉スギの木質空間",
+            "text": "床・壁・天井、どこを見ても木。気（木）になっちゃいますね。木質化された空間での宿泊を通して木を身近に感じやすいつくりになっています。\n\n木質内装には、無花粉スギを取り入れています。無花粉スギは、花粉を作らない性質を持つスギです。住友林業はDNA鑑定や組織培養を活用した苗木の増殖に取り組み、花粉症対策につながる森づくりを進めています。木を使う体験から、次の森を育てる取り組みへ目を向けてみてください。",
+            "source": {
+              "label": "無花粉スギの苗木づくり（住友林業）",
+              "url": "https://sfc.jp/information/news/2024/2024-08-08-02.html"
+            }
+          },
+          "feature": "pollen-free-sugi"
         },
         {
           "pitch": 9.619388835870362,
@@ -627,20 +740,69 @@
           },
           "clickHandlerArgs": {
             "title": "丸太枕",
-            "text": "年輪や樹皮をかたどった、やわらかな丸太形の枕。3種類のきこりんルームでお楽しみいただけます。"
+            "text": "年輪や樹皮をかたどった、やわらかな丸太形の枕。2種類のきこりんルームでお楽しみいただけます。"
+          }
+        },
+        {
+          "type": "info",
+          "feature": "wood-blinds",
+          "text": "木製ブラインド",
+          "yaw": 16.798,
+          "pitch": 10.437,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木製ブラインド"
+          },
+          "clickHandlerArgs": {
+            "title": "木製ブラインド",
+            "text": "窓辺には木製のブラインドを。木の羽根の角度で光をやわらかく調整し、街の眺めと木の質感を楽しめます。"
+          }
+        },
+        {
+          "type": "info",
+          "feature": "closet",
+          "text": "木製クローゼット",
+          "yaw": 149.991,
+          "pitch": -6.821,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木製クローゼット"
+          },
+          "clickHandlerArgs": {
+            "title": "木製クローゼット",
+            "text": "棚板とハンガーパイプをすっきりと納めた木製クローゼット。上段に小物、中央に衣類、下段に荷物を置けるつくりです。"
+          }
+        },
+        {
+          "type": "info",
+          "feature": "alarm",
+          "text": "チェーンソーアラーム",
+          "yaw": 105.107,
+          "pitch": -19.616,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "チェーンソーアラーム"
+          },
+          "clickHandlerArgs": {
+            "title": "チェーンソーアラーム",
+            "text": "木を育て、使い、次の森へ。大きめの木製スピーカーから、林業で働く音が聞こえます。",
+            "action": "alarm"
           }
         }
       ],
       "northOffset": 0,
       "haov": 360,
       "vaov": 180,
-      "thumbnail": "assets/rooms/premium-03_BED_FOOT-preview.jpg?v=quality-20260915b"
+      "thumbnail": "assets/rooms/business-03_BED_FOOT-preview.jpg?v=rooms-20260916-final"
     },
     "PANO_04_BED_SIDE": {
       "sceneId": "PANO_04_BED_SIDE",
       "title": "ベッド横",
       "type": "equirectangular",
-      "panorama": "assets/rooms/premium-04_BED_SIDE-4k.jpg?v=quality-20260915b",
+      "panorama": "assets/rooms/business-04_BED_SIDE-4k.jpg?v=rooms-20260916-final",
       "pitch": -5,
       "yaw": 18,
       "hfov": 92,
@@ -663,16 +825,21 @@
           "pitch": 5.964074921761457,
           "yaw": 40.76360520094116,
           "type": "info",
-          "text": "木質壁",
+          "text": "無花粉スギの木質空間",
           "cssClass": "tour-info",
           "createTooltipArgs": {
             "kind": "info",
-            "label": "木質壁"
+            "label": "無花粉スギの木質空間"
           },
           "clickHandlerArgs": {
-            "title": "木質壁",
-            "text": "床・壁・天井、どこを見ても木。気（木）になっちゃいますね。木質化された空間での宿泊を通して木を身近に感じやすいつくりになっています。"
-          }
+            "title": "無花粉スギの木質空間",
+            "text": "床・壁・天井、どこを見ても木。気（木）になっちゃいますね。木質化された空間での宿泊を通して木を身近に感じやすいつくりになっています。\n\n木質内装には、無花粉スギを取り入れています。無花粉スギは、花粉を作らない性質を持つスギです。住友林業はDNA鑑定や組織培養を活用した苗木の増殖に取り組み、花粉症対策につながる森づくりを進めています。木を使う体験から、次の森を育てる取り組みへ目を向けてみてください。",
+            "source": {
+              "label": "無花粉スギの苗木づくり（住友林業）",
+              "url": "https://sfc.jp/information/news/2024/2024-08-08-02.html"
+            }
+          },
+          "feature": "pollen-free-sugi"
         },
         {
           "pitch": -11.609102436835126,
@@ -705,18 +872,20 @@
           }
         },
         {
-          "pitch": -44.576391148780154,
-          "yaw": 71.98023071822286,
           "type": "info",
+          "feature": "alarm",
           "text": "チェーンソーアラーム",
-          "cssClass": "tour-info tour-audio",
+          "yaw": 73.662,
+          "pitch": -42.323,
+          "cssClass": "tour-info",
           "createTooltipArgs": {
             "kind": "info",
-            "label": "チェーンソーアラームを再生・停止"
+            "label": "チェーンソーアラーム"
           },
           "clickHandlerArgs": {
-            "action": "alarm",
-            "title": "チェーンソーアラーム"
+            "title": "チェーンソーアラーム",
+            "text": "木を育て、使い、次の森へ。大きめの木製スピーカーから、林業で働く音が聞こえます。",
+            "action": "alarm"
           }
         },
         {
@@ -828,20 +997,52 @@
           },
           "clickHandlerArgs": {
             "title": "丸太枕",
-            "text": "年輪や樹皮をかたどった、やわらかな丸太形の枕。3種類のきこりんルームでお楽しみいただけます。"
+            "text": "年輪や樹皮をかたどった、やわらかな丸太形の枕。2種類のきこりんルームでお楽しみいただけます。"
+          }
+        },
+        {
+          "type": "info",
+          "feature": "wood-blinds",
+          "text": "木製ブラインド",
+          "yaw": -6.532,
+          "pitch": 7.834,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木製ブラインド"
+          },
+          "clickHandlerArgs": {
+            "title": "木製ブラインド",
+            "text": "窓辺には木製のブラインドを。木の羽根の角度で光をやわらかく調整し、街の眺めと木の質感を楽しめます。"
+          }
+        },
+        {
+          "type": "info",
+          "feature": "closet",
+          "text": "木製クローゼット",
+          "yaw": 176.442,
+          "pitch": -6.771,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木製クローゼット"
+          },
+          "clickHandlerArgs": {
+            "title": "木製クローゼット",
+            "text": "棚板とハンガーパイプをすっきりと納めた木製クローゼット。上段に小物、中央に衣類、下段に荷物を置けるつくりです。"
           }
         }
       ],
       "northOffset": 0,
       "haov": 360,
       "vaov": 180,
-      "thumbnail": "assets/rooms/premium-04_BED_SIDE-preview.jpg?v=quality-20260915b"
+      "thumbnail": "assets/rooms/business-04_BED_SIDE-preview.jpg?v=rooms-20260916-final"
     },
     "PANO_05_WINDOW": {
       "sceneId": "PANO_05_WINDOW",
       "title": "窓側",
       "type": "equirectangular",
-      "panorama": "assets/rooms/premium-05_WINDOW-4k.jpg?v=quality-20260915b",
+      "panorama": "assets/rooms/business-05_WINDOW-4k.jpg?v=rooms-20260916-final",
       "pitch": -3,
       "yaw": 28,
       "hfov": 92,
@@ -878,16 +1079,21 @@
           "pitch": 4.125134820732232,
           "yaw": 115.64100582430528,
           "type": "info",
-          "text": "木質壁",
+          "text": "無花粉スギの木質空間",
           "cssClass": "tour-info",
           "createTooltipArgs": {
             "kind": "info",
-            "label": "木質壁"
+            "label": "無花粉スギの木質空間"
           },
           "clickHandlerArgs": {
-            "title": "木質壁",
-            "text": "床・壁・天井、どこを見ても木。気（木）になっちゃいますね。木質化された空間での宿泊を通して木を身近に感じやすいつくりになっています。"
-          }
+            "title": "無花粉スギの木質空間",
+            "text": "床・壁・天井、どこを見ても木。気（木）になっちゃいますね。木質化された空間での宿泊を通して木を身近に感じやすいつくりになっています。\n\n木質内装には、無花粉スギを取り入れています。無花粉スギは、花粉を作らない性質を持つスギです。住友林業はDNA鑑定や組織培養を活用した苗木の増殖に取り組み、花粉症対策につながる森づくりを進めています。木を使う体験から、次の森を育てる取り組みへ目を向けてみてください。",
+            "source": {
+              "label": "無花粉スギの苗木づくり（住友林業）",
+              "url": "https://sfc.jp/information/news/2024/2024-08-08-02.html"
+            }
+          },
+          "feature": "pollen-free-sugi"
         },
         {
           "pitch": -39.10000000000001,
@@ -1013,20 +1219,69 @@
           },
           "clickHandlerArgs": {
             "title": "丸太枕",
-            "text": "年輪や樹皮をかたどった、やわらかな丸太形の枕。3種類のきこりんルームでお楽しみいただけます。"
+            "text": "年輪や樹皮をかたどった、やわらかな丸太形の枕。2種類のきこりんルームでお楽しみいただけます。"
+          }
+        },
+        {
+          "type": "info",
+          "feature": "wood-blinds",
+          "text": "木製ブラインド",
+          "yaw": 21.538,
+          "pitch": 35.302,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木製ブラインド"
+          },
+          "clickHandlerArgs": {
+            "title": "木製ブラインド",
+            "text": "窓辺には木製のブラインドを。木の羽根の角度で光をやわらかく調整し、街の眺めと木の質感を楽しめます。"
+          }
+        },
+        {
+          "type": "info",
+          "feature": "closet",
+          "text": "木製クローゼット",
+          "yaw": 162.529,
+          "pitch": -4.025,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木製クローゼット"
+          },
+          "clickHandlerArgs": {
+            "title": "木製クローゼット",
+            "text": "棚板とハンガーパイプをすっきりと納めた木製クローゼット。上段に小物、中央に衣類、下段に荷物を置けるつくりです。"
+          }
+        },
+        {
+          "type": "info",
+          "feature": "alarm",
+          "text": "チェーンソーアラーム",
+          "yaw": 136.807,
+          "pitch": -14.018,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "チェーンソーアラーム"
+          },
+          "clickHandlerArgs": {
+            "title": "チェーンソーアラーム",
+            "text": "木を育て、使い、次の森へ。大きめの木製スピーカーから、林業で働く音が聞こえます。",
+            "action": "alarm"
           }
         }
       ],
       "northOffset": 0,
       "haov": 360,
       "vaov": 180,
-      "thumbnail": "assets/rooms/premium-05_WINDOW-preview.jpg?v=quality-20260915b"
+      "thumbnail": "assets/rooms/business-05_WINDOW-preview.jpg?v=rooms-20260916-final"
     },
     "PANO_06_LOUNGE": {
       "sceneId": "PANO_06_LOUNGE",
       "title": "ラウンジ",
       "type": "equirectangular",
-      "panorama": "assets/rooms/premium-06_LOUNGE-4k.jpg?v=quality-20260915b",
+      "panorama": "assets/rooms/business-06_LOUNGE-4k.jpg?v=rooms-20260916-final",
       "pitch": -5,
       "yaw": -3,
       "hfov": 92,
@@ -1049,16 +1304,21 @@
           "pitch": 6.299345472368797,
           "yaw": 129.40066066347944,
           "type": "info",
-          "text": "木質壁",
+          "text": "無花粉スギの木質空間",
           "cssClass": "tour-info",
           "createTooltipArgs": {
             "kind": "info",
-            "label": "木質壁"
+            "label": "無花粉スギの木質空間"
           },
           "clickHandlerArgs": {
-            "title": "木質壁",
-            "text": "床・壁・天井、どこを見ても木。気（木）になっちゃいますね。木質化された空間での宿泊を通して木を身近に感じやすいつくりになっています。"
-          }
+            "title": "無花粉スギの木質空間",
+            "text": "床・壁・天井、どこを見ても木。気（木）になっちゃいますね。木質化された空間での宿泊を通して木を身近に感じやすいつくりになっています。\n\n木質内装には、無花粉スギを取り入れています。無花粉スギは、花粉を作らない性質を持つスギです。住友林業はDNA鑑定や組織培養を活用した苗木の増殖に取り組み、花粉症対策につながる森づくりを進めています。木を使う体験から、次の森を育てる取り組みへ目を向けてみてください。",
+            "source": {
+              "label": "無花粉スギの苗木づくり（住友林業）",
+              "url": "https://sfc.jp/information/news/2024/2024-08-08-02.html"
+            }
+          },
+          "feature": "pollen-free-sugi"
         },
         {
           "pitch": -50.97999999999999,
@@ -1184,14 +1444,63 @@
           },
           "clickHandlerArgs": {
             "title": "丸太枕",
-            "text": "年輪や樹皮をかたどった、やわらかな丸太形の枕。3種類のきこりんルームでお楽しみいただけます。"
+            "text": "年輪や樹皮をかたどった、やわらかな丸太形の枕。2種類のきこりんルームでお楽しみいただけます。"
+          }
+        },
+        {
+          "type": "info",
+          "feature": "wood-blinds",
+          "text": "木製ブラインド",
+          "yaw": -16.262,
+          "pitch": 31.018,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木製ブラインド"
+          },
+          "clickHandlerArgs": {
+            "title": "木製ブラインド",
+            "text": "窓辺には木製のブラインドを。木の羽根の角度で光をやわらかく調整し、街の眺めと木の質感を楽しめます。"
+          }
+        },
+        {
+          "type": "info",
+          "feature": "closet",
+          "text": "木製クローゼット",
+          "yaw": 175.85,
+          "pitch": -4.965,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木製クローゼット"
+          },
+          "clickHandlerArgs": {
+            "title": "木製クローゼット",
+            "text": "棚板とハンガーパイプをすっきりと納めた木製クローゼット。上段に小物、中央に衣類、下段に荷物を置けるつくりです。"
+          }
+        },
+        {
+          "type": "info",
+          "feature": "alarm",
+          "text": "チェーンソーアラーム",
+          "yaw": 156.066,
+          "pitch": -12.724,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "チェーンソーアラーム"
+          },
+          "clickHandlerArgs": {
+            "title": "チェーンソーアラーム",
+            "text": "木を育て、使い、次の森へ。大きめの木製スピーカーから、林業で働く音が聞こえます。",
+            "action": "alarm"
           }
         }
       ],
       "northOffset": 0,
       "haov": 360,
       "vaov": 180,
-      "thumbnail": "assets/rooms/premium-06_LOUNGE-preview.jpg?v=quality-20260915b"
+      "thumbnail": "assets/rooms/business-06_LOUNGE-preview.jpg?v=rooms-20260916-final"
     }
   }
 }

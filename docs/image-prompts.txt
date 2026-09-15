@@ -1,3 +1,5 @@
+2026-09-16 CURRENT: see revision-image-prompts-20260916.json for the two-room revision and three family viewpoints. Older records follow.
+
 2026-09-15: Current room-type generation prompts are in room-image-prompts.txt and room-image-refinements.txt. The following prompts document the prior 2026-09-12 images.
 
 2026-09-12 image editing notes

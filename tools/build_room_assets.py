@@ -7,7 +7,10 @@ from scipy.ndimage import map_coordinates
 root = Path(__file__).resolve().parents[1]
 folder = root / 'assets/rooms'
 manifest = []
-for source in sorted(folder.glob('*-4k.jpg')):
+scenes = [scene for filename in ('tour-config.json', 'tour-config-family.json')
+          for scene in json.loads((root / filename).read_text())['scenes'].values()]
+for scene in scenes:
+    source = root / scene['panorama'].split('?')[0]
     name = source.name.replace('-4k.jpg', '')
     image = Image.open(source).convert('RGB')
     w, h = image.size
@@ -16,8 +19,7 @@ for source in sorted(folder.glob('*-4k.jpg')):
     target = source
     if (w,h) != (4096,2048):
         raise ValueError(f'{source}: expected 4096 x 2048')
-    yaw = {'family': -20, 'basic': 30, 'premium': 38, 'premium-02_DESK':100, 'premium-03_BED_FOOT':78, 'premium-04_BED_SIDE':18, 'premium-05_WINDOW':28, 'premium-06_LOUNGE':-3}.get(name, 42)
-    pitch = -9
+    yaw, pitch = scene['yaw'], scene['pitch']
     width, height = 1000, 650
     t = math.tan(math.radians(105) / 2)
     xx, yy = np.meshgrid(np.linspace(-t, t, width), np.linspace(t * height / width, -t * height / width, height))
@@ -34,5 +36,5 @@ for source in sorted(folder.glob('*-4k.jpg')):
     Image.fromarray(view).save(preview, quality=90, optimize=True)
     for path in (target,preview):
         manifest.append({'path':str(path.relative_to(root)), 'size':list(Image.open(path).size), 'sha256':hashlib.sha256(path.read_bytes()).hexdigest()})
-(root/'docs/room-asset-manifest.json').write_text(json.dumps({'date':'2026-09-15','source':'built-in image_gen perspective edits; spherical reprojection; premium original 4K base','assets':manifest},ensure_ascii=False,indent=2)+'\n')
+(root/'docs/room-asset-manifest.json').write_text(json.dumps({'date':'2026-09-16','source':'built-in image_gen perspective edits; spherical reprojection; business original 4K base; family three camera positions','assets':manifest},ensure_ascii=False,indent=2)+'\n')
 print(f'Prepared {len(manifest)//2} panoramas and previews')

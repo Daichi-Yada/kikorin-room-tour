@@ -21,17 +21,17 @@
   },
   "scenes": {
     "FAMILY_ROOM": {
-      "title": "家族のくつろぎ空間",
+      "title": "入口・客室全体",
       "type": "equirectangular",
-      "panorama": "assets/rooms/family-4k.jpg?v=quality-20260915b",
-      "thumbnail": "assets/rooms/family-preview.jpg?v=quality-20260915b",
+      "panorama": "assets/rooms/family-20260916-4k.jpg?v=rooms-20260916-final",
+      "thumbnail": "assets/rooms/family-20260916-preview.jpg?v=rooms-20260916-final",
       "pitch": -9,
       "yaw": -20,
       "hfov": 110,
       "hotSpots": [
         {
-          "pitch": -15.930101465614428,
-          "yaw": -85.6369785794814,
+          "pitch": -16.447,
+          "yaw": -86.354,
           "type": "info",
           "text": "丸太枕",
           "cssClass": "tour-info",
@@ -41,7 +41,7 @@
           },
           "clickHandlerArgs": {
             "title": "丸太枕",
-            "text": "年輪をかたどった、やわらかな丸太形の枕。3種類のきこりんルームにご用意します。"
+            "text": "年輪をかたどった、やわらかな丸太形の枕。2種類のきこりんルームにご用意します。"
           },
           "feature": "log-pillow"
         },
@@ -139,13 +139,13 @@
           },
           "clickHandlerArgs": {
             "title": "森の生き物を探そう",
-            "text": "鹿の角のフック、舞う落ち葉やコウモリの飾り。森の生き物を探す遊びを、家族で楽しめます。"
+            "text": "シカ・リス・ウサギ・キツネ・フクロウ・クマ。6種類の生き物を木のレリーフにしました。角や耳、しっぽの形を見比べて、どの動物か家族で探してみてください。頭上の落ち葉やコウモリにも、森の気配が隠れています。"
           },
           "feature": "forest-play"
         },
         {
-          "pitch": -20.930101465614428,
-          "yaw": -73.6369785794814,
+          "pitch": -18.058,
+          "yaw": -72.723,
           "type": "info",
           "text": "きこりんのぬいぐるみ",
           "feature": "kikorin",
@@ -158,28 +158,574 @@
             "title": "きこりんのぬいぐるみ",
             "text": "こちらは住友林業グループのキャラクター「きこりん」ぬいぐるみです。寝るときに抱きしめてあげてください。"
           }
+        },
+        {
+          "type": "info",
+          "feature": "pollen-free-sugi",
+          "text": "無花粉スギの木質空間",
+          "yaw": -79.915,
+          "pitch": 16.632,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "無花粉スギの木質空間"
+          },
+          "clickHandlerArgs": {
+            "title": "無花粉スギの木質空間",
+            "text": "木質内装には、無花粉スギを取り入れています。無花粉スギは、花粉を作らない性質を持つスギです。住友林業はDNA鑑定や組織培養を活用した苗木の増殖に取り組み、花粉症対策につながる森づくりを進めています。木を使う体験から、次の森を育てる取り組みへ目を向けてみてください。",
+            "source": {
+              "label": "無花粉スギの苗木づくり（住友林業）",
+              "url": "https://sfc.jp/information/news/2024/2024-08-08-02.html"
+            }
+          }
+        },
+        {
+          "type": "info",
+          "feature": "wood-blinds",
+          "text": "木製ブラインド",
+          "yaw": 8,
+          "pitch": 18,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木製ブラインド"
+          },
+          "clickHandlerArgs": {
+            "title": "木製ブラインド",
+            "text": "窓辺には木製のブラインドを。木の羽根の角度で光をやわらかく調整し、街の眺めと木の質感を楽しめます。"
+          }
+        },
+        {
+          "type": "info",
+          "feature": "closet",
+          "text": "木製クローゼット",
+          "yaw": -132.606,
+          "pitch": 4.842,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木製クローゼット"
+          },
+          "clickHandlerArgs": {
+            "title": "木製クローゼット",
+            "text": "棚板とハンガーパイプをすっきりと納めた木製クローゼット。上段に小物、中央に衣類、下段に荷物を置けるつくりです。"
+          }
+        },
+        {
+          "type": "info",
+          "feature": "alarm",
+          "text": "チェーンソーアラーム",
+          "yaw": -55.708,
+          "pitch": -12.28,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "チェーンソーアラーム"
+          },
+          "clickHandlerArgs": {
+            "title": "チェーンソーアラーム",
+            "text": "森で働く音を、大きめの木製スピーカーから。",
+            "action": "alarm"
+          }
+        },
+        {
+          "type": "scene",
+          "sceneId": "FAMILY_PLAY",
+          "yaw": 52,
+          "pitch": -43,
+          "targetYaw": 72,
+          "targetPitch": -12,
+          "targetHfov": 100,
+          "text": "森のあそびへ",
+          "cssClass": "tour-move",
+          "createTooltipArgs": {
+            "kind": "move",
+            "label": "森のあそびへ"
+          }
+        },
+        {
+          "type": "scene",
+          "sceneId": "FAMILY_WINDOW",
+          "yaw": 2,
+          "pitch": -32,
+          "targetYaw": -92,
+          "targetPitch": -12,
+          "targetHfov": 100,
+          "text": "窓側・ベッドへ",
+          "cssClass": "tour-move",
+          "createTooltipArgs": {
+            "kind": "move",
+            "label": "窓側・ベッドへ"
+          }
         }
-      ]
-    }
-  },
-  "views": [
-    {
-      "title": "ベッド・丸太枕",
-      "yaw": -70,
-      "pitch": -16,
-      "hfov": 85
+      ],
+      "mobileYaw": -55
     },
-    {
+    "FAMILY_PLAY": {
       "title": "森のあそび",
+      "type": "equirectangular",
+      "panorama": "assets/rooms/family-play-4k.jpg?v=rooms-20260916-final",
+      "thumbnail": "assets/rooms/family-play-preview.jpg?v=rooms-20260916-final",
+      "pitch": -12,
       "yaw": 72,
-      "pitch": -15,
-      "hfov": 85
+      "hfov": 100,
+      "hotSpots": [
+        {
+          "pitch": -9.015,
+          "yaw": -109.533,
+          "type": "info",
+          "text": "丸太枕",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "丸太枕"
+          },
+          "clickHandlerArgs": {
+            "title": "丸太枕",
+            "text": "年輪をかたどった、やわらかな丸太形の枕。2種類のきこりんルームにご用意します。"
+          },
+          "feature": "log-pillow"
+        },
+        {
+          "pitch": -11.903,
+          "yaw": -102.495,
+          "type": "info",
+          "text": "きこりんのぬいぐるみ",
+          "feature": "kikorin",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "きこりんのぬいぐるみ"
+          },
+          "clickHandlerArgs": {
+            "title": "きこりんのぬいぐるみ",
+            "text": "こちらは住友林業グループのキャラクター「きこりん」ぬいぐるみです。寝るときに抱きしめてあげてください。"
+          }
+        },
+        {
+          "type": "info",
+          "feature": "alarm",
+          "text": "チェーンソーアラーム",
+          "yaw": -83.112,
+          "pitch": -10.224,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "チェーンソーアラーム"
+          },
+          "clickHandlerArgs": {
+            "title": "チェーンソーアラーム",
+            "text": "森で働く音を、大きめの木製スピーカーから。",
+            "action": "alarm"
+          }
+        },
+        {
+          "pitch": -10.874,
+          "yaw": -156.05,
+          "type": "info",
+          "text": "BAUMのスキンケア",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "BAUMのスキンケア"
+          },
+          "clickHandlerArgs": {
+            "title": "BAUMのスキンケア",
+            "text": "「樹木との共生」をテーマに掲げる資生堂のブランド「BAUM」のスキンケア製品をデスクに。木製パーツにはオークを使い、スキンケア成分にはヒノキ由来の原料を取り入れています。住友林業の協力により、豊かな森づくりにも貢献しています。"
+          },
+          "feature": "baum"
+        },
+        {
+          "pitch": -11.953,
+          "yaw": -150.001,
+          "type": "info",
+          "text": "選べる木の香りスプレー",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "選べる木の香りスプレー"
+          },
+          "clickHandlerArgs": {
+            "title": "選べる木の香りスプレー",
+            "text": "ヒノキ・スギ・ヒバのルームスプレー。好きな木の香りを選び、使う量を調整できます。「客室・共通設備」から香りの特徴をご覧ください。"
+          },
+          "feature": "wood-spray"
+        },
+        {
+          "pitch": 8.513,
+          "yaw": -167.817,
+          "type": "info",
+          "text": "WOOD CYCLE",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "WOOD CYCLEの公式図を見る"
+          },
+          "clickHandlerArgs": {
+            "title": "WOOD CYCLE",
+            "text": "森林から木材、建築、エネルギーへ。住友林業は、木を植え育て、木材を建物などに使い、資源を循環させる「WOOD CYCLE」を進めています。この「きこりんルーム」もその循環の一端を担っています。",
+            "action": "wood-cycle"
+          },
+          "feature": "wood-cycle"
+        },
+        {
+          "pitch": -44.712,
+          "yaw": 12.703,
+          "type": "info",
+          "text": "パンフレット",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "パンフレットを読む"
+          },
+          "clickHandlerArgs": {
+            "title": "木を知る客室ガイド",
+            "text": "木材サンプルやガイドから、木の魅力と森の循環を知ることができます。",
+            "action": "brochure"
+          },
+          "feature": "brochure"
+        },
+        {
+          "pitch": -9.516,
+          "yaw": 95.271,
+          "type": "info",
+          "text": "森の生き物を探そう",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "森の生き物を探そう"
+          },
+          "clickHandlerArgs": {
+            "title": "森の生き物を探そう",
+            "text": "シカ・リス・ウサギ・キツネ・フクロウ・クマ。6種類の生き物を木のレリーフにしました。角や耳、しっぽの形を見比べて、どの動物か家族で探してみてください。頭上の落ち葉やコウモリにも、森の気配が隠れています。"
+          },
+          "feature": "forest-play"
+        },
+        {
+          "type": "info",
+          "feature": "pollen-free-sugi",
+          "text": "無花粉スギの木質空間",
+          "yaw": -74.732,
+          "pitch": 14.063,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "無花粉スギの木質空間"
+          },
+          "clickHandlerArgs": {
+            "title": "無花粉スギの木質空間",
+            "text": "木質内装には、無花粉スギを取り入れています。無花粉スギは、花粉を作らない性質を持つスギです。住友林業はDNA鑑定や組織培養を活用した苗木の増殖に取り組み、花粉症対策につながる森づくりを進めています。木を使う体験から、次の森を育てる取り組みへ目を向けてみてください。",
+            "source": {
+              "label": "無花粉スギの苗木づくり（住友林業）",
+              "url": "https://sfc.jp/information/news/2024/2024-08-08-02.html"
+            }
+          }
+        },
+        {
+          "type": "info",
+          "feature": "wood-blinds",
+          "text": "木製ブラインド",
+          "yaw": -3.429,
+          "pitch": 14.531,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木製ブラインド"
+          },
+          "clickHandlerArgs": {
+            "title": "木製ブラインド",
+            "text": "窓辺には木製のブラインドを。木の羽根の角度で光をやわらかく調整し、街の眺めと木の質感を楽しめます。"
+          }
+        },
+        {
+          "type": "info",
+          "feature": "closet",
+          "text": "木製クローゼット",
+          "yaw": -135.953,
+          "pitch": 3.638,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木製クローゼット"
+          },
+          "clickHandlerArgs": {
+            "title": "木製クローゼット",
+            "text": "棚板とハンガーパイプをすっきりと納めた木製クローゼット。上段に小物、中央に衣類、下段に荷物を置けるつくりです。"
+          }
+        },
+        {
+          "type": "scene",
+          "sceneId": "FAMILY_ROOM",
+          "yaw": -135,
+          "pitch": -42,
+          "targetYaw": -20,
+          "targetPitch": -9,
+          "targetHfov": 100,
+          "text": "入口・客室全体へ",
+          "cssClass": "tour-move",
+          "createTooltipArgs": {
+            "kind": "move",
+            "label": "入口・客室全体へ"
+          }
+        },
+        {
+          "type": "scene",
+          "sceneId": "FAMILY_WINDOW",
+          "yaw": -13,
+          "pitch": -34,
+          "targetYaw": -92,
+          "targetPitch": -12,
+          "targetHfov": 100,
+          "text": "窓側・ベッドへ",
+          "cssClass": "tour-move",
+          "createTooltipArgs": {
+            "kind": "move",
+            "label": "窓側・ベッドへ"
+          }
+        }
+      ],
+      "mobileYaw": 72
     },
-    {
-      "title": "香り・WOOD CYCLE",
-      "yaw": 150,
-      "pitch": 0,
-      "hfov": 105
+    "FAMILY_WINDOW": {
+      "title": "窓側・ベッド",
+      "type": "equirectangular",
+      "panorama": "assets/rooms/family-window-4k.jpg?v=rooms-20260916-final",
+      "thumbnail": "assets/rooms/family-window-preview.jpg?v=rooms-20260916-final",
+      "pitch": -12,
+      "yaw": -92,
+      "hfov": 100,
+      "hotSpots": [
+        {
+          "pitch": -12.158,
+          "yaw": -93.755,
+          "type": "info",
+          "text": "丸太枕",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "丸太枕"
+          },
+          "clickHandlerArgs": {
+            "title": "丸太枕",
+            "text": "年輪をかたどった、やわらかな丸太形の枕。2種類のきこりんルームにご用意します。"
+          },
+          "feature": "log-pillow"
+        },
+        {
+          "pitch": -15.533,
+          "yaw": -82.148,
+          "type": "info",
+          "text": "きこりんのぬいぐるみ",
+          "feature": "kikorin",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "きこりんのぬいぐるみ"
+          },
+          "clickHandlerArgs": {
+            "title": "きこりんのぬいぐるみ",
+            "text": "こちらは住友林業グループのキャラクター「きこりん」ぬいぐるみです。寝るときに抱きしめてあげてください。"
+          }
+        },
+        {
+          "type": "info",
+          "feature": "alarm",
+          "text": "チェーンソーアラーム",
+          "yaw": -113.95,
+          "pitch": -12.117,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "チェーンソーアラーム"
+          },
+          "clickHandlerArgs": {
+            "title": "チェーンソーアラーム",
+            "text": "森で働く音を、大きめの木製スピーカーから。",
+            "action": "alarm"
+          }
+        },
+        {
+          "pitch": -8.482,
+          "yaw": 170.444,
+          "type": "info",
+          "text": "BAUMのスキンケア",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "BAUMのスキンケア"
+          },
+          "clickHandlerArgs": {
+            "title": "BAUMのスキンケア",
+            "text": "「樹木との共生」をテーマに掲げる資生堂のブランド「BAUM」のスキンケア製品をデスクに。木製パーツにはオークを使い、スキンケア成分にはヒノキ由来の原料を取り入れています。住友林業の協力により、豊かな森づくりにも貢献しています。"
+          },
+          "feature": "baum"
+        },
+        {
+          "pitch": -8.898,
+          "yaw": 176.028,
+          "type": "info",
+          "text": "選べる木の香りスプレー",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "選べる木の香りスプレー"
+          },
+          "clickHandlerArgs": {
+            "title": "選べる木の香りスプレー",
+            "text": "ヒノキ・スギ・ヒバのルームスプレー。好きな木の香りを選び、使う量を調整できます。「客室・共通設備」から香りの特徴をご覧ください。"
+          },
+          "feature": "wood-spray"
+        },
+        {
+          "pitch": 6.724,
+          "yaw": 163.924,
+          "type": "info",
+          "text": "WOOD CYCLE",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "WOOD CYCLEの公式図を見る"
+          },
+          "clickHandlerArgs": {
+            "title": "WOOD CYCLE",
+            "text": "森林から木材、建築、エネルギーへ。住友林業は、木を植え育て、木材を建物などに使い、資源を循環させる「WOOD CYCLE」を進めています。この「きこりんルーム」もその循環の一端を担っています。",
+            "action": "wood-cycle"
+          },
+          "feature": "wood-cycle"
+        },
+        {
+          "pitch": -30.417,
+          "yaw": 122.391,
+          "type": "info",
+          "text": "パンフレット",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "パンフレットを読む"
+          },
+          "clickHandlerArgs": {
+            "title": "木を知る客室ガイド",
+            "text": "木材サンプルやガイドから、木の魅力と森の循環を知ることができます。",
+            "action": "brochure"
+          },
+          "feature": "brochure"
+        },
+        {
+          "pitch": -3.316,
+          "yaw": 117.999,
+          "type": "info",
+          "text": "森の生き物を探そう",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "森の生き物を探そう"
+          },
+          "clickHandlerArgs": {
+            "title": "森の生き物を探そう",
+            "text": "シカ・リス・ウサギ・キツネ・フクロウ・クマ。6種類の生き物を木のレリーフにしました。角や耳、しっぽの形を見比べて、どの動物か家族で探してみてください。頭上の落ち葉やコウモリにも、森の気配が隠れています。"
+          },
+          "feature": "forest-play"
+        },
+        {
+          "type": "info",
+          "feature": "pollen-free-sugi",
+          "text": "無花粉スギの木質空間",
+          "yaw": -93.863,
+          "pitch": 15.235,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "無花粉スギの木質空間"
+          },
+          "clickHandlerArgs": {
+            "title": "無花粉スギの木質空間",
+            "text": "木質内装には、無花粉スギを取り入れています。無花粉スギは、花粉を作らない性質を持つスギです。住友林業はDNA鑑定や組織培養を活用した苗木の増殖に取り組み、花粉症対策につながる森づくりを進めています。木を使う体験から、次の森を育てる取り組みへ目を向けてみてください。",
+            "source": {
+              "label": "無花粉スギの苗木づくり（住友林業）",
+              "url": "https://sfc.jp/information/news/2024/2024-08-08-02.html"
+            }
+          }
+        },
+        {
+          "type": "info",
+          "feature": "wood-blinds",
+          "text": "木製ブラインド",
+          "yaw": -7.21,
+          "pitch": 26.7,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木製ブラインド"
+          },
+          "clickHandlerArgs": {
+            "title": "木製ブラインド",
+            "text": "窓辺には木製のブラインドを。木の羽根の角度で光をやわらかく調整し、街の眺めと木の質感を楽しめます。"
+          }
+        },
+        {
+          "type": "info",
+          "feature": "closet",
+          "text": "木製クローゼット",
+          "yaw": -159.696,
+          "pitch": 5.25,
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "木製クローゼット"
+          },
+          "clickHandlerArgs": {
+            "title": "木製クローゼット",
+            "text": "棚板とハンガーパイプをすっきりと納めた木製クローゼット。上段に小物、中央に衣類、下段に荷物を置けるつくりです。"
+          }
+        },
+        {
+          "pitch": -37.611,
+          "yaw": 167.09,
+          "type": "info",
+          "text": "動物の足跡をたどろう",
+          "cssClass": "tour-info",
+          "createTooltipArgs": {
+            "kind": "info",
+            "label": "動物の足跡をたどろう"
+          },
+          "clickHandlerArgs": {
+            "title": "動物の足跡をたどろう",
+            "text": "床には、森に暮らす動物の足跡。どんな動物の足跡か、家族で探してみてください。"
+          },
+          "feature": "footprints"
+        },
+        {
+          "type": "scene",
+          "sceneId": "FAMILY_ROOM",
+          "yaw": 170,
+          "pitch": -40,
+          "targetYaw": -20,
+          "targetPitch": -9,
+          "targetHfov": 100,
+          "text": "入口・客室全体へ",
+          "cssClass": "tour-move",
+          "createTooltipArgs": {
+            "kind": "move",
+            "label": "入口・客室全体へ"
+          }
+        },
+        {
+          "type": "scene",
+          "sceneId": "FAMILY_PLAY",
+          "yaw": 80,
+          "pitch": -43,
+          "targetYaw": 72,
+          "targetPitch": -12,
+          "targetHfov": 100,
+          "text": "森のあそびへ",
+          "cssClass": "tour-move",
+          "createTooltipArgs": {
+            "kind": "move",
+            "label": "森のあそびへ"
+          }
+        }
+      ],
+      "mobileYaw": -92
     }
-  ]
+  }
 }

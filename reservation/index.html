@@ -8,8 +8,8 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
   <title>宿泊予約｜アパホテル予約画面デモ</title>
   <meta name="description" content="部屋タイプを選べる宿泊予約のデモです。施設・料金は架空の設定です。">
-  <link rel="stylesheet" href="styles.css?v=quality-20260915b">
-  <script src="../room-catalog.js?v=quality-20260915b" defer></script><script src="app.js?v=quality-20260915b" defer></script>
+  <link rel="stylesheet" href="styles.css?v=rooms-20260916-final">
+  <script src="../room-catalog.js?v=rooms-20260916-final" defer></script><script src="app.js?v=rooms-20260916-final" defer></script>
 </head>
 <body id="top">
   <div class="demo-notice"><span>発表用デモ</span> アパホテルの予約画面を参考にした非公式サンプルです。実際の予約・決済は行われません。</div>
@@ -19,7 +19,7 @@
       <div class="header-right"><span class="welcome">ようこそ、<strong data-guest-name>住林倫</strong> 様</span><a href="#guest" class="account-link">お客様情報を確認 <span>›</span></a></div>
     </div>
   </header>
-  <nav class="main-nav" aria-label="ページ内メニュー"><div><a class="active" href="#rooms">宿泊予約</a><a href="#room-details">客室のご案内</a><a href="#guest">お客様情報</a><a href="../?room=premium">360°ルームツアー <span>↗</span></a></div></nav>
+  <nav class="main-nav" aria-label="ページ内メニュー"><div><a class="active" href="#rooms">宿泊予約</a><a href="#room-details">客室のご案内</a><a href="#guest">お客様情報</a><a href="../?room=business">360°ルームツアー <span>↗</span></a></div></nav>
   <main class="container"><noscript><p>お部屋を選択するには、ブラウザのJavaScriptを有効にしてください。</p></noscript>
     <div class="breadcrumb">ホテル予約 <span>›</span> 東京都 <span>›</span> 宿泊予約 <span>›</span> 部屋タイプから予約</div>
     <div class="hotel-title"><div><div class="eyebrow">HOTEL RESERVATION</div><h1>アパホテル</h1><p>宿泊予約 <span class="model-note">施設・料金はイメージです。</span></p></div><span class="nonsmoking">全室禁煙</span></div>
@@ -38,7 +38,7 @@
     <div class="booking-layout">
       <div class="main-column">
         <section id="rooms" aria-labelledby="rooms-title">
-          <div class="section-heading"><h2 id="rooms-title">部屋タイプから予約</h2><span><strong id="result-count">4</strong> 件の部屋タイプ</span></div>
+          <div class="section-heading"><h2 id="rooms-title">部屋タイプから予約</h2><span><strong id="result-count">3</strong> 件の部屋タイプ</span></div>
           <p class="list-note">ご希望の部屋タイプをお選びください。</p>
           <label class="room-picker" for="room-type">宿泊するお部屋<select id="room-type"><option value="">選択してください</option></select></label>
           <fieldset class="room-list" id="room-details"><legend class="sr-only">宿泊する部屋タイプを選択</legend></fieldset>
